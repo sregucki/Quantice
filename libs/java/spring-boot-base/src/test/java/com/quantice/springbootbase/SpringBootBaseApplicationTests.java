@@ -1,10 +1,10 @@
-package io.quantice.userservice;
+package com.quantice.springbootbase;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserServiceApplicationTests {
+class SpringBootBaseApplicationTests {
 
     @Test
     void contextLoads() {
