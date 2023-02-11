@@ -25,6 +25,17 @@ dependencies {
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    implementation 'org.springframework.boot:spring-boot-starter-webflux:3.0.2'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc:3.0.2'
+    implementation 'io.r2dbc:r2dbc-postgresql:0.8.13.RELEASE'
+    implementation 'software.amazon.awssdk:sqs:2.19.33'
+
+    implementation 'org.springframework.boot:spring-boot-starter-security:3.0.2'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client:3.0.2'
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+
 }
 
 tasks.named('test') {
