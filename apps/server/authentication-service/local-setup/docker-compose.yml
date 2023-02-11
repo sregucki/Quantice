@@ -8,5 +8,6 @@ services:
       - "5432:5432"
     volumes:
       - postgres-auth-service:/data/postgres-auth-service
+      - ./sql/init_tables.sql:/docker-entrypoint-initdb.d/init_tables.sql
 volumes:
   postgres-auth-service:
