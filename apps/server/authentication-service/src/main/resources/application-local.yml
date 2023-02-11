@@ -1,0 +1,18 @@
+postgres:
+  host: "localhost"
+  port: 5433
+  databaseName: quantice_user_login_data
+  username: "root"
+  password: "root"
+spring:
+  r2dbc:
+    username: ${postgres.username}
+    password: ${postgres.password}
+    url: r2dbc:postgresql://${postgres.host}:${postgres.port}/${postgres.databaseName}
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 48911344485-673td23d4bcvu2vb4l2mume5lhr20vbp.apps.googleusercontent.com
+            client-secret: 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
