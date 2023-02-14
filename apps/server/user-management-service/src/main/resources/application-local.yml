@@ -21,3 +21,5 @@ spring:
   sql:
     init:
       mode: always
+
+initializeSampleUserData: true
