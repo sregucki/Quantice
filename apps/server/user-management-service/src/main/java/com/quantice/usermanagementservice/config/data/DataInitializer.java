@@ -1,8 +1,11 @@
 package com.quantice.usermanagementservice.config.data;
 
 import com.quantice.usermanagementservice.model.User;
+import com.quantice.usermanagementservice.model.enums.AuthProvider;
 import com.quantice.usermanagementservice.repository.UserRepository;
 import com.quantice.usermanagementservice.security.PasswordEncoder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
@@ -16,9 +19,16 @@ import static java.util.stream.Collectors.toList;
 @Component
 public class DataInitializer {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(DataInitializer.class);
+
     @Bean
     @ConditionalOnProperty(name = "initializeSampleUserData", havingValue = "true")
     public CommandLineRunner initSampleData(UserRepository userRepository, PasswordEncoder passwordEncoder) {
+
+        if (userRepository.count() > 0) {
+            LOGGER.warn("Sample users hasn't been saved - they're already in database");
+            return null;
+        }
 
         List<String> sampleUsernames = List.of("Arianna Guerrero", "Charis Krueger", "Tanya Lee", "Dawn Wilkerson",
             "Lucille Sheppard", "Conner Ford", "Alma Pineda", "Dominic Douglas", "Raymond Bradshaw", "Rex Holder");
@@ -34,10 +44,14 @@ public class DataInitializer {
                 .username(userData.get(0))
                 .email(userData.get(1))
                 .passwordHash(passwordEncoder.bCryptPasswordEncoder().encode(userData.get(2)))
+                .authProvider(AuthProvider.QUANTICE)
                 .build())
             .toList();
 
-        return (args -> userRepository.saveAll(sampleUsers));
+        return (args -> {
+            LOGGER.info("Sample users saved!");
+            userRepository.saveAll(sampleUsers);
+        });
 
     }
 
