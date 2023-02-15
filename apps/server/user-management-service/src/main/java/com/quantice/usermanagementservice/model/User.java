@@ -1,10 +1,13 @@
 package com.quantice.usermanagementservice.model;
 
 import com.quantice.usermanagementservice.model.converter.UserRoleListConverter;
+import com.quantice.usermanagementservice.model.enums.AuthProvider;
 import com.quantice.usermanagementservice.model.enums.UserRole;
 import jakarta.persistence.Column;
 import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -42,6 +45,10 @@ public class User {
 
     @Column(name = "user_password_hash", nullable = false)
     private String passwordHash;
+
+    @Column(name = "user_auth_provider", nullable = false)
+    @Enumerated(EnumType.STRING)
+    private AuthProvider authProvider;
 
     @Builder.Default()
     @Convert(converter = UserRoleListConverter.class)
