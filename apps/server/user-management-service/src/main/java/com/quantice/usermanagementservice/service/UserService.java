@@ -25,7 +25,6 @@ public class UserService {
         userRepository.save(User.builder()
                 .username(signUpRequest.getUsername())
                 .email(signUpRequest.getEmail())
-                .passwordHash(passwordEncoder.bCryptPasswordEncoder().encode(signUpRequest.getPassword()))
                 .build()
         );
     }
