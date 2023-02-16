@@ -1,8 +1,11 @@
 package com.quantice.usermanagementservice.config.data;
 
-import com.quantice.usermanagementservice.model.User;
+import com.quantice.usermanagementservice.model.user.User;
+import com.quantice.usermanagementservice.model.utils.enums.RoleType;
+import com.quantice.usermanagementservice.repository.RoleRepository;
 import com.quantice.usermanagementservice.repository.UserRepository;
-import com.quantice.usermanagementservice.security.PasswordEncoder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
@@ -16,28 +19,37 @@ import static java.util.stream.Collectors.toList;
 @Component
 public class DataInitializer {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(DataInitializer.class);
+
     @Bean
     @ConditionalOnProperty(name = "initializeSampleUserData", havingValue = "true")
-    public CommandLineRunner initSampleData(UserRepository userRepository, PasswordEncoder passwordEncoder) {
+    public CommandLineRunner initSampleData(UserRepository userRepository, RoleRepository roleRepository) {
+
+        if (userRepository.count() > 0) {
+            LOGGER.warn("Sample users hasn't been saved - they're already in database");
+            return null;
+        }
 
         List<String> sampleUsernames = List.of("Arianna Guerrero", "Charis Krueger", "Tanya Lee", "Dawn Wilkerson",
             "Lucille Sheppard", "Conner Ford", "Alma Pineda", "Dominic Douglas", "Raymond Bradshaw", "Rex Holder");
         List<String> sampleEmails = List.of("chrisk@att.net", "fatelk@yahoo.ca", "ideguy@aol.com",
             "dodong@msn.com", "jaxweb@me.com", "onestab@verizon.net", "studyabr@aol.com", "brickbat@yahoo.ca",
             "oneiros@gmail.com", "jhardin@verizon.net", "vsprintf@att.net", "dmbkiwi@icloud.com");
-        List<String> samplePasswords = List.of("xp7C>+hI)Wqb", "mWT&+xo5eOuU", "!Qfo<@CqO$sO", "+1zXn)l)fd8l",
-            "ZNV*CJSjpmWN", "QwUW-ZPBBiR2", "UqHsDzA8J*<x", "rLF&h%5BGX5l", "7aeIwRj4tcM9", "!zli(f)p3U!h");
 
-        List<User> sampleUsers = zip(List.of(sampleUsernames, sampleEmails, samplePasswords))
+        List<User> sampleUsers = zip(List.of(sampleUsernames, sampleEmails))
             .stream()
             .map(userData -> User.builder()
                 .username(userData.get(0))
                 .email(userData.get(1))
-                .passwordHash(passwordEncoder.bCryptPasswordEncoder().encode(userData.get(2)))
+                    .userRoleIdFk(roleRepository.findRoleByRoleType(RoleType.ROLE_USER).getRoleId())
+                    .roles(List.of(roleRepository.findRoleByRoleType(RoleType.ROLE_USER)))
                 .build())
             .toList();
 
-        return (args -> userRepository.saveAll(sampleUsers));
+        return (args -> {
+            LOGGER.info("Sample users saved!");
+            userRepository.saveAll(sampleUsers);
+        });
 
     }
 

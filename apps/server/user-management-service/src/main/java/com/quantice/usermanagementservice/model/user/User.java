@@ -1,12 +1,11 @@
-package com.quantice.usermanagementservice.model;
+package com.quantice.usermanagementservice.model.user;
 
-import com.quantice.usermanagementservice.model.converter.UserRoleListConverter;
-import com.quantice.usermanagementservice.model.enums.UserRole;
 import jakarta.persistence.Column;
-import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -40,16 +39,16 @@ public class User {
     @Column(name = "user_name", nullable = false)
     private String username;
 
-    @Column(name = "user_password_hash", nullable = false)
-    private String passwordHash;
+    @Column(name = "role_id_fk")
+    private int userRoleIdFk;
 
     @Builder.Default()
-    @Convert(converter = UserRoleListConverter.class)
-    @Column(name = "user_role", nullable = false)
-    private List<UserRole> roles = new ArrayList<>(List.of(UserRole.ROLE_USER));
+    @OneToMany
+    @JoinColumn(name = "role_id", referencedColumnName = "role_id_fk")
+    private List<Role> roles = new ArrayList<>();
 
     @Builder.Default()
-    @Column(name = "user_is_active", nullable = false)
+    @Column(name = "user_is_active")
     private boolean active = true;
 
     @CreationTimestamp

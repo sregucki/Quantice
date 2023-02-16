@@ -1,8 +1,8 @@
 package com.quantice.usermanagementservice.service;
 
-import com.quantice.usermanagementservice.model.User;
 import com.quantice.usermanagementservice.model.dto.SignInRequest;
 import com.quantice.usermanagementservice.model.dto.SignUpRequest;
+import com.quantice.usermanagementservice.model.user.User;
 import com.quantice.usermanagementservice.repository.UserRepository;
 import com.quantice.usermanagementservice.security.PasswordEncoder;
 import lombok.RequiredArgsConstructor;
@@ -25,7 +25,6 @@ public class UserService {
         userRepository.save(User.builder()
                 .username(signUpRequest.getUsername())
                 .email(signUpRequest.getEmail())
-                .passwordHash(passwordEncoder.bCryptPasswordEncoder().encode(signUpRequest.getPassword()))
                 .build()
         );
     }

@@ -1,4 +1,4 @@
-package com.quantice.usermanagementservice.config;
+package com.quantice.usermanagementservice.config.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
