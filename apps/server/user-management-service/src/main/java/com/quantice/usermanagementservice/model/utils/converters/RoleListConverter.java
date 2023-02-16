@@ -1,6 +1,6 @@
-package com.quantice.usermanagementservice.model.converter;
+package com.quantice.usermanagementservice.model.utils.converters;
 
-import com.quantice.usermanagementservice.model.enums.RoleType;
+import com.quantice.usermanagementservice.model.utils.enums.RoleType;
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 
