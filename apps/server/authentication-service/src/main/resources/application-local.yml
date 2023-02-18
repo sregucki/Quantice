@@ -1,7 +1,7 @@
 postgres:
   hostname: "[::1]"
-  port: 5432
-  databaseName: quantice_user_data
+  port: 5433
+  databaseName: auth_data
   username: root
   password: root
 
@@ -28,5 +28,3 @@ spring:
           google:
             client-id: 48911344485-673td23d4bcvu2vb4l2mume5lhr20vbp.apps.googleusercontent.com
             client-secret: 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
-
-initializeSampleUserData: true
