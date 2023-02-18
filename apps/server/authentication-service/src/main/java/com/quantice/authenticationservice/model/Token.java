@@ -23,7 +23,7 @@ import java.time.Instant;
 @ToString
 @Entity
 @Table(name = "token_data")
-public class AuthToken {
+public class Token {
 
     @Id
     @Column(name = "token_id")

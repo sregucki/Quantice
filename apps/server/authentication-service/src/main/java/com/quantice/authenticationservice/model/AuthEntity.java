@@ -37,6 +37,6 @@ public class AuthEntity {
 
     @OneToOne
     @JoinColumn(name = "auth_provider_id", referencedColumnName = "auth_provider_id", nullable = false)
-    private AuthProvider authProvider;
+    private Provider provider;
 
 }

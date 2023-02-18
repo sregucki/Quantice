@@ -1,5 +1,5 @@
 package com.quantice.authenticationservice.model.enums;
 
-public enum AuthProviderType {
+public enum ProviderType {
     INTERNAL, EXTERNAL
 }
