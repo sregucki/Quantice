@@ -1,6 +1,6 @@
 package com.quantice.authenticationservice.model;
 
-import com.quantice.authenticationservice.model.enums.AuthProviderType;
+import com.quantice.authenticationservice.model.enums.ProviderType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -20,7 +20,7 @@ import lombok.ToString;
 @ToString
 @Entity
 @Table(name = "auth_provider")
-public class AuthProvider {
+public class Provider {
 
     @Id
     @Column(name = "auth_provider_id")
@@ -31,6 +31,6 @@ public class AuthProvider {
 
     @Column(name = "auth_provider_type", nullable = false)
     @Enumerated(EnumType.STRING)
-    private AuthProviderType authProviderType;
+    private ProviderType providerType;
 
 }

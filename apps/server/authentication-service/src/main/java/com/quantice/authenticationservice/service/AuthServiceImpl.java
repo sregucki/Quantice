@@ -2,7 +2,7 @@ package com.quantice.authenticationservice.service;
 
 import com.quantice.authenticationservice.exception.AuthenticationServiceException;
 import com.quantice.authenticationservice.model.AuthEntity;
-import com.quantice.authenticationservice.model.AuthToken;
+import com.quantice.authenticationservice.model.Token;
 import com.quantice.authenticationservice.model.request.SignInRequest;
 import com.quantice.authenticationservice.model.request.SignUpRequest;
 import com.quantice.authenticationservice.model.response.OAuth2Response;
@@ -26,8 +26,8 @@ public class AuthServiceImpl implements AuthService {
 	
 	private final OAuth2AuthorizedClientService authorizedClientService;
 	private final AuthEntityService authEntityService;
-	private final AuthProviderService authProviderService;
-	private final AuthTokenService authTokenService;
+	private final ProviderService providerService;
+	private final TokenService tokenService;
 	
 	
 	@Override
@@ -43,22 +43,22 @@ public class AuthServiceImpl implements AuthService {
 	}
 	
 	@Override
-	public AuthToken signInOAuth2(final OAuth2AuthenticationToken authentication) {
+	public Token signInOAuth2(final OAuth2AuthenticationToken authentication) {
 		
 		OAuth2Response oAuth2Response = retrieveUserDetailsFromOAuth2Client(authentication);
 		authEntityService.saveIfNotExists(
 				AuthEntity.builder()
 					.email(oAuth2Response.getEmail())
-					.authProvider(authProviderService.findAuthProviderByAuthProviderName(oAuth2Response.getClientId()))
+					.provider(providerService.findAuthProviderByAuthProviderName(oAuth2Response.getClientId()))
 					.build());
 		OAuth2AccessToken oAuth2AccessToken = oAuth2Response.getToken();
 		
-		return authTokenService.saveIfNotExists(AuthToken.builder()
-				 .accessToken(oAuth2AccessToken.getTokenValue())
-				 .tokenIssuedAt(oAuth2AccessToken.getIssuedAt())
-				 .tokenExpiresAt(oAuth2AccessToken.getExpiresAt())
-				 .authEntity(authEntityService.findAuthEntityByEmail(oAuth2Response.getEmail()))
-				 .build());
+		return tokenService.saveIfNotExists(Token.builder()
+												 .accessToken(oAuth2AccessToken.getTokenValue())
+												 .tokenIssuedAt(oAuth2AccessToken.getIssuedAt())
+												 .tokenExpiresAt(oAuth2AccessToken.getExpiresAt())
+												 .authEntity(authEntityService.findAuthEntityByEmail(oAuth2Response.getEmail()))
+												 .build());
 	}
 	
 	public OAuth2Response retrieveUserDetailsFromOAuth2Client(final OAuth2AuthenticationToken authenticationToken) {

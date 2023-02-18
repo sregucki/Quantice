@@ -1,9 +1,9 @@
 package com.quantice.authenticationservice.repository;
 
-import com.quantice.authenticationservice.model.AuthProvider;
+import com.quantice.authenticationservice.model.Provider;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AuthProviderRepository extends JpaRepository<AuthProvider, Integer> {
+public interface AuthProviderRepository extends JpaRepository<Provider, Integer> {
 
-    AuthProvider findAuthProviderByAuthProviderName(String authProviderName);
+    Provider findAuthProviderByAuthProviderName(String authProviderName);
 }
