@@ -6,6 +6,7 @@ import com.quantice.authenticationservice.model.request.SignInRequest;
 import com.quantice.authenticationservice.model.request.SignUpRequest;
 import com.quantice.authenticationservice.model.response.OAuth2Response;
 import com.quantice.authenticationservice.repository.AuthEntityRepository;
+import com.quantice.authenticationservice.repository.AuthProviderRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -26,6 +27,7 @@ public class AuthServiceImpl implements AuthService{
 
     private final OAuth2AuthorizedClientService authorizedClientService;
     private final AuthEntityRepository authEntityRepository;
+    private final AuthProviderRepository authProviderRepository;
 
 
     @Override
@@ -45,17 +47,19 @@ public class AuthServiceImpl implements AuthService{
 
         OAuth2Response oAuth2Response = retrieveUserDetailsFromOAuth2Client(authentication);
         saveAuthEntityIfNotExists(AuthEntity.builder()
-                .email(oAuth2Response.getEmail())
-                .build());
+            .email(oAuth2Response.getEmail())
+            .authProvider(authProviderRepository
+                .findAuthProviderByAuthProviderName(oAuth2Response.getClientId()))
+            .build());
 
         return oAuth2Response.getToken();
     }
 
     private void saveAuthEntityIfNotExists(AuthEntity authEntity) {
 
-        authEntityRepository
-            .findAuthEntityByEmail(authEntity.getEmail())
-            .orElse(authEntityRepository.save(authEntity));
+        if (!authEntityRepository.existsAuthEntityByEmail(authEntity.getEmail())) {
+            authEntityRepository.save(authEntity);
+        }
     }
 
     public OAuth2Response retrieveUserDetailsFromOAuth2Client(final OAuth2AuthenticationToken authenticationToken) {
@@ -90,6 +94,7 @@ public class AuthServiceImpl implements AuthService{
             .email(String.valueOf(userAttributes.get("email")))
             .token(client.getAccessToken())
             .avatarUrl(String.valueOf(userAttributes.get("picture")))
+            .clientId(authenticationToken.getAuthorizedClientRegistrationId())
             .build();
     }
 

@@ -14,5 +14,5 @@ public class OAuth2Response {
     private String email;
     private OAuth2AccessToken token;
     private String avatarUrl;
-
+    private String clientId;
 }

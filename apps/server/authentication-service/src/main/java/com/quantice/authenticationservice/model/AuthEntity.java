@@ -4,6 +4,8 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -33,5 +35,8 @@ public class AuthEntity {
     @Column(name = "user_password_hash")
     private String password;
 
+    @OneToOne
+    @JoinColumn(name = "auth_provider_id", referencedColumnName = "auth_provider_id", nullable = false)
+    private AuthProvider authProvider;
 
 }
