@@ -2,8 +2,8 @@ package com.quantice.authenticationservice.service;
 
 import com.quantice.authenticationservice.model.request.SignInRequest;
 import com.quantice.authenticationservice.model.request.SignUpRequest;
-import com.quantice.authenticationservice.model.response.OAuth2Response;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
+import org.springframework.security.oauth2.core.OAuth2AccessToken;
 
 public interface AuthService {
 
@@ -11,6 +11,6 @@ public interface AuthService {
 
     SignUpRequest signUp(final SignUpRequest signUpRequest);
 
-    OAuth2Response signInOAuth2(final OAuth2AuthenticationToken authentication);
+    OAuth2AccessToken signInOAuth2(final OAuth2AuthenticationToken authentication);
 
 }
