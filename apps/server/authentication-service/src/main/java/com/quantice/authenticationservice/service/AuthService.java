@@ -7,9 +7,9 @@ import org.springframework.security.oauth2.client.authentication.OAuth2Authentic
 
 public interface AuthService {
 
-    SignInRequest signIn(final SignInRequest signInRequest);
+    Token signIn(final SignInRequest signInRequest);
 
-    SignUpRequest signUp(final SignUpRequest signUpRequest);
+    void signUp(final SignUpRequest signUpRequest);
 
     Token signInOAuth2(final OAuth2AuthenticationToken authentication);
 }
