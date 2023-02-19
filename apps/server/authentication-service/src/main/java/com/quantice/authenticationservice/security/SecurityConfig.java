@@ -9,19 +9,20 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @RequiredArgsConstructor
 public class SecurityConfig {
-	
-	@Bean
-	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-		
-		return http.authorizeHttpRequests()
-				   .requestMatchers("/register", "/auth")
-				   .permitAll()
-				   .anyRequest()
-				   .authenticated()
-				   .and()
-				   .oauth2Login()
-				   .and()
-				   .csrf().disable()
-				   .build();
-	}
+
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+
+        return http.authorizeHttpRequests()
+                .requestMatchers("/login")
+                .permitAll()
+                .anyRequest()
+                .authenticated()
+                .and()
+                .oauth2Login()
+                .defaultSuccessUrl("/oidc/token", true)
+                .and()
+                .csrf().disable()
+                .build();
+    }
 }
