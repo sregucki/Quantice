@@ -2,10 +2,11 @@ package com.quantice.authenticationservice.service;
 
 import com.quantice.authenticationservice.exception.AuthenticationServiceException;
 import com.quantice.authenticationservice.model.AuthEntity;
-import com.quantice.authenticationservice.model.AuthToken;
+import com.quantice.authenticationservice.model.Token;
 import com.quantice.authenticationservice.model.request.SignInRequest;
 import com.quantice.authenticationservice.model.request.SignUpRequest;
 import com.quantice.authenticationservice.model.response.OAuth2Response;
+import com.quantice.authenticationservice.security.PasswordEncoder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -26,39 +27,48 @@ public class AuthServiceImpl implements AuthService {
 	
 	private final OAuth2AuthorizedClientService authorizedClientService;
 	private final AuthEntityService authEntityService;
-	private final AuthProviderService authProviderService;
-	private final AuthTokenService authTokenService;
-	
+	private final ProviderService providerService;
+	private final TokenService tokenService;
+	private final PasswordEncoder passwordEncoder;
+	public static final String DEFAULT_AUTH_PROVIDER = "quantice";
 	
 	@Override
-	public SignInRequest signIn(final SignInRequest signInRequest) {
+	public Token signIn(final SignInRequest signInRequest) {
 		
-		return null;
+		return Token.builder().build();
 	}
 	
 	@Override
-	public SignUpRequest signUp(final SignUpRequest signUpRequest) {
+	public void signUp(final SignUpRequest signUpRequest) {
 		
-		return null;
+		// TODO sqs message to user-management service
+		authEntityService.saveIfNotExists(
+				AuthEntity.builder()
+						  .email(signUpRequest.getEmail())
+						  .password(passwordEncoder.bCryptPasswordEncoder().encode(signUpRequest.getPassword()))
+						  .provider(providerService.findAuthProviderByAuthProviderName(DEFAULT_AUTH_PROVIDER))
+						  .build()
+		);
 	}
 	
 	@Override
-	public AuthToken signInOAuth2(final OAuth2AuthenticationToken authentication) {
+	public Token signInOAuth2(final OAuth2AuthenticationToken authentication) {
 		
 		OAuth2Response oAuth2Response = retrieveUserDetailsFromOAuth2Client(authentication);
 		authEntityService.saveIfNotExists(
 				AuthEntity.builder()
-					.email(oAuth2Response.getEmail())
-					.authProvider(authProviderService.findAuthProviderByAuthProviderName(oAuth2Response.getClientId()))
-					.build());
+						  .email(oAuth2Response.getEmail())
+						  .provider(providerService.findAuthProviderByAuthProviderName(oAuth2Response.getClientId()))
+						  .build());
 		OAuth2AccessToken oAuth2AccessToken = oAuth2Response.getToken();
 		
-		return authTokenService.saveIfNotExists(AuthToken.builder()
-				 .accessToken(oAuth2AccessToken.getTokenValue())
-				 .tokenIssuedAt(oAuth2AccessToken.getIssuedAt())
-				 .tokenExpiresAt(oAuth2AccessToken.getExpiresAt())
-				 .authEntity(authEntityService.findAuthEntityByEmail(oAuth2Response.getEmail()))
-				 .build());
+		return tokenService.saveIfNotExists(
+				Token.builder()
+					 .accessToken(oAuth2AccessToken.getTokenValue())
+					 .tokenIssuedAt(oAuth2AccessToken.getIssuedAt())
+					 .tokenExpiresAt(oAuth2AccessToken.getExpiresAt())
+					 .authEntity(authEntityService.findAuthEntityByEmail(oAuth2Response.getEmail()).get())
+					 .build());
 	}
 	
 	public OAuth2Response retrieveUserDetailsFromOAuth2Client(final OAuth2AuthenticationToken authenticationToken) {
@@ -88,12 +98,13 @@ public class AuthServiceImpl implements AuthService {
 		ResponseEntity<Map> response = restTemplate.exchange(userInfoEndpointUri, HttpMethod.GET, entity, Map.class);
 		Map userAttributes = response.getBody();
 		
-		return OAuth2Response.builder()
-				 .username(String.valueOf(userAttributes.get("name")))
-				 .email(String.valueOf(userAttributes.get("email")))
-				 .token(client.getAccessToken())
-				 .avatarUrl(String.valueOf(userAttributes.get("picture")))
-				 .clientId(authenticationToken.getAuthorizedClientRegistrationId())
-				 .build();
+		return OAuth2Response
+				.builder()
+				.username(String.valueOf(userAttributes.get("name")))
+				.email(String.valueOf(userAttributes.get("email")))
+				.token(client.getAccessToken())
+				.avatarUrl(String.valueOf(userAttributes.get("picture")))
+				.clientId(authenticationToken.getAuthorizedClientRegistrationId())
+				.build();
 	}
 }

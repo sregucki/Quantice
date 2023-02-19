@@ -1,18 +1,7 @@
 package com.quantice.authenticationservice.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.Instant;
 
@@ -23,14 +12,14 @@ import java.time.Instant;
 @ToString
 @Entity
 @Table(name = "token_data")
-public class AuthToken {
+public class Token {
 
     @Id
     @Column(name = "token_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long tokenId;
 
-    @Column(name = "access_token", nullable = false)
+    @Column(name = "access_token")
     private String accessToken;
 
     @Column(name = "refresh_token")
@@ -42,8 +31,8 @@ public class AuthToken {
     @Column(name = "token_expires_at", nullable = false)
     private Instant tokenExpiresAt;
     
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, optional = false)
     @JoinColumn(name = "user_id", referencedColumnName = "user_id", nullable = false)
     private AuthEntity authEntity;
-
+    
 }
