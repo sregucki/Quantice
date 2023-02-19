@@ -8,7 +8,7 @@ import org.springframework.security.oauth2.core.OAuth2AccessToken;
 @Builder
 @Getter
 @ToString
-public class OAuth2Response {
+public class OicdResponse {
 
     private String username;
     private String email;

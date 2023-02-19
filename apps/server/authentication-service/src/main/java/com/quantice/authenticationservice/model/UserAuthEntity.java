@@ -12,20 +12,20 @@ import java.util.UUID;
 @ToString
 @Entity
 @Table(name = "user_login_data")
-public class AuthEntity {
+public class UserAuthEntity {
 
     @Id
-    @Column(name = "user_id")
+    @Column(name = "id")
     @GeneratedValue
     private UUID userId;
 
-    @Column(name = "user_email", unique = true, nullable = false)
+    @Column(name = "email", unique = true, nullable = false)
     private String email;
 
-    @Column(name = "user_password_hash")
-    private String password;
+    @Column(name = "password_hash")
+    private String passwordHash;
 
     @OneToOne
-    @JoinColumn(name = "auth_provider_id", referencedColumnName = "auth_provider_id", nullable = false)
-    private Provider provider;
+    @JoinColumn(name = "auth_provider_id", referencedColumnName = "id", nullable = false)
+    private OidcProvider oidcProvider;
 }
