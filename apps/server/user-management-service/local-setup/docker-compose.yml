@@ -3,7 +3,7 @@ services:
   postgres-user-management-service:
     image: postgres:15.2-alpine3.17
     env_file:
-      - env/postgres-user-management-service.env
+      - env/.env
     ports:
       - "5432:5432"
     volumes:
