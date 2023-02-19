@@ -5,6 +5,8 @@ import com.quantice.authenticationservice.repository.AuthEntityRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 public class AuthEntityServiceImpl implements AuthEntityService {
@@ -21,8 +23,9 @@ public class AuthEntityServiceImpl implements AuthEntityService {
 	}
 	
 	@Override
-	public AuthEntity findAuthEntityByEmail(final String email) {
+	public Optional<AuthEntity> findAuthEntityByEmail(final String email) {
 		
 		return authEntityRepository.findAuthEntityByEmail(email);
 	}
+	
 }
