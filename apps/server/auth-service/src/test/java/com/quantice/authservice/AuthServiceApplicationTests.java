@@ -1,10 +1,10 @@
-package com.quantice.authenticationservice;
+package com.quantice.authservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AuthenticationServiceApplicationTests {
+class AuthServiceApplicationTests {
 
     @Test
     void contextLoads() {
