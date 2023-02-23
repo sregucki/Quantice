@@ -26,9 +26,8 @@ spring:
       client:
         registration:
           google:
-            redirect-uri: http://localhost:8081/login/oauth2/code/google
-            client-id: 48911344485-i1t6bbhfjpd4tuapskk55td70ccghoke.apps.googleusercontent.com
-            client-secret: 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
+            client-id: 48911344485-673td23d4bcvu2vb4l2mume5lhr20vbp.apps.googleusercontent.com
+            client-secret: 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
 
 logging:
   level:
