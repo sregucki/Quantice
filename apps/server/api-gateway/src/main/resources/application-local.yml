@@ -6,3 +6,5 @@ spring:
           uri: http://localhost:8090
           predicates:
             - Path=/test/**
+token:
+  authServerUri: ${AUTH_SERVER_URI:http://localhost:8090/validtoken}
