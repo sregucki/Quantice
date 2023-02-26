@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  postgres-auth-service:
+    image: postgres:15.2-alpine3.17
+    env_file:
+      - local.env
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres-auth-service:/data/postgres-auth-service
+volumes:
+  postgres-auth-service:
