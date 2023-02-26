@@ -21,8 +21,8 @@ public class UserRoleConverter implements AttributeConverter<List<Role>, String>
     }
 
     @Override
-    public List<Role> convertToEntityAttribute(final String dbData) {
+    public List<Role> convertToEntityAttribute(final String roles) {
 
-        return dbData != null ? Arrays.stream(dbData.split(SPLIT_CHAR)).map(Role::valueOf).toList() : emptyList();
+        return roles != null ? Arrays.stream(roles.split(SPLIT_CHAR)).map(Role::valueOf).toList() : emptyList();
     }
 }
