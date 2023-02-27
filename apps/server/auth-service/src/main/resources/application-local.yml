@@ -1,0 +1,39 @@
+spring:
+  jpa:
+    generate-ddl: false
+    defer-datasource-initialization: false
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://${postgres.hostname}:${postgres.port}/${postgres.databaseName}
+    username: ${postgres.username}
+    password: ${postgres.password}
+  sql:
+    init:
+      mode: always
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 48911344485-ufvkf8v9bugs30bgh85t3p95qc98iim8.apps.googleusercontent.com
+            client-secret: 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
+
+jwt:
+  tokenSecret: 04ca023b39512e46d0c2cf4b48d5aac61d34302994c87ed4eff225dcf3b0a218739f3897051a057f9b846a69ea2927a587044164b7bae5e1306219d50b588cb1
+
+postgres:
+  hostname: "[::1]"
+  port: 5433
+  databaseName: auth_data
+  username: root
+  password: root
+
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
