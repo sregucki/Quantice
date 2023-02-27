@@ -29,6 +29,7 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         }
 
         userService.saveIfNotExists(User.builder()
+                        .name(String.valueOf(oAuth2User.getAttributes().get("name")))
                         .email(userEmail)
                         .authProvider(AuthProvider.valueOfIgnoreCase(oAuth2UserRequest.getClientRegistration().getClientName()))
                 .build()).orElseThrow(() -> new OAuth2AuthenticationException(String.format("User with email %s already exists", userEmail)));
@@ -37,6 +38,4 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
 
         return oAuth2User;
     }
-
-
 }
