@@ -1,4 +1,4 @@
-package com.quantice.authservice.security;
+package com.quantice.authservice.controller;
 
 import com.quantice.authservice.security.jwt.TokenValidator;
 import lombok.RequiredArgsConstructor;
