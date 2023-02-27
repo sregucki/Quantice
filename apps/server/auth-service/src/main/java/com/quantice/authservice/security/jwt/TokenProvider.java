@@ -33,15 +33,24 @@ public class TokenProvider {
         secretKey = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
     }
 
-    public String createToken(Authentication authentication) {
+    public String getName(Authentication authentication) {
+
+        return authentication.getName();
+    }
+
+    public String getNameOAuth2(Authentication authentication) {
 
         OAuth2User oAuth2User = (OAuth2User) authentication.getPrincipal();
+        return String.valueOf(oAuth2User.getAttributes().get("email"));
+    }
+
+    public String createToken(String name) {
 
         Instant instant = Instant.now().plus(tokenProperties.getTokenExpirationMsec(), ChronoUnit.MILLIS);
         Date expiryDate = Date.from(instant);
 
         return Jwts.builder()
-                .setSubject(String.valueOf(oAuth2User.getName()))
+                .setSubject(name)
                 .setIssuedAt(new Date())
                 .setExpiration(expiryDate)
                 .signWith(secretKey, SignatureAlgorithm.HS256)
