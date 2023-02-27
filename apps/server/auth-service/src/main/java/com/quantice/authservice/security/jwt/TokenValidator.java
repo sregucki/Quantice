@@ -2,9 +2,14 @@ package com.quantice.authservice.security.jwt;
 
 import com.quantice.authservice.repository.UserRepository;
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.security.Keys;
+import io.jsonwebtoken.security.SignatureException;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -21,6 +26,7 @@ public class TokenValidator {
     private SecretKey secretKey;
     private final TokenProperties tokenProperties;
     private final UserRepository userRepository;
+    private static final Logger LOGGER = LoggerFactory.getLogger(TokenValidator.class);
 
     @PostConstruct
     public void initSecretKey() {
@@ -31,7 +37,27 @@ public class TokenValidator {
 
     public boolean validateToken(String token) {
 
-        return userRepository.existsByEmail(getClaimFromToken(token, Claims::getSubject)) && isExpired(token);
+        LOGGER.info(String.format("Validating token: %s", token));
+        String subject;
+
+        try {
+            subject = getClaimFromToken(token, Claims::getSubject);
+        }
+        catch (SignatureException e) {
+            LOGGER.error("Invalid token signature");
+            return false;
+        }
+        catch (MalformedJwtException e) {
+            LOGGER.error("Invalid jwt token");
+            return false;
+        }
+        catch (ExpiredJwtException e) {
+            LOGGER.error("Expired jwt token");
+            return false;
+        }
+
+        LOGGER.info(String.format("Token subject: %s", subject));
+        return userRepository.existsByEmail(getClaimFromToken(token, Claims::getSubject)) && !isExpired(token);
     }
 
     private Claims getAllClaimsFromToken(String token) {
