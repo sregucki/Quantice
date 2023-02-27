@@ -15,14 +15,16 @@ public class UserService {
 
     public Optional<User> saveIfNotExists(User user) {
 
-        if (!userRepository.existsByEmailAndAuthProvider(user.getEmail(), user.getAuthProvider())) {
-
-            return Optional.of(userRepository.save(user));
-        }
         if (userRepository.existsByEmailAndAuthProviderNot(user.getEmail(), user.getAuthProvider())) {
 
             return Optional.empty();
         }
+
+        if (!userRepository.existsByEmailAndAuthProvider(user.getEmail(), user.getAuthProvider())) {
+
+            return Optional.of(userRepository.save(user));
+        }
+
         // TODO Update here
 
         return Optional.of(user);
