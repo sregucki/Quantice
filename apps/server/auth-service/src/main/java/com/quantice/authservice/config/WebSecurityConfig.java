@@ -36,7 +36,7 @@ public class WebSecurityConfig {
                 .authenticationEntryPoint(new RestAuthenticationEntryPoint())
                 .and()
                 .authorizeRequests()
-                .antMatchers("/auth/**", "/oauth2/**", "/token/validate")
+                .antMatchers("/auth/**", "/oauth2/**", "/token/validate", "/login", "/register")
                 .permitAll()
                 .anyRequest()
                 .authenticated()
