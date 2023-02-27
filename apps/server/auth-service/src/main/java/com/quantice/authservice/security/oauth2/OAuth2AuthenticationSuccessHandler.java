@@ -8,10 +8,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 
 
 @RequiredArgsConstructor
@@ -22,11 +20,11 @@ public class OAuth2AuthenticationSuccessHandler extends SimpleUrlAuthenticationS
     private static final Logger LOGGER = LoggerFactory.getLogger(OAuth2AuthenticationSuccessHandler.class);
 
     @Override
-    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) {
 
-        response.addHeader("Authorization", tokenProvider.createToken(tokenProvider.getNameOAuth2(authentication)));
+        String token = tokenProvider.createToken(tokenProvider.getNameOAuth2(authentication));
+        LOGGER.info(String.format("Token generated successfully: %s", token));
 
+        response.addHeader("Authorization", token);
     }
-
-
 }
