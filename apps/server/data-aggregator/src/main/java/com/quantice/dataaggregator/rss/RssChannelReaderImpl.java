@@ -10,11 +10,11 @@ import lombok.RequiredArgsConstructor;
 import org.jsoup.Jsoup;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 
 @RequiredArgsConstructor
-@Service
+@Component
 public class RssChannelReaderImpl implements RssChannelReader {
 
     private final RssUtils rssUtils;
@@ -32,7 +32,7 @@ public class RssChannelReaderImpl implements RssChannelReader {
             LOGGER.error(String.format("Rss channel of url: %s is not parsable", url));
             return;
         }
-
+        // TODO Save entries of with unique urls
         SyndFeed syndFeed = rssUtils.getParsingResult(url).get();
         entryRepository.saveAll(Flux.fromIterable(readEntries(syndFeed))).subscribe();
     }
