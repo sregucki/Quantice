@@ -71,15 +71,20 @@ public class RssUtilsImpl implements RssUtils {
     }
 
     @Override
-    public List<String> getChannels() throws IOException {
+    public List<String> getChannels() {
 
-        ClassPathResource resource = new ClassPathResource(channelsFile);
-        Reader reader = new InputStreamReader(resource.getInputStream());
+        try {
+            ClassPathResource resource = new ClassPathResource(channelsFile);
+            Reader reader = new InputStreamReader(resource.getInputStream());
+            Map<String, List<String>> json = gson.fromJson(reader, Map.class);
 
-        Map<String, List<String>> json = gson.fromJson(reader, Map.class);
-
-        reader.close();
-        return json.get("channels");
+            reader.close();
+            return json.get("channels");
+        }
+        catch (IOException e) {
+            LOGGER.error("Error while reading rss channels uris'");
+            return null;
+        }
     }
 
 }
