@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @NoArgsConstructor
@@ -15,12 +16,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @Getter
 @ToString
-@Document(collation = "entry")
+@Document(collection = "entry")
 public class Entry {
 
     @Id
     private String id;
-    // TODO unique url saving
+    @Indexed(unique = true)
     private String url;
     private String title;
     private String description;
