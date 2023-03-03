@@ -28,6 +28,9 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'io.projectreactor:reactor-test'
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+    implementation 'com.rometools:rome:2.0.0'
+    implementation 'org.jsoup:jsoup:1.15.4'
+    implementation 'com.google.code.gson:gson:2.10.1'
 
 }
 
