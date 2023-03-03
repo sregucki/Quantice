@@ -22,19 +22,19 @@ public class RssChannelReaderImpl implements RssChannelReader {
     private static final Logger LOGGER = LoggerFactory.getLogger(RssChannelReaderImpl.class);
 
     @Override
-    public void readChannel(String url) {
+    public Flux<Entry> readChannel(String url) {
 
         if (!rssUtils.isActive(url)) {
             LOGGER.error(String.format("Rss channel of url: %s is inactive", url));
-            return;
+            return Flux.empty();
         }
         if (rssUtils.getParsingResult(url).isEmpty()) {
             LOGGER.error(String.format("Rss channel of url: %s is not parsable", url));
-            return;
+            return Flux.empty();
         }
         // TODO Save entries of with unique urls
         SyndFeed syndFeed = rssUtils.getParsingResult(url).get();
-        entryRepository.saveAll(Flux.fromIterable(readEntries(syndFeed))).subscribe();
+        return entryRepository.saveAll(Flux.fromIterable(readEntries(syndFeed)));
     }
 
     private List<Entry> readEntries(SyndFeed syndFeed) {

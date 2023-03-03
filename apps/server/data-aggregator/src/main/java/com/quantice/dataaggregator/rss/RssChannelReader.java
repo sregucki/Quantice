@@ -1,7 +1,10 @@
 package com.quantice.dataaggregator.rss;
 
+import com.quantice.dataaggregator.model.Entry;
+import reactor.core.publisher.Flux;
+
 public interface RssChannelReader {
 
-    void readChannel(String url);
+    Flux<Entry> readChannel(String url);
 
 }
