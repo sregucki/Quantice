@@ -32,9 +32,12 @@ public class RssChannelReaderImpl implements RssChannelReader {
             LOGGER.error(String.format("Rss channel of url: %s is not parsable", url));
             return Flux.empty();
         }
-        // TODO Save entries of with unique urls
+
         SyndFeed syndFeed = rssUtils.getParsingResult(url).get();
-        return entryRepository.saveAll(Flux.fromIterable(readEntries(syndFeed)));
+        List<Entry> entries = readEntries(syndFeed).stream().filter(entry -> !entryRepository.existsByUrl(entry.getUrl()).subscribe()
+            .isDisposed()).toList();
+
+        return entryRepository.saveAll(entries);
     }
 
     private List<Entry> readEntries(SyndFeed syndFeed) {
