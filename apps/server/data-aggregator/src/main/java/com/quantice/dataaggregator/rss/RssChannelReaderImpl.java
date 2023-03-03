@@ -22,24 +22,22 @@ public class RssChannelReaderImpl implements RssChannelReader {
     private static final Logger LOGGER = LoggerFactory.getLogger(RssChannelReaderImpl.class);
 
     @Override
-    public Flux<Entry> readChannel(String url) {
+    public void readChannel(String url) {
 
         if (!rssUtils.isActive(url)) {
             LOGGER.error(String.format("Rss channel of url: %s is inactive", url));
-            return Flux.empty();
+            return;
         }
         if (rssUtils.getParsingResult(url).isEmpty()) {
             LOGGER.error(String.format("Rss channel of url: %s is not parsable", url));
-            return Flux.empty();
+            return;
         }
 
         SyndFeed syndFeed = rssUtils.getParsingResult(url).get();
-
-        return entryRepository.saveAll(readEntries(syndFeed));
+        entryRepository.saveAll(Flux.fromIterable(readEntries(syndFeed))).subscribe();
     }
 
-    @Override
-    public List<Entry> readEntries(SyndFeed syndFeed) {
+    private List<Entry> readEntries(SyndFeed syndFeed) {
 
         return syndFeed.getEntries().stream().map(rssEntry -> {
 
