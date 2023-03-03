@@ -34,8 +34,7 @@ public class RssChannelReaderImpl implements RssChannelReader {
         }
 
         SyndFeed syndFeed = rssUtils.getParsingResult(url).get();
-        List<Entry> entries = readEntries(syndFeed).stream().filter(entry -> !entryRepository.existsByUrl(entry.getUrl()).subscribe()
-            .isDisposed()).toList();
+        List<Entry> entries = readEntries(syndFeed).stream().filter(entry -> !entryRepository.existsByUrl(entry.getUrl()).block()).toList();
 
         return entryRepository.saveAll(entries);
     }
