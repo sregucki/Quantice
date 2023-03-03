@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  mongo-data-aggregator:
+    image: mongo:5.0.15
+    env_file:
+      - local.env
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo-data-aggregator:/data/db
+volumes:
+  mongo-data-aggregator:
