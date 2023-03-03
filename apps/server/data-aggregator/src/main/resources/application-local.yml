@@ -8,3 +8,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://${mongo.hostname}:${mongo.port}/${mongo.databaseName}
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.data: DEBUG
