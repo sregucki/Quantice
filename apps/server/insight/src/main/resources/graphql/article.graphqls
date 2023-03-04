@@ -1,0 +1,11 @@
+type Article {
+    url: String!
+    title: String!
+    description: String!
+    author: String
+    publishedAt: String!
+}
+
+type Query {
+    findArticles(keyword: String!, from: String, to: String, limit: Int): [Article]
+}
