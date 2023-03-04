@@ -26,7 +26,6 @@ public class Entry {
     private String title;
     private String description;
     private String author;
-    private String content;
     private Instant publishedAt;
 
 }
