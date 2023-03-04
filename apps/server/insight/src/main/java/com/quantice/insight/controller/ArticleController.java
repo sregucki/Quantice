@@ -16,7 +16,7 @@ public class ArticleController {
     private final NewsApiService newsApiService;
 
     @QueryMapping
-    public List<Article> findArticles(@Argument String keyword, @Argument String from, @Argument String to, @Argument Integer limit) {
+    public List<Article> findArticlesNewsApi(@Argument String keyword, @Argument String from, @Argument String to, @Argument Integer limit) {
 
         return newsApiService.findArticles(keyword, Optional.ofNullable(from), Optional.ofNullable(to), Optional.ofNullable(limit));
     }
