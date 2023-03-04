@@ -28,6 +28,5 @@ public class Entry {
     private String author;
     private String content;
     private Instant publishedAt;
-    private String rssChannelId;
 
 }
