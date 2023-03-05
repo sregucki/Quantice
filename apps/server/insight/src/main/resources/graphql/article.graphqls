@@ -8,4 +8,5 @@ type Article {
 
 type Query {
     findArticlesNewsApi(keyword: String!, from: String, to: String, limit: Int): [Article]
+    findArticlesRss(keyword: String!, from: String, to: String, limit: Int): [Article]
 }
