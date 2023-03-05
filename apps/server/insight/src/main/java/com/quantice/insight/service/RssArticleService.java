@@ -48,6 +48,10 @@ public class RssArticleService {
             .values()
             .stream()
             .flatMap(values -> values.stream().limit(1))
+            .collect(groupingBy(Article::getTitle))
+            .values()
+            .stream()
+            .flatMap(values -> values.stream().limit(1))
             .limit(limit.orElse(10))
             .toList();
     }
