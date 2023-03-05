@@ -1,5 +1,4 @@
-package com.quantice.dataaggregator.model;
-
+package com.quantice.insight.model;
 
 import java.time.Instant;
 import lombok.AllArgsConstructor;
@@ -8,7 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @NoArgsConstructor
@@ -17,11 +15,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @ToString
 @Document(collection = "entry")
-public class Entry {
+public class Article {
 
     @Id
     private String id;
-    @Indexed(unique = true)
     private String url;
     private String title;
     private String description;
