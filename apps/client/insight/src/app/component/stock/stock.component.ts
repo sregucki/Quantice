@@ -1,19 +1,23 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Location} from "@angular/common";
 import {ActivationEnd, Router} from "@angular/router";
 import {ArticleService} from "../../service/article.service";
 import {Subscription} from "rxjs";
+import {Article} from "../../model/article";
 
 @Component({
   selector: 'app-stock',
   templateUrl: './stock.component.html',
   styleUrls: ['./stock.component.css']
 })
-export class StockComponent {
+export class StockComponent implements OnInit {
   sub: Subscription;
   stockName: string;
+  headers: string[];
+  initArticles: Article[];
 
   constructor(private location: Location, private router: Router, private articleService: ArticleService) {
+
     this.sub = router.events.subscribe((val) => {
       if (val instanceof ActivationEnd) {
         if (location.path() != '') {
@@ -22,6 +26,13 @@ export class StockComponent {
           this.stockName = 'home' // TODO error here
         }
       }
+    });
+  }
+
+  ngOnInit(): void {
+    this.articleService.getArticlesNewsApi(this.stockName).subscribe(data => {
+      this.initArticles = data;
+      this.headers = Object.keys(this.initArticles[0]).slice(1);
     });
   }
 
