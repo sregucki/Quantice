@@ -36,4 +36,19 @@ export class StockComponent implements OnInit {
     });
   }
 
+  redirect(url: string) {
+    window.open(url, "_blank");
+  }
+
+  getDomainFromUrl(url: string): string {
+    const a = document.createElement('a');
+    a.setAttribute('href', url);
+    return a.hostname.replace('www.', '');
+  }
+
+  parseInstant(instant: string) {
+    const d = new Date(instant);
+    return d.toDateString();
+  }
+
 }
