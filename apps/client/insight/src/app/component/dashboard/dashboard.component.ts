@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {map, Observable, startWith} from "rxjs";
 import {FormControl} from "@angular/forms";
 import {HttpClient} from "@angular/common/http";
-import data from '../../assets/data/stocks.json'
+import data from '../../../assets/data/stocks.json'
 import {Router} from "@angular/router";
 
 export interface Stock {
@@ -39,12 +39,12 @@ export class DashboardComponent {
   }
 
   navigateTo(value: string){
-    console.log(value);
-    this.router.navigate(['../', value]).then(r => {
-      console.log(r);
+    this.router.navigate(['/stock', value.toLowerCase()]).then(
+      success => {
+      console.log('Successfully routed to: ' + value.toLowerCase() + 'page');
     }, err => {
-      console.log(err);
+      console.log('Error while routing to: ' + value.toLowerCase());
     });
-
   }
+
 }

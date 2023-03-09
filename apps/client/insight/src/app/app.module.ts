@@ -5,19 +5,21 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {GraphQLModule} from './graphql.module';
 import {HttpClientModule} from '@angular/common/http';
-import {DashboardComponent} from './dashboard/dashboard.component';
+import {DashboardComponent} from './component/dashboard/dashboard.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatInputModule} from "@angular/material/input";
 import {MatAutocompleteModule} from "@angular/material/autocomplete";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {StockComponent} from './component/stock/stock.component';
 
 // @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    StockComponent
   ],
   imports: [
     BrowserModule,
@@ -35,4 +37,5 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
