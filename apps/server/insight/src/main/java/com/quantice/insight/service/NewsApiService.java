@@ -1,5 +1,6 @@
 package com.quantice.insight.service;
 
+import com.quantice.insight.config.ArticleApiConstants;
 import com.quantice.insight.config.properties.NewsApiProperties;
 import com.quantice.insight.model.Article;
 import java.time.Instant;
@@ -25,7 +26,7 @@ public class NewsApiService {
             keyword,
             from.orElse(Instant.now().minus(7, ChronoUnit.DAYS).toString()),
             to.orElse(Instant.now().toString()),
-            limit.orElse(10),
+            limit.orElse(ArticleApiConstants.DEFAULT_LIMIT_ARTICLES.getArticlesLimit()),
             newsApiProperties.getNewsApiKey()
         );
 

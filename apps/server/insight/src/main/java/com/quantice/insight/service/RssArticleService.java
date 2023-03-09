@@ -2,6 +2,7 @@ package com.quantice.insight.service;
 
 import static java.util.stream.Collectors.groupingBy;
 
+import com.quantice.insight.config.ArticleApiConstants;
 import com.quantice.insight.model.Article;
 import com.quantice.insight.repository.ArticleRepository;
 import java.time.Instant;
@@ -52,7 +53,7 @@ public class RssArticleService {
             .values()
             .stream()
             .flatMap(values -> values.stream().limit(1))
-            .limit(limit.orElse(10))
+            .limit(limit.orElse(ArticleApiConstants.DEFAULT_LIMIT_ARTICLES.getArticlesLimit()))
             .toList();
     }
 
