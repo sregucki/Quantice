@@ -4,6 +4,7 @@ import com.quantice.dataaggregator.model.Entry;
 import com.quantice.dataaggregator.repository.EntryRepository;
 import com.rometools.rome.feed.synd.SyndContent;
 import com.rometools.rome.feed.synd.SyndFeed;
+import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
@@ -44,6 +45,10 @@ public class RssChannelReaderImpl implements RssChannelReader {
         return syndFeed.getEntries().stream().map(rssEntry -> {
 
             Optional<SyndContent> description = Optional.ofNullable(rssEntry.getDescription());
+            Instant publishedAt = null;
+            if (rssEntry.getDescription() != null) {
+                publishedAt = rssEntry.getPublishedDate().toInstant();
+            }
             String descriptionValue = description.map(syndContent -> Jsoup.parse(syndContent.getValue()).text()).orElse("");
 
             return Entry.builder()
@@ -51,7 +56,7 @@ public class RssChannelReaderImpl implements RssChannelReader {
                 .title(rssEntry.getTitle())
                 .description(descriptionValue)
                 .author(rssEntry.getAuthor())
-                .publishedAt(rssEntry.getPublishedDate().toInstant())
+                .publishedAt(publishedAt)
                 .build();
 
         }).toList();
