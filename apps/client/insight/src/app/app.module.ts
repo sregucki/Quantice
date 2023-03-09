@@ -13,8 +13,8 @@ import {MatInputModule} from "@angular/material/input";
 import {MatAutocompleteModule} from "@angular/material/autocomplete";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {StockComponent} from './component/stock/stock.component';
+import {MatTableModule} from "@angular/material/table";
 
-// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +33,7 @@ import {StockComponent} from './component/stock/stock.component';
     MatInputModule,
     MatAutocompleteModule,
     MatSlideToggleModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
