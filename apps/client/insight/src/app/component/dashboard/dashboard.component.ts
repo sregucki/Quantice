@@ -38,13 +38,21 @@ export class DashboardComponent {
     return this.stocks.filter(stock => stock.name.toLowerCase().includes(filterValue));
   }
 
-  navigateTo(value: string){
-    this.router.navigate(['/stock', value.toLowerCase()]).then(
+  navigateTo(stockName: string, ticker: string) {
+    const stockNameFull = stockName.toLowerCase();
+    this.router.navigate(['/stock', stockNameFull],
+      {
+        state: {
+          stockName: stockNameFull,
+          ticker: ticker
+        }
+      }).then(
       success => {
-      console.log('Successfully routed to: ' + value.toLowerCase() + 'page');
-    }, err => {
-      console.log('Error while routing to: ' + value.toLowerCase());
-    });
+        console.log('Successfully routed to: ' + stockNameFull + ' page');
+      },
+      err => {
+        console.log('Error while routing to: ' + stockNameFull);
+      });
   }
 
 }
