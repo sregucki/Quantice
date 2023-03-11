@@ -14,6 +14,9 @@ import {MatAutocompleteModule} from "@angular/material/autocomplete";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {StockComponent} from './component/stock/stock.component';
 import {MatTableModule} from "@angular/material/table";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatCardModule} from "@angular/material/card";
+import {ChartModule} from "angular-highcharts";
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import {MatTableModule} from "@angular/material/table";
     MatAutocompleteModule,
     MatSlideToggleModule,
     MatTableModule,
+    MatGridListModule,
+    MatCardModule,
+    ChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
