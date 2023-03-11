@@ -16,7 +16,8 @@ import {StockComponent} from './component/stock/stock.component';
 import {MatTableModule} from "@angular/material/table";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatCardModule} from "@angular/material/card";
-import {ChartModule} from "angular-highcharts";
+import {ChartModule, HIGHCHARTS_MODULES} from "angular-highcharts";
+import theme from 'highcharts/themes/brand-light';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,12 @@ import {ChartModule} from "angular-highcharts";
     MatCardModule,
     ChartModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HIGHCHARTS_MODULES,
+      useFactory: () => [theme]
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
