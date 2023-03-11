@@ -18,9 +18,6 @@ export class StockChartService {
       rangeSelector: {
         selected: 1
       },
-      title: {
-        text: ticker
-      },
       series: [{
         type: 'line',
         tooltip: {
