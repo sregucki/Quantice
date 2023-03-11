@@ -1,9 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {Location} from "@angular/common";
-import {ActivationEnd, Router} from "@angular/router";
-import {ArticleService} from "../../service/article.service";
+import {Router} from "@angular/router";
+import {ArticleService} from "../../service/article-service/article.service";
 import {Subscription} from "rxjs";
 import {Article} from "../../model/article";
+import {StockChart} from "angular-highcharts";
+import {StockChartService} from "../../service/stock-chart-service/stock-chart.service";
+import {StockService} from "../../service/stock-service/stock.service";
 
 @Component({
   selector: 'app-stock',
@@ -15,24 +18,59 @@ export class StockComponent implements OnInit {
   stockName: string;
   headers: string[];
   initArticles: Article[];
+  stockChart: StockChart;
+  ticker: string;
+  // lastPrice: string;
+  lastPrice: number;
+  lastPriceChange: number;
+  lastPriceChangePercent: number;
 
-  constructor(private location: Location, private router: Router, private articleService: ArticleService) {
+  constructor(private location: Location, private router: Router, private articleService: ArticleService,
+              private stockChartService: StockChartService, private stockService: StockService) {
 
-    this.sub = router.events.subscribe((val) => {
-      if (val instanceof ActivationEnd) {
-        if (location.path() != '') {
-          this.stockName = location.path().split("/")[2];
-        } else {
-          this.stockName = 'home' // TODO error here
-        }
-      }
-    });
+    const navigation = this.router.getCurrentNavigation();
+    const state = navigation?.extras.state as {
+      stockName: string,
+      ticker: string
+    };
+    this.ticker = state.ticker;
+    this.stockName = state.stockName;
   }
 
   ngOnInit(): void {
+
     this.articleService.getArticlesNewsApi(this.stockName).subscribe(data => {
       this.initArticles = data;
       this.headers = Object.keys(this.initArticles[0]).slice(1);
+    });
+    this.stockService.getStockData(this.ticker, '3y', '1d').subscribe(stockData => {
+
+      const stockDataClose = stockData['data' as keyof typeof stockData]['Close' as keyof typeof stockData];
+      const stockDataCloseFormatted = [];
+      for (let [date, price] of Object.entries(stockDataClose)) {
+        stockDataCloseFormatted.push([Date.parse(date), price])
+      }
+      this.stockChart = this.stockChartService.getLineChart(this.ticker, stockDataCloseFormatted)
+
+      this.lastPrice = (
+        Number(stockDataCloseFormatted[stockDataCloseFormatted.length - 1][1])
+      );
+
+      this.lastPriceChange =
+        (
+          Number(stockDataCloseFormatted[stockDataCloseFormatted.length - 1][1])
+        -
+          Number(stockDataCloseFormatted[stockDataCloseFormatted.length - 2][1])
+        );
+
+      this.lastPriceChangePercent = ((
+        (
+          Number(stockDataCloseFormatted[stockDataCloseFormatted.length - 1][1])
+          /
+          Number(stockDataCloseFormatted[stockDataCloseFormatted.length - 2][1])
+        ) - 1
+      ) * 100);
+
     });
   }
 

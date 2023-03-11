@@ -1,9 +1,11 @@
 
+
 .main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.3fr 1fr;
-  margin: 0 5% 0 5%;
+  margin: 0 auto 0 auto;
+  max-width: 1200px;
 }
 
 .navbar {
@@ -13,8 +15,72 @@
 
 .charts-main {
   grid-area: 1 / 1 / 2 / 2;
-  border: solid blue 2px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr;
   height: 40vh;
+}
+.chart {
+  grid-area: 1 / 2 / 2 / 3;
+  margin: 3%;
+}
+
+.chart-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: 1 / 1 / 2 / 2;
+  margin-right: 10%;
+  margin-bottom: 15%;
+}
+
+.stock-last-price {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  line-height: 1;
+  color: #202020;
+  letter-spacing: -.025em;
+  margin-top: 10%;
+  margin-bottom: 1.5%;
+}
+
+.positive {
+  color: rgb(54, 127, 46);
+}
+
+.negative {
+  color: rgb(181, 26, 40);
+}
+
+.stock-price-change {
+  margin-right: 10px;
+  min-width: 0;
+  font-size: 1.3rem;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.stock-price-change-percent {
+  font-size: 1.3rem;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.stock-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.70rem;
+  font-weight: bolder;
+  line-height: 1.125;
+  border-bottom: 2px solid #656565;
 }
 
 .content {
@@ -51,7 +117,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 0.3fr 1fr 0.3fr;
   box-shadow: 0 -1px 0 0 #e1e1e1, inset 0 -1px 0 0 #e1e1e1;;
-  height: 11vh;
+  height: 13vh;
   border-radius: 0;
   margin-right: 10%;
   margin-left: 1%;
