@@ -1,0 +1,9337 @@
+[
+  {
+    "id": "1",
+    "name": "Boeing",
+    "short_name": "BA",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "2",
+    "name": "Chevron",
+    "short_name": "CVX",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "3",
+    "name": "Caterpillar",
+    "short_name": "CAT",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "4",
+    "name": "Intel",
+    "short_name": "INTC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "5",
+    "name": "Microsoft",
+    "short_name": "MSFT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "6",
+    "name": "Walt Disney",
+    "short_name": "DIS",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "7",
+    "name": "Dow",
+    "short_name": "DOW",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "8",
+    "name": "Cisco",
+    "short_name": "CSCO",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "9",
+    "name": "Goldman Sachs",
+    "short_name": "GS",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "10",
+    "name": "JPMorgan",
+    "short_name": "JPM",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "11",
+    "name": "Coca-Cola",
+    "short_name": "KO",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "12",
+    "name": "McDonaldÂ¢Â€Â™s",
+    "short_name": "MCD",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "13",
+    "name": "Merck&Co",
+    "short_name": "MRK",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "14",
+    "name": "3M",
+    "short_name": "MMM",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "15",
+    "name": "Apple",
+    "short_name": "AAPL",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "16",
+    "name": "Exxon Mobil",
+    "short_name": "XOM",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "17",
+    "name": "Pfizer",
+    "short_name": "PFE",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "18",
+    "name": "Walmart",
+    "short_name": "WMT",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "19",
+    "name": "Home Depot",
+    "short_name": "HD",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "20",
+    "name": "IBM",
+    "short_name": "IBM",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "21",
+    "name": "Verizon",
+    "short_name": "VZ",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "22",
+    "name": "Travelers",
+    "short_name": "TRV",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "23",
+    "name": "J&J",
+    "short_name": "JNJ",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "24",
+    "name": "American Express",
+    "short_name": "AXP",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "25",
+    "name": "Raytheon Technologies",
+    "short_name": "RTX",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "26",
+    "name": "Visa A",
+    "short_name": "V",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "27",
+    "name": "Walgreens Boots",
+    "short_name": "WBA",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "28",
+    "name": "UnitedHealth",
+    "short_name": "UNH",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "29",
+    "name": "Nike",
+    "short_name": "NKE",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "30",
+    "name": "Procter&Gamble",
+    "short_name": "PG",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "31",
+    "name": "eBay",
+    "short_name": "EBAY",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "32",
+    "name": "Kraft Heinz",
+    "short_name": "KHC",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "33",
+    "name": "Vertex",
+    "short_name": "VRTX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "34",
+    "name": "Monster Beverage",
+    "short_name": "MNST",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "35",
+    "name": "Cintas",
+    "short_name": "CTAS",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "36",
+    "name": "Autodesk",
+    "short_name": "ADSK",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "37",
+    "name": "Gilead",
+    "short_name": "GILD",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "38",
+    "name": "Alphabet A",
+    "short_name": "GOOGL",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "39",
+    "name": "Fiserv",
+    "short_name": "FISV",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "40",
+    "name": "Liberty Global",
+    "short_name": "LBTYA",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "41",
+    "name": "Adobe",
+    "short_name": "ADBE",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "42",
+    "name": "Qualcomm",
+    "short_name": "QCOM",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "43",
+    "name": "Baidu",
+    "short_name": "BIDU",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "44",
+    "name": "Applied Materials",
+    "short_name": "AMAT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "45",
+    "name": "Cadence Design",
+    "short_name": "CDNS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "46",
+    "name": "Microchip",
+    "short_name": "MCHP",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "47",
+    "name": "Wynn Resorts",
+    "short_name": "WYNN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "48",
+    "name": "Intuitive Surgical",
+    "short_name": "ISRG",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "49",
+    "name": "Henry Schein",
+    "short_name": "HSIC",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "50",
+    "name": "Paychex",
+    "short_name": "PAYX",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "51",
+    "name": "VeriSign",
+    "short_name": "VRSN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "52",
+    "name": "Fastenal",
+    "short_name": "FAST",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "53",
+    "name": "",
+    "short_name": "CTXS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "54",
+    "name": "Sirius XM",
+    "short_name": "SIRI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "55",
+    "name": "PACCAR",
+    "short_name": "PCAR",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "56",
+    "name": "Amazon",
+    "short_name": "AMZN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "57",
+    "name": "Ross Stores",
+    "short_name": "ROST",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "58",
+    "name": "NetEase",
+    "short_name": "NTES",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "59",
+    "name": "NetApp",
+    "short_name": "NTAP",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "60",
+    "name": "Costco",
+    "short_name": "COST",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "61",
+    "name": "Check Point Software",
+    "short_name": "CHKP",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "62",
+    "name": "Lam Research",
+    "short_name": "LRCX",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "63",
+    "name": "Intuit",
+    "short_name": "INTU",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "64",
+    "name": "Expedia",
+    "short_name": "EXPE",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "65",
+    "name": "Trip.com ADR",
+    "short_name": "TCOM",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "66",
+    "name": "Cognizant A",
+    "short_name": "CTSH",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "67",
+    "name": "KLA Corp",
+    "short_name": "KLAC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "68",
+    "name": "Activision Blizzard",
+    "short_name": "ATVI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "69",
+    "name": "Amgen",
+    "short_name": "AMGN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "70",
+    "name": "Xilinx",
+    "short_name": "XLNX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "71",
+    "name": "Electronic Arts",
+    "short_name": "EA",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "72",
+    "name": "Biogen",
+    "short_name": "BIIB",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "73",
+    "name": "Gen Digital",
+    "short_name": "NLOK",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "74",
+    "name": "NVIDIA",
+    "short_name": "NVDA",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "75",
+    "name": "Starbucks",
+    "short_name": "SBUX",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "76",
+    "name": "Celgene",
+    "short_name": "CELG",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "77",
+    "name": "Comcast",
+    "short_name": "CMCSA",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "78",
+    "name": "Analog Devices",
+    "short_name": "ADI",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "79",
+    "name": "Xcel Energy",
+    "short_name": "XEL",
+    "country": "united-states",
+    "sector": "Utilities",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "80",
+    "name": "CSX",
+    "short_name": "CSX",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "81",
+    "name": "Micron",
+    "short_name": "MU",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "82",
+    "name": "Western Digital",
+    "short_name": "WDC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "83",
+    "name": "Marriott Int",
+    "short_name": "MAR",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "84",
+    "name": "Texas Instruments",
+    "short_name": "TXN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "85",
+    "name": "AMD",
+    "short_name": "AMD",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "86",
+    "name": "Hasbro",
+    "short_name": "HAS",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "87",
+    "name": "PepsiCo",
+    "short_name": "PEP",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "88",
+    "name": "ADP",
+    "short_name": "ADP",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "89",
+    "name": "United Airlines Holdings",
+    "short_name": "UAL",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "90",
+    "name": "Netflix",
+    "short_name": "NFLX",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "91",
+    "name": "Cerner",
+    "short_name": "CERN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "92",
+    "name": "Booking",
+    "short_name": "BKNG",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "93",
+    "name": "OÂ¢Â€Â™Reilly Automotive",
+    "short_name": "ORLY",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "94",
+    "name": "Illumina",
+    "short_name": "ILMN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "95",
+    "name": "JB Hunt",
+    "short_name": "JBHT",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "96",
+    "name": "Maxim",
+    "short_name": "MXIM",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "97",
+    "name": "Viatris",
+    "short_name": "VTRS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "98",
+    "name": "Alexion",
+    "short_name": "ALXN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "99",
+    "name": "Broadcom",
+    "short_name": "AVGO",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "100",
+    "name": "NXP",
+    "short_name": "NXPI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "101",
+    "name": "Tesla",
+    "short_name": "TSLA",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "102",
+    "name": "Take-Two",
+    "short_name": "TTWO",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "103",
+    "name": "Dollar Tree",
+    "short_name": "DLTR",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "104",
+    "name": "Align",
+    "short_name": "ALGN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "105",
+    "name": "Biomarin Pharma",
+    "short_name": "BMRN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "106",
+    "name": "Charter Communications",
+    "short_name": "CHTR",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "107",
+    "name": "IDEXX Labs",
+    "short_name": "IDXX",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "108",
+    "name": "Incyte",
+    "short_name": "INCY",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "109",
+    "name": "Liberty Global C",
+    "short_name": "LBTYK",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "110",
+    "name": "MercadoLibre",
+    "short_name": "MELI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "111",
+    "name": "T-Mobile US",
+    "short_name": "TMUS",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "112",
+    "name": "Meta Platforms",
+    "short_name": "FB",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "113",
+    "name": "Willis Towers Watson",
+    "short_name": "WLTW",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "114",
+    "name": "Workday",
+    "short_name": "WDAY",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "115",
+    "name": "Mondelez",
+    "short_name": "MDLZ",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "116",
+    "name": "Skyworks",
+    "short_name": "SWKS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "117",
+    "name": "Lululemon Athletica",
+    "short_name": "LULU",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "118",
+    "name": "Regeneron Pharma",
+    "short_name": "REGN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "119",
+    "name": "ASML ADR",
+    "short_name": "ASML",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "120",
+    "name": "Synopsys",
+    "short_name": "SNPS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "121",
+    "name": "Ulta Beauty",
+    "short_name": "ULTA",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "122",
+    "name": "Verisk",
+    "short_name": "VRSK",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "123",
+    "name": "American Airlines",
+    "short_name": "AAL",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "124",
+    "name": "Alphabet C",
+    "short_name": "GOOG",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "125",
+    "name": "JD.com Inc Adr",
+    "short_name": "JD",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "126",
+    "name": "PayPal Holdings Inc",
+    "short_name": "PYPL",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "127",
+    "name": "Fox Corp A",
+    "short_name": "FOXA",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "128",
+    "name": "Fox Corp B",
+    "short_name": "FOX",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "134",
+    "name": "Goodyear Tire & Rubber Co",
+    "short_name": "GT",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "135",
+    "name": "ODP",
+    "short_name": "ODP",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "136",
+    "name": "Fifth Third",
+    "short_name": "FITB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "137",
+    "name": "DISH Network",
+    "short_name": "DISH",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "138",
+    "name": "aTyr Pharma",
+    "short_name": "LIFE",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "139",
+    "name": "PDL BioPharma",
+    "short_name": "PDLI",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "140",
+    "name": "SINA Corp",
+    "short_name": "SINA",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "141",
+    "name": "Sohu.Com",
+    "short_name": "SOHU",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "142",
+    "name": "Warner Bros Discovery",
+    "short_name": "DISCA",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "143",
+    "name": "Ribbon Com",
+    "short_name": "RBBN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "144",
+    "name": "Steel Dynamics",
+    "short_name": "STLD",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "145",
+    "name": "Bed Bath & Beyond",
+    "short_name": "BBBY",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "146",
+    "name": "Nasdaq Inc",
+    "short_name": "NDAQ",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "147",
+    "name": "Ryanair ADR",
+    "short_name": "RYAAY",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "148",
+    "name": "JetBlue",
+    "short_name": "JBLU",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "149",
+    "name": "Shyft Group Inc",
+    "short_name": "SHYF",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "150",
+    "name": "Dentsply",
+    "short_name": "XRAY",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "151",
+    "name": "Crocs",
+    "short_name": "CROX",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "152",
+    "name": "Zions",
+    "short_name": "ZION",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "153",
+    "name": "Northern Trust",
+    "short_name": "NTRS",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "154",
+    "name": "Lamar",
+    "short_name": "LAMR",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "155",
+    "name": "Patterson-UTI Energy",
+    "short_name": "PTEN",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "156",
+    "name": "Atlanticuss",
+    "short_name": "ATLC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "157",
+    "name": "CH Robinson",
+    "short_name": "CHRW",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "158",
+    "name": "Alpine Immune Sciences",
+    "short_name": "ALPN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "159",
+    "name": "Pan American Silver",
+    "short_name": "PAAS",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "160",
+    "name": "Viavi Solutions",
+    "short_name": "VIAV",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "161",
+    "name": "E-TRADE",
+    "short_name": "ETFC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "162",
+    "name": "Garmin",
+    "short_name": "GRMN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "163",
+    "name": "IAC\/InterActiveCorp",
+    "short_name": "IAC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "164",
+    "name": "UTStarcom",
+    "short_name": "UTSI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "165",
+    "name": "Rambus",
+    "short_name": "RMBS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "166",
+    "name": "NII Holdings",
+    "short_name": "NIHD_old",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "167",
+    "name": "Yellow",
+    "short_name": "YELL",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "168",
+    "name": "Akamai",
+    "short_name": "AKAM",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "169",
+    "name": "Flex",
+    "short_name": "FLEX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "170",
+    "name": "Expeditors Washington",
+    "short_name": "EXPD",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "171",
+    "name": "Patterson",
+    "short_name": "PDCO",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "172",
+    "name": "T Rowe",
+    "short_name": "TROW",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "173",
+    "name": "Qurate Retail A",
+    "short_name": "QRTEA",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "174",
+    "name": "Huntington Bancshares",
+    "short_name": "HBAN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "175",
+    "name": "Stericycle",
+    "short_name": "SRCL",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "176",
+    "name": "Cincinnati Financial",
+    "short_name": "CINF",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "177",
+    "name": "Extreme",
+    "short_name": "EXTR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "178",
+    "name": "Axon Enterprise",
+    "short_name": "AXON",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "179",
+    "name": "Hologic",
+    "short_name": "HOLX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "180",
+    "name": "Capstone Green Energy",
+    "short_name": "CGRN",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "181",
+    "name": "Marvell",
+    "short_name": "MRVL",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "182",
+    "name": "Ballard",
+    "short_name": "BLDP",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "183",
+    "name": "Sify",
+    "short_name": "SIFY",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "184",
+    "name": "Mattel",
+    "short_name": "MAT",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "185",
+    "name": "Exelon",
+    "short_name": "EXC",
+    "country": "united-states",
+    "sector": "Utilities",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "186",
+    "name": "SLM",
+    "short_name": "SLM",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "187",
+    "name": "Paramount Global B",
+    "short_name": "VIAC",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "188",
+    "name": "Frontier Com",
+    "short_name": "FTRCQ",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "189",
+    "name": "Principal Financial",
+    "short_name": "PFG",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "190",
+    "name": "Viacom A",
+    "short_name": "VIA_old",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "191",
+    "name": "Newell Brands",
+    "short_name": "NWL",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "192",
+    "name": "Teradyne",
+    "short_name": "TER",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "193",
+    "name": "FLIR Systems",
+    "short_name": "FLIR",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "194",
+    "name": "SunPower",
+    "short_name": "SPWR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "195",
+    "name": "Seagate",
+    "short_name": "STX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "196",
+    "name": "Veradigm",
+    "short_name": "MDRX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "197",
+    "name": "SSR Mining",
+    "short_name": "SSRM",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "198",
+    "name": "Middleby Corp",
+    "short_name": "MIDD",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "199",
+    "name": "News Corp",
+    "short_name": "NWS",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "200",
+    "name": "Equinix",
+    "short_name": "EQIX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "201",
+    "name": "Seagen",
+    "short_name": "SGEN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "202",
+    "name": "CMC Materials",
+    "short_name": "CCMP",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "203",
+    "name": "CME Group",
+    "short_name": "CME",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "204",
+    "name": "Urban Outfitters",
+    "short_name": "URBN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "205",
+    "name": "EW Scripps A",
+    "short_name": "SSP",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "206",
+    "name": "First Solar",
+    "short_name": "FSLR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "207",
+    "name": "F5 Networks",
+    "short_name": "FFIV",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "208",
+    "name": "News Corp A",
+    "short_name": "NWSA",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "209",
+    "name": "ADTRAN",
+    "short_name": "ADTN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "210",
+    "name": "Advanced Energy",
+    "short_name": "AEIS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "211",
+    "name": "Airnet Tech",
+    "short_name": "ANTE",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "212",
+    "name": "Arena Pharma",
+    "short_name": "ARNA",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "213",
+    "name": "Imunon",
+    "short_name": "CLSN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "214",
+    "name": "Wolfspeed",
+    "short_name": "CREE",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "215",
+    "name": "Cirrus",
+    "short_name": "CRUS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "216",
+    "name": "Dunkin Brands",
+    "short_name": "DNKN",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "217",
+    "name": "Entegris",
+    "short_name": "ENTG",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "218",
+    "name": "The Hain Celestial",
+    "short_name": "HAIN",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "219",
+    "name": "IPG Photonics",
+    "short_name": "IPGP",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "220",
+    "name": "Ionis Pharma",
+    "short_name": "IONS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "221",
+    "name": "Itron",
+    "short_name": "ITRI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "222",
+    "name": "ManTech",
+    "short_name": "MANT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "223",
+    "name": "Motorcar Parts",
+    "short_name": "MPAA",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "224",
+    "name": "Nuance Communications",
+    "short_name": "NUAN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "225",
+    "name": "QuickLogic",
+    "short_name": "QUIK",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "226",
+    "name": "Radware",
+    "short_name": "RDWR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "227",
+    "name": "Royal Gold",
+    "short_name": "RGLD",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "228",
+    "name": "Yandex",
+    "short_name": "YNDX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "229",
+    "name": "Atlantic American",
+    "short_name": "AAME",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "230",
+    "name": "AAON",
+    "short_name": "AAON",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "231",
+    "name": "Atlas Air",
+    "short_name": "AAWW",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "232",
+    "name": "Ameris",
+    "short_name": "ABCB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "233",
+    "name": "ArcBest Corp",
+    "short_name": "ARCB",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "234",
+    "name": "ARCA Biopharma",
+    "short_name": "ABIO",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "235",
+    "name": "ABIOMED",
+    "short_name": "ABMD",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "236",
+    "name": "Autoweb",
+    "short_name": "AUTO",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "237",
+    "name": "ACADIA",
+    "short_name": "ACAD",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "238",
+    "name": "Acadia Healthcare",
+    "short_name": "ACHC",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "239",
+    "name": "Achillion",
+    "short_name": "ACHN_old",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "240",
+    "name": "ACI Worldwide",
+    "short_name": "ACIW",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "241",
+    "name": "Axcelis",
+    "short_name": "ACLS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "242",
+    "name": "ACNB",
+    "short_name": "ACNB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "243",
+    "name": "Acorda",
+    "short_name": "ACOR",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "244",
+    "name": "AcelRx",
+    "short_name": "ACRX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "245",
+    "name": "Acacia Research",
+    "short_name": "ACTG",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "246",
+    "name": "ADES",
+    "short_name": "ADES",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "247",
+    "name": "Addus",
+    "short_name": "ADUS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "248",
+    "name": "Aegion",
+    "short_name": "AEGN",
+    "country": "united-states",
+    "sector": "Industrials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "249",
+    "name": "Aehr Test Systems",
+    "short_name": "AEHR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "250",
+    "name": "ADDvantage",
+    "short_name": "AEY",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "251",
+    "name": "Aeterna Zentaris",
+    "short_name": "AEZS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "252",
+    "name": "Agenus",
+    "short_name": "AGEN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "253",
+    "name": "AGNC Invest",
+    "short_name": "AGNC",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "254",
+    "name": "Agilysys",
+    "short_name": "AGYS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "255",
+    "name": "Allied Healthcare",
+    "short_name": "AHPI",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "256",
+    "name": "Altra",
+    "short_name": "AIMC",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "257",
+    "name": "Air T",
+    "short_name": "AIRT",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "258",
+    "name": "Akorn",
+    "short_name": "AKRXQ",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "259",
+    "name": "Alico",
+    "short_name": "ALCO",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "260",
+    "name": "Allegiant",
+    "short_name": "ALGT",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "261",
+    "name": "Alimera",
+    "short_name": "ALIM",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "262",
+    "name": "Alkermes Plc",
+    "short_name": "ALKS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "263",
+    "name": "Allot Communications",
+    "short_name": "ALLT",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "264",
+    "name": "Alnylam",
+    "short_name": "ALNY",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "265",
+    "name": "AstroNova",
+    "short_name": "ALOT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "266",
+    "name": "Alaska Communications",
+    "short_name": "ALSK",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "267",
+    "name": "AMAG",
+    "short_name": "AMAG",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "268",
+    "name": "Amedisys",
+    "short_name": "AMED",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "269",
+    "name": "Amkor",
+    "short_name": "AMKR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "270",
+    "name": "American National Bankshares",
+    "short_name": "AMNB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "271",
+    "name": "Allied Motion",
+    "short_name": "AMOT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "272",
+    "name": "American River",
+    "short_name": "AMRB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "273",
+    "name": "Amyris",
+    "short_name": "AMRS",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "274",
+    "name": "American Superconductor",
+    "short_name": "AMSC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "275",
+    "name": "AMERISAFE",
+    "short_name": "AMSF",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "276",
+    "name": "American Software",
+    "short_name": "AMSWA",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "277",
+    "name": "TD Ameritrade",
+    "short_name": "AMTD",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "278",
+    "name": "American Woodmark",
+    "short_name": "AMWD",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "279",
+    "name": "American National Insurance",
+    "short_name": "ANAT",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "280",
+    "name": "The Andersons",
+    "short_name": "ANDE",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "281",
+    "name": "AngioDynamics",
+    "short_name": "ANGO",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "282",
+    "name": "Anika",
+    "short_name": "ANIK",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "283",
+    "name": "ANSYS",
+    "short_name": "ANSS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "284",
+    "name": "Alpha & Omega Semiconductor",
+    "short_name": "AOSL",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "285",
+    "name": "American Public Education",
+    "short_name": "APEI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "286",
+    "name": "Apogee",
+    "short_name": "APOG",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "287",
+    "name": "Riot Platforms",
+    "short_name": "RIOT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "288",
+    "name": "Seelos Therapeutics",
+    "short_name": "SEEL",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "289",
+    "name": "IRSA Propiedades ADR",
+    "short_name": "IRCP",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "290",
+    "name": "Asia Pacific Wire & Cable",
+    "short_name": "APWC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "291",
+    "name": "Accuray",
+    "short_name": "ARAY",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "292",
+    "name": "Janone",
+    "short_name": "JAN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "293",
+    "name": "Approach Resources",
+    "short_name": "AREXQ",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "294",
+    "name": "Gentherm",
+    "short_name": "THRM",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "295",
+    "name": "Ark Restaurants",
+    "short_name": "ARKR",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "296",
+    "name": "Alliance Resource",
+    "short_name": "ARLP",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "297",
+    "name": "Arrow",
+    "short_name": "AROW",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "298",
+    "name": "ArQule",
+    "short_name": "ARQL",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "299",
+    "name": "Artesian",
+    "short_name": "ARTNA",
+    "country": "united-states",
+    "sector": "Utilities",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "300",
+    "name": "Arts-Way",
+    "short_name": "ARTW",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "301",
+    "name": "Arotech",
+    "short_name": "ARTX_old",
+    "country": "united-states",
+    "sector": "Industrials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "302",
+    "name": "Arrowhead Pharma",
+    "short_name": "ARWR",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "303",
+    "name": "Asta Funding",
+    "short_name": "ASFI",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "304",
+    "name": "Ascena Retail",
+    "short_name": "ASNAQ",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "305",
+    "name": "AmeriServ",
+    "short_name": "ASRV",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "306",
+    "name": "Astrotech",
+    "short_name": "ASTC",
+    "country": "united-states",
+    "sector": "Industrials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "307",
+    "name": "Astec",
+    "short_name": "ASTE",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "308",
+    "name": "Vericel Corp Ord",
+    "short_name": "VCEL",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "309",
+    "name": "Asure",
+    "short_name": "ASUR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "310",
+    "name": "Amtech",
+    "short_name": "ASYS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "311",
+    "name": "America First Tax",
+    "short_name": "ATAX",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "312",
+    "name": "Alphatecs",
+    "short_name": "ATEC",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "313",
+    "name": "Athersys",
+    "short_name": "ATHX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "314",
+    "name": "Ames",
+    "short_name": "ATLO",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "315",
+    "name": "ATN Int",
+    "short_name": "ATNI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "316",
+    "name": "AtriCure",
+    "short_name": "ATRC",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "317",
+    "name": "ATRION",
+    "short_name": "ATRI",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "318",
+    "name": "Astronics",
+    "short_name": "ATRO",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "319",
+    "name": "Auburn",
+    "short_name": "AUBN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "320",
+    "name": "AudioCodes",
+    "short_name": "AUDC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "321",
+    "name": "AeroVironment",
+    "short_name": "AVAV",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "322",
+    "name": "AVEO",
+    "short_name": "AVEO",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "323",
+    "name": "Avid",
+    "short_name": "AVID",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "324",
+    "name": "Sarepta",
+    "short_name": "SRPT",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "325",
+    "name": "Aviat",
+    "short_name": "AVNW",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "326",
+    "name": "Aware",
+    "short_name": "AWRE",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "327",
+    "name": "Abraxas Petroleum",
+    "short_name": "AXAS",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "328",
+    "name": "AXT",
+    "short_name": "AXTI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "329",
+    "name": "Natus",
+    "short_name": "NTUS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "330",
+    "name": "BancFirst",
+    "short_name": "BANF",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "331",
+    "name": "Banner",
+    "short_name": "BANR",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "332",
+    "name": "Inotiv",
+    "short_name": "NOTV",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "333",
+    "name": "Hope Bancorp",
+    "short_name": "HOPE",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "334",
+    "name": "Beasley",
+    "short_name": "BBGI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "335",
+    "name": "Barrett",
+    "short_name": "BBSI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "336",
+    "name": "BCB Bancorp",
+    "short_name": "BCBP",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "337",
+    "name": "B Communications",
+    "short_name": "BCOMF",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "338",
+    "name": "Balchem",
+    "short_name": "BCPC",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "339",
+    "name": "BioCryst",
+    "short_name": "BCRX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "340",
+    "name": "Clarus",
+    "short_name": "CLAR",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "341",
+    "name": "Bridge Bancorp",
+    "short_name": "BDGE_old",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "342",
+    "name": "BioDelivery Sciences",
+    "short_name": "BDSI",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "343",
+    "name": "BioTelemetry",
+    "short_name": "BEAT",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "344",
+    "name": "Beacon Roofing",
+    "short_name": "BECN",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "345",
+    "name": "Bel Fuse A",
+    "short_name": "BELFA",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "346",
+    "name": "Bel Fuse B",
+    "short_name": "BELFB",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "347",
+    "name": "BankFinancial",
+    "short_name": "BFIN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "348",
+    "name": "BGC Partners",
+    "short_name": "BGCP",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "349",
+    "name": "Big 5",
+    "short_name": "BGFV",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "350",
+    "name": "Biocept",
+    "short_name": "BIOC",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "351",
+    "name": "Albireo Pharma",
+    "short_name": "ALBO",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "352",
+    "name": "Green Brick Partners Inc",
+    "short_name": "GRBK",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "353",
+    "name": "Option Care Health",
+    "short_name": "OPCH",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "354",
+    "name": "BJs Restaurants",
+    "short_name": "BJRI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "355",
+    "name": "Blueknight",
+    "short_name": "BKEP",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "356",
+    "name": "Bank of South Carolina",
+    "short_name": "BKSC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "357",
+    "name": "Builders FirstSource",
+    "short_name": "BLDR",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "358",
+    "name": "Bridgeline Digital",
+    "short_name": "BLIN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "359",
+    "name": "Blackbaud",
+    "short_name": "BLKB",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "360",
+    "name": "BioLineRx",
+    "short_name": "BLRX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "361",
+    "name": "BIOLASE",
+    "short_name": "BIOL",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "362",
+    "name": "Bank of Marin",
+    "short_name": "BMRC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "363",
+    "name": "Bryn Mawr Bank",
+    "short_name": "BMTC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "364",
+    "name": "Bonso Electronics Int",
+    "short_name": "BNSO",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "365",
+    "name": "Bank of Commerce",
+    "short_name": "BOCH",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "366",
+    "name": "BOK Financial",
+    "short_name": "BOKF",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "367",
+    "name": "Dmc Global",
+    "short_name": "BOOM",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "368",
+    "name": "BOS",
+    "short_name": "BOSC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "369",
+    "name": "Boston Private",
+    "short_name": "BPFH",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "370",
+    "name": "Bridgford",
+    "short_name": "BRID",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "371",
+    "name": "Brookline Bancorp",
+    "short_name": "BRKL",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "372",
+    "name": "Azenta",
+    "short_name": "BRKS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "373",
+    "name": "Bassett",
+    "short_name": "BSET",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "374",
+    "name": "BSQUARE",
+    "short_name": "BSQR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "375",
+    "name": "Sierra Bancorp",
+    "short_name": "BSRR",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "376",
+    "name": "BioSpecifics",
+    "short_name": "BSTC",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "377",
+    "name": "First Busey",
+    "short_name": "BUSE",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "378",
+    "name": "BroadVision",
+    "short_name": "BVSN_old",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "379",
+    "name": "Broadwind",
+    "short_name": "BWEN",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "380",
+    "name": "Protective Insurance A",
+    "short_name": "PTVCA",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "381",
+    "name": "Protective Insurance B",
+    "short_name": "PTVCB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "382",
+    "name": "Broadway Financial",
+    "short_name": "BYFC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "383",
+    "name": "China Automotive",
+    "short_name": "CAAS",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "384",
+    "name": "Camden",
+    "short_name": "CAC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "385",
+    "name": "Credit Acceptance",
+    "short_name": "CACC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "386",
+    "name": "Color Star Technology Co",
+    "short_name": "CSCW",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "387",
+    "name": "The Cheesecake",
+    "short_name": "CAKE",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "388",
+    "name": "Cal-Maine",
+    "short_name": "CALM",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "389",
+    "name": "CalAmp",
+    "short_name": "CAMP",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "390",
+    "name": "Camtek",
+    "short_name": "CAMT",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "391",
+    "name": "Carbonite",
+    "short_name": "CARB_old",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "392",
+    "name": "Carolina Trust Bank",
+    "short_name": "CART_old",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "393",
+    "name": "Carver",
+    "short_name": "CARV",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "394",
+    "name": "Pathward Financial",
+    "short_name": "CASH",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "395",
+    "name": "Cass",
+    "short_name": "CASS",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "396",
+    "name": "Caseys",
+    "short_name": "CASY",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "397",
+    "name": "Cardtronics",
+    "short_name": "CATM",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "398",
+    "name": "Cathay",
+    "short_name": "CATY",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "399",
+    "name": "Mullen Automotive",
+    "short_name": "NETE",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "400",
+    "name": "CBAK Energy",
+    "short_name": "CBAT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "401",
+    "name": "Colony Bankcorp",
+    "short_name": "CBAN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "402",
+    "name": "Statera Biopharma",
+    "short_name": "STAB",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "403",
+    "name": "China Biologic",
+    "short_name": "CBPO",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "404",
+    "name": "Cracker Barrel Old",
+    "short_name": "CBRL",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "405",
+    "name": "Commerce Bancshares",
+    "short_name": "CBSH",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "406",
+    "name": "Capital City Bank",
+    "short_name": "CCBG",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "407",
+    "name": "Antelope Enterprise Holdings",
+    "short_name": "AEHL",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "408",
+    "name": "CNB Financial",
+    "short_name": "CCNE",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "409",
+    "name": "Cogent",
+    "short_name": "CCOI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "410",
+    "name": "Cross Country",
+    "short_name": "CCRN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "411",
+    "name": "Codexis",
+    "short_name": "CDXS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "412",
+    "name": "Cadiz",
+    "short_name": "CDZI",
+    "country": "united-states",
+    "sector": "Utilities",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "413",
+    "name": "CECO Environmental",
+    "short_name": "CECE",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "414",
+    "name": "Perdoceo Education",
+    "short_name": "PRDO",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "415",
+    "name": "Central Garden&Pet",
+    "short_name": "CENT",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "416",
+    "name": "Central Garden&Pet A",
+    "short_name": "CENTA",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "417",
+    "name": "Cerus",
+    "short_name": "CERS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "418",
+    "name": "Central European Media",
+    "short_name": "CETV",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "419",
+    "name": "CEVA",
+    "short_name": "CEVA",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "420",
+    "name": "CF Bankshares",
+    "short_name": "CFBK",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "421",
+    "name": "C&F Financial",
+    "short_name": "CFFI",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "422",
+    "name": "Capitol Federal",
+    "short_name": "CFFN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "423",
+    "name": "Pingtan Marine",
+    "short_name": "PME",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "424",
+    "name": "Compugen",
+    "short_name": "CGEN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "425",
+    "name": "Cognex",
+    "short_name": "CGNX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "426",
+    "name": "Comstock",
+    "short_name": "CHCI",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "427",
+    "name": "City Holding",
+    "short_name": "CHCO",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "428",
+    "name": "Churchill Downs",
+    "short_name": "CHDN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "429",
+    "name": "The Chefs Warehouse",
+    "short_name": "CHEF",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "430",
+    "name": "Apex Global Brands Inc",
+    "short_name": "APEX",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "431",
+    "name": "China Natural Resources",
+    "short_name": "CHNR",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "432",
+    "name": "Coherus BioSciences",
+    "short_name": "CHRS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "433",
+    "name": "Cinedigm",
+    "short_name": "CIDM",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "434",
+    "name": "Fanhua",
+    "short_name": "FANH",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "435",
+    "name": "Citizens",
+    "short_name": "CIZN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "436",
+    "name": "China Jo-Jo Drugstores",
+    "short_name": "CJJD",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "437",
+    "name": "Collectors Universe",
+    "short_name": "CLCT",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "438",
+    "name": "Celldex Therapeutics",
+    "short_name": "CLDX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "439",
+    "name": "Clearfield",
+    "short_name": "CLFD",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "440",
+    "name": "Calumet",
+    "short_name": "CLMT",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "441",
+    "name": "Clean Energy",
+    "short_name": "CLNE",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "442",
+    "name": "ClearOne",
+    "short_name": "CLRO",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "443",
+    "name": "Town Sportss",
+    "short_name": "CLUBQ",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "444",
+    "name": "Clovis",
+    "short_name": "CLVS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "445",
+    "name": "Euro Tech",
+    "short_name": "CLWT",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "446",
+    "name": "Columbus McKinnon",
+    "short_name": "CMCO",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "447",
+    "name": "Destination XL Group",
+    "short_name": "DXLG",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "448",
+    "name": "Comtech",
+    "short_name": "CMTL",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "449",
+    "name": "Century Bancorp",
+    "short_name": "CNBKA",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "450",
+    "name": "Fortress Biotech",
+    "short_name": "FBIO",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "451",
+    "name": "ZW Data Action Technologies",
+    "short_name": "CNET",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "452",
+    "name": "Taoping",
+    "short_name": "TAOP",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "453",
+    "name": "CONMED",
+    "short_name": "CNMD",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "454",
+    "name": "Consolidated Communications",
+    "short_name": "CNSL",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "455",
+    "name": "Century Casinos",
+    "short_name": "CNTY",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "456",
+    "name": "Coherent",
+    "short_name": "COHR",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "457",
+    "name": "Cohu",
+    "short_name": "COHU",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "458",
+    "name": "Coca-Cola Bottling",
+    "short_name": "COKE",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "459",
+    "name": "Columbia Banking",
+    "short_name": "COLB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "460",
+    "name": "Columbia Sportswear",
+    "short_name": "COLM",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "461",
+    "name": "Conns",
+    "short_name": "CONN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "462",
+    "name": "Polarityte",
+    "short_name": "PTE",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "463",
+    "name": "Core-Mark",
+    "short_name": "CORE",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "464",
+    "name": "Corcept",
+    "short_name": "CORT",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "465",
+    "name": "Cowen Group",
+    "short_name": "COWN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "466",
+    "name": "Two Rivers Bancorp",
+    "short_name": "TRCB_old",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "467",
+    "name": "Canterbury Park",
+    "short_name": "CPHC",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "468",
+    "name": "Cumberland",
+    "short_name": "CPIX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "469",
+    "name": "Capital Product",
+    "short_name": "CPLP",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "470",
+    "name": "Catalyst Pharmaceuticals",
+    "short_name": "CPRX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "471",
+    "name": "Computer Programs&Systems",
+    "short_name": "CPSI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "472",
+    "name": "Consumer Portfolio Services",
+    "short_name": "CPSS",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "473",
+    "name": "CRA",
+    "short_name": "CRAI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "474",
+    "name": "Smart Powerr",
+    "short_name": "CREG",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "475",
+    "name": "Cresud SACIF",
+    "short_name": "CRESY",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "476",
+    "name": "Curis",
+    "short_name": "CRIS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "477",
+    "name": "Correvio Pharma",
+    "short_name": "CORV_old",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "478",
+    "name": "Americas Car-Mart",
+    "short_name": "CRMT",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "479",
+    "name": "Ceragon",
+    "short_name": "CRNT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "480",
+    "name": "CorVel",
+    "short_name": "CRVL",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "481",
+    "name": "Crown Crafts",
+    "short_name": "CRWS",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "482",
+    "name": "Carrizo Oil&Gas",
+    "short_name": "CRZO_old",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "483",
+    "name": "CenterState Banks",
+    "short_name": "CSFL_old",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "484",
+    "name": "CoStar",
+    "short_name": "CSGP",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "485",
+    "name": "CSG Systems",
+    "short_name": "CSGS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "486",
+    "name": "Cardiovascular",
+    "short_name": "CSII",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "487",
+    "name": "Canadian Solar Inc",
+    "short_name": "CSIQ",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "488",
+    "name": "Cornerstone OnDemand",
+    "short_name": "CSOD",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "489",
+    "name": "CSP",
+    "short_name": "CSPI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "490",
+    "name": "Capital Southwest",
+    "short_name": "CSWC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "491",
+    "name": "Community Trust",
+    "short_name": "CTBI",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "492",
+    "name": "Cyren",
+    "short_name": "CYRN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "493",
+    "name": "Computer Task",
+    "short_name": "CTG",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "494",
+    "name": "Charles&Colvard",
+    "short_name": "CTHR",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "495",
+    "name": "CTI Industries",
+    "short_name": "CTIB",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "496",
+    "name": "CTi Biopharma",
+    "short_name": "CTIC",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "497",
+    "name": "Citi Trends",
+    "short_name": "CTRN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "498",
+    "name": "Cutera",
+    "short_name": "CUTR",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "499",
+    "name": "CVB Financial",
+    "short_name": "CVBF",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "500",
+    "name": "Cavco",
+    "short_name": "CVCO",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "501",
+    "name": "Central Valley Community",
+    "short_name": "CVCY",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "502",
+    "name": "Commercial Vehicle",
+    "short_name": "CVGI",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "503",
+    "name": "Calavo Growers",
+    "short_name": "CVGW",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "504",
+    "name": "Codorus Valley",
+    "short_name": "CVLY",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "505",
+    "name": "Covenant",
+    "short_name": "CVLG",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "506",
+    "name": "CVD Equipment",
+    "short_name": "CVV",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "507",
+    "name": "Community West Bancshares",
+    "short_name": "CWBC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "508",
+    "name": "Consolidated Water",
+    "short_name": "CWCO",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "509",
+    "name": "Casella",
+    "short_name": "CWST",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "510",
+    "name": "China XD Plastics",
+    "short_name": "CXDC",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "511",
+    "name": "Cypress",
+    "short_name": "CY_old",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "512",
+    "name": "Cyanotech",
+    "short_name": "CYAN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "513",
+    "name": "CyberOptics",
+    "short_name": "CYBE",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "514",
+    "name": "Cyclacel",
+    "short_name": "CYCC",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "515",
+    "name": "Changyoucom",
+    "short_name": "CYOU_old",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "516",
+    "name": "Cytokinetics Inc",
+    "short_name": "CYTK",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "517",
+    "name": "Plus Therapeutics",
+    "short_name": "PSTV",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "518",
+    "name": "Citizens&Northern",
+    "short_name": "CZNC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "519",
+    "name": "Citizens Community",
+    "short_name": "CZWI",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "520",
+    "name": "Data I\/O",
+    "short_name": "DAIO",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "521",
+    "name": "Daktronics",
+    "short_name": "DAKT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "522",
+    "name": "BBQ Holdings",
+    "short_name": "BBQ",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "523",
+    "name": "Performance Shipping",
+    "short_name": "PSHG",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "524",
+    "name": "Dime Community",
+    "short_name": "DCOM",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "525",
+    "name": "DennyÂ¢Â€Â™s",
+    "short_name": "DENN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "526",
+    "name": "Assertio Therapeutics",
+    "short_name": "ASRT",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "527",
+    "name": "Destination Maternity",
+    "short_name": "DESTQ",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "528",
+    "name": "Donegal A",
+    "short_name": "DGICA",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "529",
+    "name": "Donegal B",
+    "short_name": "DGICB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "530",
+    "name": "Digi",
+    "short_name": "DGII",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "531",
+    "name": "Digital Ally",
+    "short_name": "DGLY",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "532",
+    "name": "Diamond Hill",
+    "short_name": "DHIL",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "533",
+    "name": "Newegg Commerce",
+    "short_name": "NEGG",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "534",
+    "name": "Diodes",
+    "short_name": "DIOD",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "535",
+    "name": "Discovery B",
+    "short_name": "DISCB",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "536",
+    "name": "Discovery Communications C",
+    "short_name": "DISCK",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "537",
+    "name": "Daily Journal Corp",
+    "short_name": "DJCO",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "538",
+    "name": "Dorchester Minerals",
+    "short_name": "DMLP",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "539",
+    "name": "Digimarc",
+    "short_name": "DMRC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "540",
+    "name": "DNB Financial",
+    "short_name": "DNBF_old",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "541",
+    "name": "Dorman",
+    "short_name": "DORM",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "542",
+    "name": "Star Equity Holdings",
+    "short_name": "STRR",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "543",
+    "name": "US Gold",
+    "short_name": "USAU",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "544",
+    "name": "Durect",
+    "short_name": "DRRX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "545",
+    "name": "Descartes Systems",
+    "short_name": "DSGX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "546",
+    "name": "DSP Group",
+    "short_name": "DSPG",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "547",
+    "name": "Deswell Industries",
+    "short_name": "DSWL",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "548",
+    "name": "Dynavax",
+    "short_name": "DVAX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "549",
+    "name": "Dawson Geophysical",
+    "short_name": "DWSN",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "550",
+    "name": "DexCom",
+    "short_name": "DXCM",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "551",
+    "name": "DXP Enterprises",
+    "short_name": "DXPE",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "552",
+    "name": "The Dixie",
+    "short_name": "DXYN",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "553",
+    "name": "Dynatronics",
+    "short_name": "DYNT",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "554",
+    "name": "Global Eagle",
+    "short_name": "GEENQ",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "555",
+    "name": "Ebix",
+    "short_name": "EBIX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "556",
+    "name": "Eagle Montana",
+    "short_name": "EBMT",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "557",
+    "name": "Meridian Interstate",
+    "short_name": "EBSB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "558",
+    "name": "Enterprise",
+    "short_name": "EBTC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "559",
+    "name": "Echo Global",
+    "short_name": "ECHO",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "560",
+    "name": "US Ecology",
+    "short_name": "ECOL",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "561",
+    "name": "Encore Capital",
+    "short_name": "ECPG",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "562",
+    "name": "EDAP",
+    "short_name": "EDAP",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "563",
+    "name": "Alithya A",
+    "short_name": "ALYA",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "564",
+    "name": "Educational Development",
+    "short_name": "EDUC",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "565",
+    "name": "Euronet",
+    "short_name": "EEFT",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "566",
+    "name": "Ecology&Environment",
+    "short_name": "EEI_old",
+    "country": "united-states",
+    "sector": "Industrials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "567",
+    "name": "Enterprise Financial",
+    "short_name": "EFSC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "568",
+    "name": "eGain",
+    "short_name": "EGAN",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "569",
+    "name": "Eagle",
+    "short_name": "EGBN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "570",
+    "name": "Eagle Bulk Shipping",
+    "short_name": "EGLE",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "571",
+    "name": "NIC",
+    "short_name": "EGOV",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "572",
+    "name": "eHealth",
+    "short_name": "EHTH",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "573",
+    "name": "Endologix",
+    "short_name": "ELGXQ",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "574",
+    "name": "Electro-Sensors",
+    "short_name": "ELSE",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "575",
+    "name": "Eltek",
+    "short_name": "ELTK",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "576",
+    "name": "Emclaire",
+    "short_name": "EMCF",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "577",
+    "name": "EMCORE",
+    "short_name": "EMKR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "578",
+    "name": "Eastern Co",
+    "short_name": "EML",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "579",
+    "name": "Emmis Comm",
+    "short_name": "EMMS",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "580",
+    "name": "Endo Int",
+    "short_name": "ENDP",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "581",
+    "name": "ENGlobal",
+    "short_name": "ENG",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "582",
+    "name": "The Ensign",
+    "short_name": "ENSG",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "583",
+    "name": "Bottomline",
+    "short_name": "EPAY",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "584",
+    "name": "Erie Indemnity",
+    "short_name": "ERIE",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "585",
+    "name": "Energy Recovery",
+    "short_name": "ERII",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "586",
+    "name": "Elmira Savings Bank",
+    "short_name": "ESBK",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "587",
+    "name": "Escalade",
+    "short_name": "ESCA",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "588",
+    "name": "Euroseas",
+    "short_name": "ESEA",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "589",
+    "name": "Enstar",
+    "short_name": "ESGR",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "590",
+    "name": "ESSA Bancorp",
+    "short_name": "ESSA",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "591",
+    "name": "Symbolic Logic",
+    "short_name": "EVOL",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "592",
+    "name": "East West Bancorp",
+    "short_name": "EWBC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "593",
+    "name": "EXACT Sciences",
+    "short_name": "EXAS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "594",
+    "name": "EXFO",
+    "short_name": "EXFO",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "595",
+    "name": "ExlServices",
+    "short_name": "EXLS",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "596",
+    "name": "Exponent",
+    "short_name": "EXPO",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "597",
+    "name": "EZCORP",
+    "short_name": "EZPW",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "598",
+    "name": "Farmer Bros. Co",
+    "short_name": "FARM",
+    "country": "united-states",
+    "sector": "Consumer Staples",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "599",
+    "name": "FARO",
+    "short_name": "FARO",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "600",
+    "name": "First Business",
+    "short_name": "FBIZ",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "601",
+    "name": "The First Bancshares",
+    "short_name": "FBMS",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "602",
+    "name": "First Bancorp",
+    "short_name": "FBNC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "603",
+    "name": "Fauquier",
+    "short_name": "FBSS",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "604",
+    "name": "First Capital",
+    "short_name": "FCAP",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "605",
+    "name": "First Community Bancshares",
+    "short_name": "FCBC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "606",
+    "name": "First Community",
+    "short_name": "FCCO",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "607",
+    "name": "1st Constitution Bancorp",
+    "short_name": "FCCY",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "608",
+    "name": "FuelCell Energy",
+    "short_name": "FCEL",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "609",
+    "name": "FirstCash",
+    "short_name": "FCFS",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "610",
+    "name": "First Citizens BancShares",
+    "short_name": "FCNCA",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "611",
+    "name": "Civista Bancshares",
+    "short_name": "CIVB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "612",
+    "name": "Premier Financial",
+    "short_name": "PFC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "613",
+    "name": "Frequency Electronics",
+    "short_name": "FEIM",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "614",
+    "name": "Franklin Electric",
+    "short_name": "FELE",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "615",
+    "name": "First Financial Bancorp",
+    "short_name": "FFBC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "616",
+    "name": "Baijiayun",
+    "short_name": "FFHL",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "617",
+    "name": "Flushing",
+    "short_name": "FFIC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "618",
+    "name": "First Financial Bankshares",
+    "short_name": "FFIN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "619",
+    "name": "First Financial Northwest",
+    "short_name": "FFNW",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "620",
+    "name": "Veru",
+    "short_name": "VERU",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "621",
+    "name": "First Interstate BancSystem",
+    "short_name": "FIBK",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "622",
+    "name": "Financial Institutions",
+    "short_name": "FISI",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "623",
+    "name": "National Beverage",
+    "short_name": "FIZZ",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "624",
+    "name": "Standard Biotools",
+    "short_name": "FLDM",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "625",
+    "name": "First of Long Island",
+    "short_name": "FLIC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "626",
+    "name": "Avadel Pharma",
+    "short_name": "AVDL",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "627",
+    "name": "1-800 FLOWERS.COM",
+    "short_name": "FLWS",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "628",
+    "name": "Flexsteel",
+    "short_name": "FLXS",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "629",
+    "name": "First Midwest",
+    "short_name": "FMBI",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "630",
+    "name": "Farmers National",
+    "short_name": "FMNB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "631",
+    "name": "First Bancorp Inc",
+    "short_name": "FNLC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "632",
+    "name": "Amicus",
+    "short_name": "FOLD",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "633",
+    "name": "Fonar",
+    "short_name": "FONR",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "634",
+    "name": "Forward Industries",
+    "short_name": "FORD",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "635",
+    "name": "FormFactor",
+    "short_name": "FORM",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "636",
+    "name": "Forrester",
+    "short_name": "FORR",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "637",
+    "name": "Formula Systems ADR",
+    "short_name": "FORTY",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "638",
+    "name": "Francescass",
+    "short_name": "FRAN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "639",
+    "name": "Republic First Bancorp",
+    "short_name": "FRBK",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "640",
+    "name": "First Merchants",
+    "short_name": "FRME",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "641",
+    "name": "Franklin Financial",
+    "short_name": "FRAF",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "642",
+    "name": "First Savings",
+    "short_name": "FSFG",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "643",
+    "name": "Colliers International",
+    "short_name": "CIGI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "644",
+    "name": "LB Foster",
+    "short_name": "FSTR",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "645",
+    "name": "Fuel Tech",
+    "short_name": "FTEK",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "646",
+    "name": "Fortinet",
+    "short_name": "FTNT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "647",
+    "name": "Fulton",
+    "short_name": "FULT",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "648",
+    "name": "First United",
+    "short_name": "FUNC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "649",
+    "name": "Forward Air",
+    "short_name": "FWRD",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "650",
+    "name": "German American Bancorp",
+    "short_name": "GABC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "651",
+    "name": "Gaia Inc",
+    "short_name": "GAIA",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "652",
+    "name": "Sellas Life Sciences",
+    "short_name": "SLS",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "653",
+    "name": "StealthGas",
+    "short_name": "GASS",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "654",
+    "name": "Glacier",
+    "short_name": "GBCI",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "655",
+    "name": "Global Indemnity",
+    "short_name": "GBLI",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "656",
+    "name": "Greene County",
+    "short_name": "GCBC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "657",
+    "name": "Gencor",
+    "short_name": "GENC",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "658",
+    "name": "Genetic Technologies",
+    "short_name": "GENE",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "659",
+    "name": "Geron",
+    "short_name": "GERN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "660",
+    "name": "Gevo",
+    "short_name": "GEVO",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "661",
+    "name": "Guaranty Federal",
+    "short_name": "GFED",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "662",
+    "name": "General Finance",
+    "short_name": "GFN",
+    "country": "united-states",
+    "sector": "Industrials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "663",
+    "name": "Genomic",
+    "short_name": "GHDX_old",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "664",
+    "name": "Gulf Island Fabrication",
+    "short_name": "GIFI",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "665",
+    "name": "Giga Media Ltd",
+    "short_name": "GIGM",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "666",
+    "name": "G-III Apparel",
+    "short_name": "GIII",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "667",
+    "name": "Gilat",
+    "short_name": "GILT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "668",
+    "name": "Globus Maritime",
+    "short_name": "GLBS",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "669",
+    "name": "Glen Burnie",
+    "short_name": "GLBZ",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "670",
+    "name": "Great Lakes Dredge&Dock",
+    "short_name": "GLDD",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "671",
+    "name": "Golar",
+    "short_name": "GLNG",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "672",
+    "name": "Greenlight Capital Re",
+    "short_name": "GLRE",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "673",
+    "name": "Glu Mobile",
+    "short_name": "GLUU",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "674",
+    "name": "Golar LNG Partners LP",
+    "short_name": "GMLP",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "675",
+    "name": "GenMark",
+    "short_name": "GNMK",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "676",
+    "name": "Gentex",
+    "short_name": "GNTX",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "677",
+    "name": "Gladstone Commercial",
+    "short_name": "GOOD",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "678",
+    "name": "Green Plains Energy",
+    "short_name": "GPRE",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "679",
+    "name": "Grifols ADR",
+    "short_name": "GRFS",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "680",
+    "name": "Indus Realty Trust",
+    "short_name": "INDT",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "681",
+    "name": "US Global",
+    "short_name": "GROW",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "682",
+    "name": "Gravity Co",
+    "short_name": "GRVY",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "683",
+    "name": "Great Southern Bancorp",
+    "short_name": "GSBC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "684",
+    "name": "Novanta",
+    "short_name": "NOVT",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "685",
+    "name": "GSI Technology",
+    "short_name": "GSIT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "686",
+    "name": "CSI Compressco",
+    "short_name": "CCLP",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "687",
+    "name": "Ferroglobe",
+    "short_name": "GSM",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "688",
+    "name": "Good Times",
+    "short_name": "GTIM",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "689",
+    "name": "Chart Industries",
+    "short_name": "GTLS",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "690",
+    "name": "GTX Inc",
+    "short_name": "ONCT",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "691",
+    "name": "Gulf Resources",
+    "short_name": "GURE",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "692",
+    "name": "Gyrodyne of America",
+    "short_name": "GYRO",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "693",
+    "name": "Hawaiian",
+    "short_name": "HA",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "694",
+    "name": "Hanmi",
+    "short_name": "HAFC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "695",
+    "name": "Hallmark",
+    "short_name": "HALL",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "696",
+    "name": "Halozyme",
+    "short_name": "HALO",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "697",
+    "name": "Haynes",
+    "short_name": "HAYN",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "698",
+    "name": "Home Bancorp",
+    "short_name": "HBCP",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "699",
+    "name": "Hancock Whitney",
+    "short_name": "HWC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "700",
+    "name": "Harvard Bioscience",
+    "short_name": "HBIO",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "701",
+    "name": "Horizon Bancorp",
+    "short_name": "HBNC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "702",
+    "name": "Heritage-Crystal Clean",
+    "short_name": "HCCI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "703",
+    "name": "The Hackett",
+    "short_name": "HCKT",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "704",
+    "name": "Healthcare Services",
+    "short_name": "HCSG",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "705",
+    "name": "Hudson",
+    "short_name": "HDSN",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "706",
+    "name": "H&E Equipment",
+    "short_name": "HEES",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "707",
+    "name": "Helen of Troy Ltd",
+    "short_name": "HELE",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "708",
+    "name": "Home Federal Louisiana",
+    "short_name": "HFBL",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "709",
+    "name": "Heritage Financial Co",
+    "short_name": "HFWA",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "710",
+    "name": "Green Giant",
+    "short_name": "HGSH",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "711",
+    "name": "Hudson Global Inc",
+    "short_name": "HSON",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "712",
+    "name": "Hibbett Sports",
+    "short_name": "HIBB",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "713",
+    "name": "Hingham Institution",
+    "short_name": "HIFS",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "714",
+    "name": "Highways",
+    "short_name": "HIHO",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "715",
+    "name": "Himax",
+    "short_name": "HIMX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "716",
+    "name": "Harmonic",
+    "short_name": "HLIT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "717",
+    "name": "HMN Financial",
+    "short_name": "HMNF",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "718",
+    "name": "HMS Holdings",
+    "short_name": "HMSY",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "719",
+    "name": "Hallador",
+    "short_name": "HNRG",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "720",
+    "name": "Hooker Furniture",
+    "short_name": "HOFT",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "721",
+    "name": "Hollysys Automation Tech",
+    "short_name": "HOLI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "722",
+    "name": "Home BancShares",
+    "short_name": "HOMB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "723",
+    "name": "Craft Brew",
+    "short_name": "BREW",
+    "country": "united-states",
+    "sector": "Consumer Staples",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "724",
+    "name": "Hong Kong Highpower",
+    "short_name": "HPJ_old",
+    "country": "united-states",
+    "sector": "Industrials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "725",
+    "name": "Horizon Finance",
+    "short_name": "HRZN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "726",
+    "name": "Heidrick&Struggles",
+    "short_name": "HSII",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "727",
+    "name": "Heska",
+    "short_name": "HSKA",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "728",
+    "name": "HealthStream",
+    "short_name": "HSTM",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "729",
+    "name": "Remark",
+    "short_name": "MARK",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "730",
+    "name": "Heritage Commerce",
+    "short_name": "HTBK",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "731",
+    "name": "Huazhu",
+    "short_name": "HTHT",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "732",
+    "name": "Heartland Express",
+    "short_name": "HTLD",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "733",
+    "name": "Heartland Financial",
+    "short_name": "HTLF",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "734",
+    "name": "Hub Group",
+    "short_name": "HUBG",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "735",
+    "name": "Hurco",
+    "short_name": "HURC",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "736",
+    "name": "Huron",
+    "short_name": "HURN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "737",
+    "name": "Tivity Health",
+    "short_name": "TVTY",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "738",
+    "name": "Hawthorn Bancshares",
+    "short_name": "HWBK",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "739",
+    "name": "Houston Wire&Cable",
+    "short_name": "HWCC",
+    "country": "united-states",
+    "sector": "Industrials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "740",
+    "name": "Hawkins",
+    "short_name": "HWKN",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "741",
+    "name": "Horizon Therapeutics",
+    "short_name": "HZNP",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "742",
+    "name": "Integra",
+    "short_name": "IART",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "743",
+    "name": "Independent Bank Corp",
+    "short_name": "IBCP",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "744",
+    "name": "IBERIABANK",
+    "short_name": "IBKC_old",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "745",
+    "name": "Interactive Brokers",
+    "short_name": "IBKR",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "746",
+    "name": "International Bancshares",
+    "short_name": "IBOC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "747",
+    "name": "icad",
+    "short_name": "ICAD",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "748",
+    "name": "ImmuCell",
+    "short_name": "ICCC",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "749",
+    "name": "ICF International",
+    "short_name": "ICFI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "750",
+    "name": "ICON PLC",
+    "short_name": "ICLR",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "751",
+    "name": "ICU Medical",
+    "short_name": "ICUI",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "752",
+    "name": "InterDigital",
+    "short_name": "IDCC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "753",
+    "name": "Aceragen",
+    "short_name": "IDRA",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "754",
+    "name": "Industrial Services",
+    "short_name": "IDSA_old",
+    "country": "united-states",
+    "sector": "Industrials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "755",
+    "name": "ID Systems",
+    "short_name": "PWFL",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "756",
+    "name": "Icahn Enterprises",
+    "short_name": "IEP",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "757",
+    "name": "IES Holdings",
+    "short_name": "IESC",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "758",
+    "name": "Simply",
+    "short_name": "SIMP",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "759",
+    "name": "Interface",
+    "short_name": "TILE",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "760",
+    "name": "Internet Gold",
+    "short_name": "IGLDF",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "761",
+    "name": "Information Services",
+    "short_name": "III",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "762",
+    "name": "Insteel Industries",
+    "short_name": "IIIN",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "763",
+    "name": "IntriCon",
+    "short_name": "IIN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "764",
+    "name": "Coherent A",
+    "short_name": "IIVI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "765",
+    "name": "Terawulf",
+    "short_name": "IKNX",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "766",
+    "name": "ImmunoGen",
+    "short_name": "IMGN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "767",
+    "name": "Ingles",
+    "short_name": "IMKTA",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "768",
+    "name": "Immersion Corp",
+    "short_name": "IMMR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "769",
+    "name": "Immunomedics",
+    "short_name": "IMMU",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "770",
+    "name": "ChipMOS Tech",
+    "short_name": "IMOS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "771",
+    "name": "Internap",
+    "short_name": "INAPQ",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "772",
+    "name": "Independent Bank",
+    "short_name": "INDB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "773",
+    "name": "Infinity",
+    "short_name": "INFI",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "774",
+    "name": "Infinera",
+    "short_name": "INFN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "775",
+    "name": "Innodata",
+    "short_name": "INOD",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "776",
+    "name": "Insmed",
+    "short_name": "INSM",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "777",
+    "name": "The Intergroup",
+    "short_name": "INTG",
+    "country": "united-states",
+    "sector": "Real Estate",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "778",
+    "name": "INTL FCStone",
+    "short_name": "SNEX",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "779",
+    "name": "Identiv",
+    "short_name": "INVE",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "780",
+    "name": "InnerWorkings",
+    "short_name": "INWK",
+    "country": "united-states",
+    "sector": "Industrials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "781",
+    "name": "Innospec",
+    "short_name": "IOSP",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "782",
+    "name": "Inter Parfums",
+    "short_name": "IPAR",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "783",
+    "name": "Innophoss",
+    "short_name": "IPHS_old",
+    "country": "united-states",
+    "sector": "Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "784",
+    "name": "iRobot",
+    "short_name": "IRBT",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "785",
+    "name": "Iridium",
+    "short_name": "IRDM",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "786",
+    "name": "IRIDEX",
+    "short_name": "IRIX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "787",
+    "name": "IF Bancorp",
+    "short_name": "IROQ",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "788",
+    "name": "Ironwood",
+    "short_name": "IRWD",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "789",
+    "name": "Investors Bancorp",
+    "short_name": "ISBC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "790",
+    "name": "International Speedway",
+    "short_name": "ISCA_old",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "791",
+    "name": "Insignia",
+    "short_name": "ISIG",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "792",
+    "name": "Autoscope Technologies",
+    "short_name": "AATC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "793",
+    "name": "Isramco",
+    "short_name": "ISRL_old",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "794",
+    "name": "Innovative Solutions",
+    "short_name": "ISSC",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "795",
+    "name": "Investors Title",
+    "short_name": "ITIC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "796",
+    "name": "Ituran",
+    "short_name": "ITRN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "797",
+    "name": "Intevac",
+    "short_name": "IVAC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "798",
+    "name": "Jack In The Box",
+    "short_name": "JACK",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "799",
+    "name": "JAKKS Pacific",
+    "short_name": "JAKK",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "800",
+    "name": "Jazz Pharma",
+    "short_name": "JAZZ",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "801",
+    "name": "John B Sanfilippo&Son",
+    "short_name": "JBSS",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "802",
+    "name": "Ziff Davis",
+    "short_name": "JCOM",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "803",
+    "name": "Pineapple Holdings",
+    "short_name": "JCS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "804",
+    "name": "Jewett-Cameron Trading",
+    "short_name": "JCTCF",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "805",
+    "name": "J & J Snack Foods",
+    "short_name": "JJSF",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "806",
+    "name": "Jack Henry&Associates",
+    "short_name": "JKHY",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "807",
+    "name": "51job",
+    "short_name": "JOBS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "808",
+    "name": "Centric Brands",
+    "short_name": "CTRCQ",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "809",
+    "name": "Johnson Outdoors",
+    "short_name": "JOUT",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "810",
+    "name": "China Finance",
+    "short_name": "JRJC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "811",
+    "name": "Coffee Holding",
+    "short_name": "JVA",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "812",
+    "name": "Kaiser",
+    "short_name": "KALU",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "813",
+    "name": "Kimball",
+    "short_name": "KBAL",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "814",
+    "name": "Kelly Services A",
+    "short_name": "KELYA",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "815",
+    "name": "Kelly Services B",
+    "short_name": "KELYB",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "816",
+    "name": "Kewaunee",
+    "short_name": "KEQU",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "817",
+    "name": "Kentucky First Federal",
+    "short_name": "KFFB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "818",
+    "name": "Simply Good Foods",
+    "short_name": "SMPL",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "819",
+    "name": "Kforce",
+    "short_name": "KFRC",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "820",
+    "name": "Kingold",
+    "short_name": "KGJI",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "821",
+    "name": "Kingstone",
+    "short_name": "KINS",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "822",
+    "name": "Kirklands",
+    "short_name": "KIRK",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "823",
+    "name": "Kulicke&Soffa",
+    "short_name": "KLIC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "824",
+    "name": "Kandi",
+    "short_name": "KNDI",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "825",
+    "name": "Luokung Tech",
+    "short_name": "LKCO",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "826",
+    "name": "Thermogenesis Holdings",
+    "short_name": "THMO",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "827",
+    "name": "Kopin",
+    "short_name": "KOPN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "828",
+    "name": "Koss",
+    "short_name": "KOSS",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "829",
+    "name": "Kearny Financial",
+    "short_name": "KRNY",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "830",
+    "name": "Key Tronic",
+    "short_name": "KTCC",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "831",
+    "name": "Kratos Defense&Security",
+    "short_name": "KTOS",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "832",
+    "name": "KVH Industries",
+    "short_name": "KVHI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "833",
+    "name": "Golden Entertainment",
+    "short_name": "GDEN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "834",
+    "name": "Lakeland Industries",
+    "short_name": "LAKE",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "835",
+    "name": "Lancaster Colony",
+    "short_name": "LANC",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "836",
+    "name": "Landmark",
+    "short_name": "LARK",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "837",
+    "name": "Distribution Solutions",
+    "short_name": "LAWS",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "838",
+    "name": "Lakeland Bancorp",
+    "short_name": "LBAI",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "839",
+    "name": "Liquid Media",
+    "short_name": "YVR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "840",
+    "name": "Liberty Global B",
+    "short_name": "LBTYB",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "841",
+    "name": "LCNB",
+    "short_name": "LCNB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "842",
+    "name": "Lifetime Brands",
+    "short_name": "LCUT",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "843",
+    "name": "SemiLEDS",
+    "short_name": "LEDS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "844",
+    "name": "Littelfuse",
+    "short_name": "LFUS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "845",
+    "name": "Ligand",
+    "short_name": "LGND",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "846",
+    "name": "LHC Group",
+    "short_name": "LHCG",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "847",
+    "name": "Lincoln Educational",
+    "short_name": "LINC",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "848",
+    "name": "Qurate Retail B",
+    "short_name": "QRTEB",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "849",
+    "name": "Live Ventures",
+    "short_name": "LIVE",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "850",
+    "name": "Lakeland Financial",
+    "short_name": "LKFN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "851",
+    "name": "Edgio",
+    "short_name": "LLNW",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "852",
+    "name": "Liberty Media Formula A",
+    "short_name": "FWONA",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "853",
+    "name": "Limoneira",
+    "short_name": "LMNR",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "854",
+    "name": "Luminex",
+    "short_name": "LMNX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "855",
+    "name": "Lifecore Biomedical",
+    "short_name": "LNDC",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "856",
+    "name": "Manhattan Bridge",
+    "short_name": "LOAN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "857",
+    "name": "LogMeIn",
+    "short_name": "LOGM",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "858",
+    "name": "Loop Industries",
+    "short_name": "LOOP",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "859",
+    "name": "Grand Canyon Education",
+    "short_name": "LOPE",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "860",
+    "name": "Telesat",
+    "short_name": "LORL",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "861",
+    "name": "LPL Financial",
+    "short_name": "LPLA",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "862",
+    "name": "LivePerson",
+    "short_name": "LPSN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "863",
+    "name": "LightPath",
+    "short_name": "LPTH",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "864",
+    "name": "Liquidity Services",
+    "short_name": "LQDT",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "865",
+    "name": "Genasys Inc",
+    "short_name": "GNSS",
+    "country": "united-states",
+    "sector": "Consumer Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "866",
+    "name": "Lake Shore Bancorp",
+    "short_name": "LSBK",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "867",
+    "name": "Lattice",
+    "short_name": "LSCC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "868",
+    "name": "Landstar",
+    "short_name": "LSTR",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "869",
+    "name": "Lightbridge",
+    "short_name": "LTBR",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "870",
+    "name": "Lantronix",
+    "short_name": "LTRX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "871",
+    "name": "Luna",
+    "short_name": "LUNA",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "872",
+    "name": "Lifeway",
+    "short_name": "LWAY",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "873",
+    "name": "Lexicon",
+    "short_name": "LXRX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "874",
+    "name": "LSI Industries",
+    "short_name": "LYTS",
+    "country": "united-states",
+    "sector": "Industrials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "875",
+    "name": "Senstar Technologies",
+    "short_name": "MAGS",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "876",
+    "name": "Manhattan Associates",
+    "short_name": "MANH",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "877",
+    "name": "Marine Petroleum",
+    "short_name": "MARPS",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "878",
+    "name": "Masimo",
+    "short_name": "MASI",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "879",
+    "name": "Matthews",
+    "short_name": "MATW",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "880",
+    "name": "J W Mays",
+    "short_name": "MAYS",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "881",
+    "name": "Mercantile",
+    "short_name": "MBWM",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "882",
+    "name": "Macatawa Bank",
+    "short_name": "MCBC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "883",
+    "name": "Mid-Con",
+    "short_name": "MCEP",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "884",
+    "name": "Marchex",
+    "short_name": "MCHX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "885",
+    "name": "Monarch",
+    "short_name": "MCRI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "886",
+    "name": "Stagwell",
+    "short_name": "STGW",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "887",
+    "name": "The Medicines",
+    "short_name": "MDCO_old",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "888",
+    "name": "Sotherly Hotels",
+    "short_name": "SOHO",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "889",
+    "name": "Medidata",
+    "short_name": "MDSO_old",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "890",
+    "name": "STRATA Skin Sciences",
+    "short_name": "SSKN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "891",
+    "name": "Methanex",
+    "short_name": "MEOH",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "892",
+    "name": "Mercer Int",
+    "short_name": "MERC",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "893",
+    "name": "Mackinac",
+    "short_name": "MFNC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "894",
+    "name": "Perma-Pipe Int",
+    "short_name": "PPIH",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "895",
+    "name": "MutualFirst",
+    "short_name": "MFSF_old",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "896",
+    "name": "MGE Energy",
+    "short_name": "MGEE",
+    "country": "united-states",
+    "sector": "Utilities",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "897",
+    "name": "Magic",
+    "short_name": "MGIC",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "898",
+    "name": "Magellan Health",
+    "short_name": "MGLN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "899",
+    "name": "MGP Ingredients",
+    "short_name": "MGPI",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "900",
+    "name": "McGrath",
+    "short_name": "MGRC",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "901",
+    "name": "Magyar",
+    "short_name": "MGYR",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "902",
+    "name": "Maiden Holdings",
+    "short_name": "MHLD",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "903",
+    "name": "Mind Technology",
+    "short_name": "MIND",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "904",
+    "name": "Mobile Mini",
+    "short_name": "MINI_old",
+    "country": "united-states",
+    "sector": "Industrials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "905",
+    "name": "Mitek",
+    "short_name": "MITK",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "906",
+    "name": "MKS Instruments",
+    "short_name": "MKSI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "907",
+    "name": "MarketAxesss",
+    "short_name": "MKTX",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "908",
+    "name": "Mesa Labs",
+    "short_name": "MLAB",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "909",
+    "name": "MillerKnoll",
+    "short_name": "MLHR",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "910",
+    "name": "Steel Connect",
+    "short_name": "STCN",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "911",
+    "name": "Malvern",
+    "short_name": "MLVF",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "912",
+    "name": "Martin Midstream",
+    "short_name": "MMLP",
+    "country": "united-states",
+    "sector": "Utilities",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "913",
+    "name": "Merit",
+    "short_name": "MMSI",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "914",
+    "name": "MakeMyTrip",
+    "short_name": "MMYT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "915",
+    "name": "MIND CTI",
+    "short_name": "MNDO",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "916",
+    "name": "MannKind",
+    "short_name": "MNKD",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "917",
+    "name": "MediciNova",
+    "short_name": "MNOV",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "918",
+    "name": "Monro Muffler Brake",
+    "short_name": "MNRO",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "919",
+    "name": "Momenta",
+    "short_name": "MNTA",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "920",
+    "name": "Manitex",
+    "short_name": "MNTX",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "921",
+    "name": "MidWestOne",
+    "short_name": "MOFG",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "922",
+    "name": "Morningstar",
+    "short_name": "MORN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "923",
+    "name": "Peraso",
+    "short_name": "MOSY",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "924",
+    "name": "Model Performance Acquisition Unt",
+    "short_name": "USWS",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "925",
+    "name": "Mid Penn",
+    "short_name": "MPB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "926",
+    "name": "Tellurian",
+    "short_name": "TELL",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "927",
+    "name": "Monolithic",
+    "short_name": "MPWR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "928",
+    "name": "Mercury",
+    "short_name": "MRCY",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "929",
+    "name": "Marlin Business",
+    "short_name": "MRLN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "930",
+    "name": "Marten Transport",
+    "short_name": "MRTN",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "931",
+    "name": "MSB Financial",
+    "short_name": "MSBF_old",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "932",
+    "name": "Middlesex Water",
+    "short_name": "MSEX",
+    "country": "united-states",
+    "sector": "Utilities",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "933",
+    "name": "MISONIX",
+    "short_name": "MSON",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "934",
+    "name": "MicroStrategy",
+    "short_name": "MSTR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "935",
+    "name": "Mannatech",
+    "short_name": "MTEX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "936",
+    "name": "Matrix",
+    "short_name": "MTRX",
+    "country": "united-states",
+    "sector": "Industrials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "937",
+    "name": "MTS Systems",
+    "short_name": "MTSC",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "938",
+    "name": "Sharplink Gaming",
+    "short_name": "SBET",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "939",
+    "name": "Microvision",
+    "short_name": "MVIS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "940",
+    "name": "Myriad Genetics",
+    "short_name": "MYGN",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "941",
+    "name": "MYR Group",
+    "short_name": "MYRG",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "942",
+    "name": "Vaxart",
+    "short_name": "VXRT",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "943",
+    "name": "Natural Alternatives",
+    "short_name": "NAII",
+    "country": "united-states",
+    "sector": "Consumer Staples",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "944",
+    "name": "Onto Innovation",
+    "short_name": "ONTO",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "945",
+    "name": "Nathans Famous",
+    "short_name": "NATH",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "946",
+    "name": "National Instruments",
+    "short_name": "NATI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "947",
+    "name": "Natures Sunshine",
+    "short_name": "NATR",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "948",
+    "name": "Neurocrine",
+    "short_name": "NBIX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "949",
+    "name": "Northeast Bancorp",
+    "short_name": "NBN",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "950",
+    "name": "NBT Bancorp",
+    "short_name": "NBTB",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "951",
+    "name": "Select Bancorp",
+    "short_name": "SLCT",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "952",
+    "name": "National CineMedia",
+    "short_name": "NCMI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "953",
+    "name": "The9 ADR",
+    "short_name": "NCTY",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "954",
+    "name": "Nordson",
+    "short_name": "NDSN",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "955",
+    "name": "Neogen",
+    "short_name": "NEOG",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "956",
+    "name": "Neptune",
+    "short_name": "NEPT",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "957",
+    "name": "Newtek",
+    "short_name": "NEWT",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "958",
+    "name": "Northfield Bancorp",
+    "short_name": "NFBK",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "959",
+    "name": "Bimi International Medical",
+    "short_name": "BIMI",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "960",
+    "name": "Nice ADR",
+    "short_name": "NICE",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "961",
+    "name": "Nicholas Financial",
+    "short_name": "NICK",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "962",
+    "name": "National Bankshares",
+    "short_name": "NKSH",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "963",
+    "name": "Nektar",
+    "short_name": "NKTR",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "964",
+    "name": "Lumos Pharma Inc",
+    "short_name": "LUMO",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "965",
+    "name": "NN Inc",
+    "short_name": "NNBR",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "966",
+    "name": "Northrim",
+    "short_name": "NRIM",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "967",
+    "name": "National Security",
+    "short_name": "NSEC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "968",
+    "name": "Insight Enterprises",
+    "short_name": "NSIT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "969",
+    "name": "NAPCO",
+    "short_name": "NSSC",
+    "country": "united-states",
+    "sector": "Information Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "970",
+    "name": "Nortech",
+    "short_name": "NSYS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "971",
+    "name": "NetScout",
+    "short_name": "NTCT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "972",
+    "name": "NETGEAR",
+    "short_name": "NTGR",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "973",
+    "name": "Northern Technologies",
+    "short_name": "NTIC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "974",
+    "name": "NetSol",
+    "short_name": "NTWK",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "975",
+    "name": "NeuroMetrix",
+    "short_name": "NURO",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "976",
+    "name": "NuVasive",
+    "short_name": "NUVA",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "977",
+    "name": "Novavax",
+    "short_name": "NVAX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "978",
+    "name": "NVE Corporation",
+    "short_name": "NVEC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "979",
+    "name": "Kazia Therapeutics ADR",
+    "short_name": "KZIA",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "980",
+    "name": "Nova",
+    "short_name": "NVMI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "981",
+    "name": "Inseego",
+    "short_name": "INSG",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "982",
+    "name": "Northwest Bancshares",
+    "short_name": "NWBI",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "983",
+    "name": "Norwood",
+    "short_name": "NWFL",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "984",
+    "name": "National Western Life Insurance",
+    "short_name": "NWLI",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "985",
+    "name": "Northwest Pipe",
+    "short_name": "NWPX",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "986",
+    "name": "Nexstar",
+    "short_name": "NXST",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "987",
+    "name": "New York Mortgage",
+    "short_name": "NYMT",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "988",
+    "name": "Nymox Pharmaceutical",
+    "short_name": "NYMX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "989",
+    "name": "Empire Resorts",
+    "short_name": "NYNY_old",
+    "country": "united-states",
+    "sector": "Consumer Discretionary",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "990",
+    "name": "Optibase",
+    "short_name": "OBAS",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "991",
+    "name": "Ocean Bio-Chem",
+    "short_name": "OBCI",
+    "country": "united-states",
+    "sector": "Consumer\/Non-Cyclical",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "992",
+    "name": "Optical Cable",
+    "short_name": "OCC",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "993",
+    "name": "OceanFirst",
+    "short_name": "OCFC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "994",
+    "name": "Sonoma Pharma",
+    "short_name": "SNOA",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "995",
+    "name": "Oconee",
+    "short_name": "OFED",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "996",
+    "name": "Orthofix",
+    "short_name": "OFIX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "997",
+    "name": "Omega Flex",
+    "short_name": "OFLX",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "998",
+    "name": "Achieve Life Sciences",
+    "short_name": "ACHV",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "999",
+    "name": "O2Micro",
+    "short_name": "OIIM",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1000",
+    "name": "Old Line",
+    "short_name": "OLBK_old",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1001",
+    "name": "Aeroportuario del Centro Norte",
+    "short_name": "OMAB",
+    "country": "united-states",
+    "sector": "Transportation",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1002",
+    "name": "Omnicell",
+    "short_name": "OMCL",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1003",
+    "name": "Omeros",
+    "short_name": "OMER",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1004",
+    "name": "Odyssey",
+    "short_name": "OMEX",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1005",
+    "name": "Oncolytics Biotech",
+    "short_name": "ONCY",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1006",
+    "name": "ON Semiconductor",
+    "short_name": "ON",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1007",
+    "name": "OptimumBank Holdings",
+    "short_name": "OPHC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1008",
+    "name": "Old Point",
+    "short_name": "OPOF",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1009",
+    "name": "Ocean Power",
+    "short_name": "OPTT",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NYSE",
+    "ccy": "USD"
+  },
+  {
+    "id": "1010",
+    "name": "Great Elm Group",
+    "short_name": "GEG",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1011",
+    "name": "Acer Therapeutics",
+    "short_name": "ACER",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1012",
+    "name": "ORBCOMM",
+    "short_name": "ORBC",
+    "country": "united-states",
+    "sector": "Communication Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1013",
+    "name": "Oritani",
+    "short_name": "ORIT_old",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1014",
+    "name": "Orrstown",
+    "short_name": "ORRF",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1015",
+    "name": "Old Second Bancorp",
+    "short_name": "OSBC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1016",
+    "name": "OSI Systems",
+    "short_name": "OSIS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1017",
+    "name": "Ossen Innovation",
+    "short_name": "OSN",
+    "country": "united-states",
+    "sector": "Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1018",
+    "name": "Overstockcom",
+    "short_name": "OSTK",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1019",
+    "name": "OraSure",
+    "short_name": "OSUR",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1020",
+    "name": "Open Text",
+    "short_name": "OTEX",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1021",
+    "name": "On Track",
+    "short_name": "OTIVF",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "OTC Markets",
+    "ccy": "USD"
+  },
+  {
+    "id": "1022",
+    "name": "Otter Tail",
+    "short_name": "OTTR",
+    "country": "united-states",
+    "sector": "Utilities",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1023",
+    "name": "Ohio Valley Banc",
+    "short_name": "OVBC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1024",
+    "name": "Oak Valley Bancorp",
+    "short_name": "OVLY",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1025",
+    "name": "Tenax Therapeutics",
+    "short_name": "TENX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1026",
+    "name": "Geospace",
+    "short_name": "GEOS",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1027",
+    "name": "Bank Ozk",
+    "short_name": "OZK",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1028",
+    "name": "Pacific Biosciences",
+    "short_name": "PACB",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1029",
+    "name": "Highpeak Energy Acquisition",
+    "short_name": "HPK",
+    "country": "united-states",
+    "sector": "Energy",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1030",
+    "name": "PacWest",
+    "short_name": "PACW",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1031",
+    "name": "Universal Display",
+    "short_name": "OLED",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1032",
+    "name": "Patrick",
+    "short_name": "PATK",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1033",
+    "name": "Frp Holdings Ord",
+    "short_name": "FRPH",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1034",
+    "name": "Pathfinder Bancorp",
+    "short_name": "PBHC",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1035",
+    "name": "Porter Bancorp",
+    "short_name": "LMST",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1036",
+    "name": "Prudential Pennsylvania",
+    "short_name": "PBIP",
+    "country": "united-states",
+    "sector": "Financial",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1037",
+    "name": "PC Connection",
+    "short_name": "CNXN",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1038",
+    "name": "PotlatchDeltic",
+    "short_name": "PCH",
+    "country": "united-states",
+    "sector": "Basic Materials",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1039",
+    "name": "Points International",
+    "short_name": "PCOM",
+    "country": "united-states",
+    "sector": "Services",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1040",
+    "name": "Pacira",
+    "short_name": "PCRX",
+    "country": "united-states",
+    "sector": "Healthcare",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1041",
+    "name": "PC-Tel",
+    "short_name": "PCTI",
+    "country": "united-states",
+    "sector": "Technology",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  },
+  {
+    "id": "1042",
+    "name": "Pure Cycle",
+    "short_name": "PCYO",
+    "country": "united-states",
+    "sector": "Capital Goods",
+    "exch": "NASDAQ",
+    "ccy": "USD"
+  }
+]
+
+

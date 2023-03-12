@@ -1,0 +1,16 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Search stock</mat-label>
+    <input matInput
+           aria-label="State"
+           [matAutocomplete]="auto"
+           [formControl]="stateCtrl">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let stock of filteredStocks | async" [value]="stock.name" (click)="navigateTo(stock.name, stock.short_name)">
+        <span>{{stock.name}}</span> |
+        <small>{{stock.short_name}}</small>
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+</form>

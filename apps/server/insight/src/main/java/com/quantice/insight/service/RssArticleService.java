@@ -2,6 +2,7 @@ package com.quantice.insight.service;
 
 import static java.util.stream.Collectors.groupingBy;
 
+import com.quantice.insight.config.ArticleApiConstants;
 import com.quantice.insight.model.Article;
 import com.quantice.insight.repository.ArticleRepository;
 import java.time.Instant;
@@ -10,6 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -17,6 +20,7 @@ import org.springframework.stereotype.Service;
 public class RssArticleService {
 
     private final ArticleRepository articleRepository;
+    private static final Logger LOGGER = LoggerFactory.getLogger(RssArticleService.class);
 
     public List<Article> findArticles(final String keyword, final Optional<String> from, final Optional<String> to, final Optional<Integer> limit) {
 
@@ -27,7 +31,7 @@ public class RssArticleService {
             fromInstant = Instant.parse(from.get());
         }
         else {
-            fromInstant = Instant.now().minus(7, ChronoUnit.DAYS);
+            fromInstant = Instant.now().minus(365, ChronoUnit.DAYS);
         }
 
         if (to.isPresent()) {
@@ -41,7 +45,7 @@ public class RssArticleService {
         articles.addAll(articleRepository.findTop100ByUrlContainingIgnoreCaseAndPublishedAtBetweenOrderByPublishedAt(keyword, fromInstant, toInstant));
         articles.addAll(articleRepository.findTop100ByTitleContainingIgnoreCaseAndPublishedAtBetweenOrderByPublishedAt(keyword, fromInstant, toInstant));
         articles.addAll(articleRepository.findTop100ByDescriptionContainingIgnoreCaseAndPublishedAtBetweenOrderByPublishedAt(keyword, fromInstant, toInstant));
-
+        LOGGER.info(String.format("Processing articles request:\n%s",articles));
         return articles
             .stream()
             .collect(groupingBy(Article::getUrl))
@@ -52,7 +56,7 @@ public class RssArticleService {
             .values()
             .stream()
             .flatMap(values -> values.stream().limit(1))
-            .limit(limit.orElse(10))
+            .limit(limit.orElse(ArticleApiConstants.DEFAULT_LIMIT_ARTICLES.getArticlesLimit()))
             .toList();
     }
 

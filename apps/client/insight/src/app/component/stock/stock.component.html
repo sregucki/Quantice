@@ -1,0 +1,66 @@
+<div class="main">
+  <div class="navbar"><span>navbar here</span></div>
+  <div class="content">
+    <div class="charts-main">
+      <div [chart]="stockChart" class="chart">
+      </div>
+      <div class="chart-info">
+        <div class="stock-name">
+          <span>{{ticker}}</span>
+        </div>
+        <div class="stock-last-price">
+          <span>{{lastPrice | number: '1.2-2'}}$</span>
+        </div>
+        <div>
+          <i class="fa-solid"
+             [ngClass]="lastPriceChange > 0 ? 'fa-caret-up': 'fa-caret-down'"
+             [ngStyle]="{'color': (lastPriceChange > 0) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}"
+          style="font-size: 1.2em; margin-right: 3px">
+          </i>
+          <span class="stock-price-change" [ngClass]="{
+          'positive': lastPriceChange > 0,
+          'negative': lastPriceChange < 0
+          }">{{lastPriceChange | number: '1.2-2'}}$</span>
+          <span class="stock-price-change-percent" [ngClass]="{
+          'positive': lastPriceChangePercent > 0,
+          'negative': lastPriceChangePercent < 0
+          }">{{lastPriceChangePercent | number: '1.2-2'}}%</span>
+        </div>
+      </div>
+    </div>
+    <div class="articles-main">
+      <div class="articles-bar">
+        <div class="articles-bar-bookmark">
+          <span>Overview</span>
+        </div>
+      </div>
+      <div class="articles-content">
+        <div class="articles">
+          <div class="recent-news-bar">
+            <div class="recent-news">
+              <span>Recent news</span>
+            </div>
+            <div class="recent-news-bar-gradient"></div>
+          </div>
+          <div class="articles-list">
+            <div class="article" *ngFor="let article of initArticles">
+              <div class="article-title" (click)="redirect(article.url)">
+                <span>{{article.title}}</span>
+              </div>
+              <div class="article-content">
+                <p>{{article.description}}</p>
+              </div>
+              <div class="article-footer">
+                <span>{{parseInstant(article.publishedAt)}}</span>
+                <span> by {{getDomainFromUrl(article.url)}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="articles-search">
+          <span>articles search params here</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
