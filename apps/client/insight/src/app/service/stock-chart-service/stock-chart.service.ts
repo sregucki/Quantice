@@ -23,7 +23,7 @@ export class StockChartService {
           valueDecimals: 2
         },
         color: '#3677a8',
-        name: ticker,
+        name: ticker.toUpperCase(),
         data: data
       }]
     })
