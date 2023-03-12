@@ -1,13 +1,12 @@
 import {Injectable} from '@angular/core';
 import {StockChart} from "angular-highcharts";
-import {HttpClient} from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
 })
 export class StockChartService {
 
-  constructor(private http: HttpClient) {
+  constructor() {
   }
 
   getLineChart(ticker: string, data: unknown[][]): StockChart {
@@ -23,6 +22,7 @@ export class StockChartService {
         tooltip: {
           valueDecimals: 2
         },
+        color: '#3677a8',
         name: ticker,
         data: data
       }]
