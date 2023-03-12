@@ -29,21 +29,38 @@
       </div>
     </div>
     <div class="articles-main">
-      <div class="articles">
-        <div class="article" *ngFor="let article of initArticles">
-          <div class="article-title" (click)="redirect(article.url)">
-            <span>{{article.title}}</span>
-          </div>
-          <div class="article-content">
-            <p>{{article.description}}</p>
-          </div>
-          <div class="article-footer">
-            <span>{{parseInstant(article.publishedAt)}}</span>
-            <span> by {{getDomainFromUrl(article.url)}}</span>
-          </div>
+      <div class="articles-bar">
+        <div class="articles-bar-bookmark">
+          <span>Overview</span>
         </div>
       </div>
-      <div class="articles-search"><span>articles search params here</span></div>
+      <div class="articles-content">
+        <div class="articles">
+          <div class="recent-news-bar">
+            <div class="recent-news">
+              <span>Recent news</span>
+            </div>
+            <div class="recent-news-bar-gradient"></div>
+          </div>
+          <div class="articles-list">
+            <div class="article" *ngFor="let article of initArticles">
+              <div class="article-title" (click)="redirect(article.url)">
+                <span>{{article.title}}</span>
+              </div>
+              <div class="article-content">
+                <p>{{article.description}}</p>
+              </div>
+              <div class="article-footer">
+                <span>{{parseInstant(article.publishedAt)}}</span>
+                <span> by {{getDomainFromUrl(article.url)}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="articles-search">
+          <span>articles search params here</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
