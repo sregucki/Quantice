@@ -6,7 +6,7 @@
       </div>
       <div class="chart-info">
         <div class="stock-name">
-          <span>{{ticker}}</span>
+          <span>{{stockName}}</span>
         </div>
         <div class="stock-last-price">
           <span>{{lastPrice | number: '1.2-2'}}$</span>
@@ -43,16 +43,23 @@
             <div class="recent-news-bar-gradient"></div>
           </div>
           <div class="articles-list">
-            <div class="article" *ngFor="let article of initArticles">
-              <div class="article-title" (click)="redirect(article.url)">
-                <span>{{article.title}}</span>
+            <div class="article-main" *ngFor="let article of initArticles">
+              <div class="article-thumbnail">
+                <div class="thumbnail">
+                  <img src="assets/quantice-logo.png" alt="image" height="80">
+                </div>
               </div>
-              <div class="article-content">
-                <p>{{article.description}}</p>
-              </div>
-              <div class="article-footer">
-                <span>{{parseInstant(article.publishedAt)}}</span>
-                <span> by {{getDomainFromUrl(article.url)}}</span>
+              <div class="article">
+                <div class="article-title" (click)="redirect(article.url)">
+                  <span>{{article.title}}</span>
+                </div>
+                <div class="article-content">
+                  <span>{{article.description}}</span>
+                </div>
+                <div class="article-footer">
+                  <span>{{parseInstant(article.publishedAt)}}</span>
+                  <span> by {{getDomainFromUrl(article.url)}}</span>
+                </div>
               </div>
             </div>
           </div>

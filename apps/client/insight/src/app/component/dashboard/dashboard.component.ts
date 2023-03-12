@@ -39,19 +39,19 @@ export class DashboardComponent {
   }
 
   navigateTo(stockName: string, ticker: string) {
-    const stockNameFull = stockName.toLowerCase();
-    this.router.navigate(['/stock', stockNameFull],
+    ticker = ticker.toLowerCase();
+    this.router.navigate(['/stock', ticker],
       {
         state: {
-          stockName: stockNameFull,
+          stockName: stockName,
           ticker: ticker
         }
       }).then(
       success => {
-        console.log('Successfully routed to: ' + stockNameFull + ' page');
+        console.log('Successfully routed to: ' + ticker + ' page');
       },
       err => {
-        console.log('Error while routing to: ' + stockNameFull);
+        console.log('Error while routing to: ' + ticker);
       });
   }
 
