@@ -9,7 +9,9 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.TextScore;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -22,10 +24,14 @@ public class Entry {
     @Id
     private String id;
     @Indexed(unique = true)
+    @TextIndexed
     private String url;
+    @TextIndexed
     private String title;
+    @TextIndexed
     private String description;
-    private String author;
+    @TextScore
+    public Float score;
     private Instant publishedAt;
 
 }
