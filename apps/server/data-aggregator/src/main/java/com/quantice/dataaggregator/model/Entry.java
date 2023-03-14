@@ -11,7 +11,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.TextScore;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -34,8 +33,5 @@ public class Entry {
     private String description;
 
     private Instant publishedAt;
-
-    @TextScore
-    private Float score;
 
 }
