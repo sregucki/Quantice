@@ -14,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 @RequiredArgsConstructor
+@Deprecated
 public class NewsApiService {
 
     private final NewsApiProperties newsApiProperties;
