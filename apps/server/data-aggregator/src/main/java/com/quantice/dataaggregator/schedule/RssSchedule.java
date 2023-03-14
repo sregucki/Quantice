@@ -1,5 +1,6 @@
 package com.quantice.dataaggregator.schedule;
 
+import com.quantice.dataaggregator.config.RssProperties;
 import com.quantice.dataaggregator.rss.RssChannelReader;
 import com.quantice.dataaggregator.rss.RssUtils;
 import lombok.RequiredArgsConstructor;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 public class RssSchedule {
 
     private final RssUtils rssUtils;
+    private final RssProperties rssProperties;
     private final RssChannelReader rssChannelReader;
 
     /**
@@ -19,9 +21,7 @@ public class RssSchedule {
      */
     @Scheduled(fixedRate = 3600000)
     public void aggregateRss() {
-        rssUtils.getChannels().stream().map(
-            channel -> rssChannelReader.readChannel(channel).subscribe()
-        ).toList();
+        rssUtils.getChannelsUrls(rssProperties.getLanguage()).flatMap(rssChannelReader::readChannel).subscribe();
     }
 
 }
