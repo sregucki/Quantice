@@ -9,6 +9,9 @@ import com.rometools.rome.io.XmlReader;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
@@ -67,12 +70,17 @@ public class RssUtilsImpl implements RssUtils {
 
     @Override
     public Flux<String> getChannelsUrls(Language language) {
-        return channelRepository.findAll().mapNotNull(channel -> {
-            if (channel.getLanguage() == language) {
-                return channel.getUrl();
-            }
-            return null;
-        }).filter(Objects::nonNull);
+
+        List<String> channels = new ArrayList<>(
+            channelRepository.findAll().mapNotNull(channel -> {
+                if (channel.getLanguage() == language) {
+                    return channel.getUrl();
+                }
+                return null;
+            }).filter(Objects::nonNull).toStream().toList());
+
+        Collections.shuffle(channels);
+        return Flux.fromIterable(channels);
     }
 
 }
