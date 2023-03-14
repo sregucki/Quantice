@@ -6,6 +6,7 @@ import com.quantice.insight.repository.ArticleRepository;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
@@ -34,7 +35,7 @@ public class RssArticleService {
             fromInstant = Instant.parse(from.get());
         }
         else {
-            fromInstant = Instant.now().minus(10, ChronoUnit.DAYS);
+            fromInstant = Instant.now().minus(60, ChronoUnit.DAYS);
         }
 
         if (to.isPresent()) {
@@ -48,7 +49,7 @@ public class RssArticleService {
         TextCriteria textCriteria = TextCriteria
             .forDefaultLanguage()
             .matchingPhrase(keyword);
-        Query query = TextQuery.queryText(textCriteria).sortByScore();
+        Query query = TextQuery.queryText(textCriteria).sortByScore(); // Sort articles by score
 
         final List<Article> articles = new ArrayList<>(
             mongoTemplate.find(query, Article.class)
@@ -56,7 +57,12 @@ public class RssArticleService {
 
         return articles
             .stream()
-            .limit(limit.orElse(ArticleApiConstants.DEFAULT_LIMIT_ARTICLES.getArticlesLimit()))
+            .filter(article -> article.getPublishedAt() != null)
+            .filter(article ->
+                article.getPublishedAt().isAfter(fromInstant) && article.getPublishedAt().isBefore(toInstant) // Pick articles only within specified time range
+            )
+            .limit(limit.orElse(ArticleApiConstants.DEFAULT_LIMIT_ARTICLES.getArticlesLimit())) // Pick n articles with the best score
+            .sorted(Comparator.comparing(Article::getPublishedAt).reversed()) // Sort articles by publish date
             .toList();
     }
 
