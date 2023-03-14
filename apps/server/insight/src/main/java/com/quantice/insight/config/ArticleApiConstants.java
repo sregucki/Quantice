@@ -6,7 +6,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @Getter
 public enum ArticleApiConstants {
-    DEFAULT_LIMIT_ARTICLES(5);
+    DEFAULT_LIMIT_ARTICLES(10);
 
     private final int articlesLimit;
 
