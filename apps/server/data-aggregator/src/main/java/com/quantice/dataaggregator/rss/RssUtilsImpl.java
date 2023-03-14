@@ -1,31 +1,28 @@
 package com.quantice.dataaggregator.rss;
 
-import com.google.gson.Gson;
+import com.quantice.dataaggregator.model.Language;
+import com.quantice.dataaggregator.repository.ChannelRepository;
 import com.rometools.rome.feed.synd.SyndFeed;
 import com.rometools.rome.io.FeedException;
 import com.rometools.rome.io.SyndFeedInput;
 import com.rometools.rome.io.XmlReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.List;
-import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
+import reactor.core.publisher.Flux;
 
 @Component
 @RequiredArgsConstructor
 public class RssUtilsImpl implements RssUtils {
 
     private final SyndFeedInput syndFeedInput;
-    private final Gson gson;
-    public static final String channelsFile = "channels.json";
+    private final ChannelRepository channelRepository;
     private static final Logger LOGGER = LoggerFactory.getLogger(RssUtilsImpl.class);
 
     @Override
@@ -41,9 +38,9 @@ public class RssUtilsImpl implements RssUtils {
 
             return Optional.ofNullable(syndFeed);
 
-        } catch (IOException | FeedException e) {
+        } catch (IOException | FeedException | IllegalArgumentException e) {
 
-            LOGGER.error(String.format("Error while processing channel of url: %s\nError message: %s", url, e.getMessage()));
+            LOGGER.warn(String.format("Error while processing channel of url: %s\nError message: %s", url, e.getMessage()));
             return Optional.empty();
         }
 
@@ -53,7 +50,6 @@ public class RssUtilsImpl implements RssUtils {
     public boolean isActive(String url) {
 
         try {
-
             HttpURLConnection httpURLConnection = (HttpURLConnection) new URL(url).openConnection();
             httpURLConnection.setRequestMethod("HEAD");
 
@@ -63,28 +59,20 @@ public class RssUtilsImpl implements RssUtils {
 
         } catch (IOException e) {
 
-            LOGGER.error(String.format("Error while processing channel of url: %s\nError message: %s", url, e.getMessage()));
+            LOGGER.warn(String.format("Error while processing channel of url: %s\nError message: %s", url, e.getMessage()));
             return false;
         }
-
         return true;
     }
 
     @Override
-    public List<String> getChannels() {
-
-        try {
-            ClassPathResource resource = new ClassPathResource(channelsFile);
-            Reader reader = new InputStreamReader(resource.getInputStream());
-            Map<String, List<String>> json = gson.fromJson(reader, Map.class);
-
-            reader.close();
-            return json.get("channels");
-        }
-        catch (IOException e) {
-            LOGGER.error("Error while reading rss channels uris'");
+    public Flux<String> getChannelsUrls(Language language) {
+        return channelRepository.findAll().mapNotNull(channel -> {
+            if (channel.getLanguage() == language) {
+                return channel.getUrl();
+            }
             return null;
-        }
+        }).filter(Objects::nonNull);
     }
 
 }

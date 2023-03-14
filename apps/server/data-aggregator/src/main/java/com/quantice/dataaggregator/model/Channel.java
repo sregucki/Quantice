@@ -1,7 +1,5 @@
 package com.quantice.dataaggregator.model;
 
-
-import java.time.Instant;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -16,15 +14,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @Getter
 @ToString
-@Document(collection = "entry")
-public class Entry {
+@Document(collection = "channel")
+public class Channel {
 
     @Id
     private String id;
     @Indexed(unique = true)
     private String url;
-    private String title;
-    private String description;
-    private Instant publishedAt;
+    private Language language;
+    private Topic topic;
 
 }

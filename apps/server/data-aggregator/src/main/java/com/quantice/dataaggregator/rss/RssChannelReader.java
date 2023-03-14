@@ -7,4 +7,6 @@ public interface RssChannelReader {
 
     Flux<Entry> readChannel(String url);
 
+    void saveChannels();
+
 }
