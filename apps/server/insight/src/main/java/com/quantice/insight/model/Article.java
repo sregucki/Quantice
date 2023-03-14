@@ -7,7 +7,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.TextScore;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,10 +21,19 @@ public class Article {
 
     @Id
     private String id;
+
+    @TextIndexed(weight = 3)
     private String url;
+
+    @TextIndexed(weight = 5)
     private String title;
+
+    @TextIndexed(weight = 2)
     private String description;
-    private String author;
+
     private Instant publishedAt;
+
+    @TextScore
+    private Float score;
 
 }
