@@ -40,7 +40,7 @@ public class RssUtilsImpl implements RssUtils {
 
         } catch (IOException | FeedException | IllegalArgumentException e) {
 
-            LOGGER.error(String.format("Error while processing channel of url: %s\nError message: %s", url, e.getMessage()));
+            LOGGER.warn(String.format("Error while processing channel of url: %s\nError message: %s", url, e.getMessage()));
             return Optional.empty();
         }
 
@@ -59,7 +59,7 @@ public class RssUtilsImpl implements RssUtils {
 
         } catch (IOException e) {
 
-            LOGGER.error(String.format("Error while processing channel of url: %s\nError message: %s", url, e.getMessage()));
+            LOGGER.warn(String.format("Error while processing channel of url: %s\nError message: %s", url, e.getMessage()));
             return false;
         }
         return true;

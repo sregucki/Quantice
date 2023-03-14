@@ -44,11 +44,11 @@ public class RssChannelReaderImpl implements RssChannelReader {
         Optional<SyndFeed> syndFeed = rssUtils.getParsingResult(url);
 
         if (!rssUtils.isActive(url)) {
-            LOGGER.error(String.format("Rss channel of url: %s is inactive", url));
+            LOGGER.warn(String.format("Rss channel of url: %s is inactive", url));
             return Flux.empty();
         }
         if (syndFeed.isEmpty()) {
-            LOGGER.error(String.format("Rss channel of url: %s is not parsable", url));
+            LOGGER.warn(String.format("Rss channel of url: %s is not parsable", url));
             return Flux.empty();
         }
 
