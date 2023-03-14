@@ -1,18 +1,21 @@
 package com.quantice.insight.service;
 
-import static java.util.stream.Collectors.groupingBy;
-
 import com.quantice.insight.config.ArticleApiConstants;
 import com.quantice.insight.model.Article;
 import com.quantice.insight.repository.ArticleRepository;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.TextCriteria;
+import org.springframework.data.mongodb.core.query.TextQuery;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -20,6 +23,7 @@ import org.springframework.stereotype.Service;
 public class RssArticleService {
 
     private final ArticleRepository articleRepository;
+    private final MongoTemplate mongoTemplate;
     private static final Logger LOGGER = LoggerFactory.getLogger(RssArticleService.class);
 
     public List<Article> findArticles(final String keyword, final Optional<String> from, final Optional<String> to, final Optional<Integer> limit) {
@@ -31,7 +35,7 @@ public class RssArticleService {
             fromInstant = Instant.parse(from.get());
         }
         else {
-            fromInstant = Instant.now().minus(365, ChronoUnit.DAYS);
+            fromInstant = Instant.now().minus(60, ChronoUnit.DAYS);
         }
 
         if (to.isPresent()) {
@@ -41,23 +45,29 @@ public class RssArticleService {
             toInstant = Instant.now();
         }
 
-        final List<Article> articles = new ArrayList<>();
-        articles.addAll(articleRepository.findTop100ByUrlContainingIgnoreCaseAndPublishedAtBetweenOrderByPublishedAt(keyword, fromInstant, toInstant));
-        articles.addAll(articleRepository.findTop100ByTitleContainingIgnoreCaseAndPublishedAtBetweenOrderByPublishedAt(keyword, fromInstant, toInstant));
-        articles.addAll(articleRepository.findTop100ByDescriptionContainingIgnoreCaseAndPublishedAtBetweenOrderByPublishedAt(keyword, fromInstant, toInstant));
-        LOGGER.info(String.format("Processing articles request:\n%s",articles));
+        // Full text search for other languages needs to be set up here
+        TextCriteria textCriteria = TextCriteria
+            .forDefaultLanguage()
+            .matchingPhrase(keyword);
+        Query query = TextQuery.queryText(textCriteria).sortByScore(); // Sort articles by score
+
+        final List<Article> articles = new ArrayList<>(
+            mongoTemplate.find(query, Article.class)
+        );
+
         return articles
             .stream()
-            .collect(groupingBy(Article::getUrl))
-            .values()
-            .stream()
-            .flatMap(values -> values.stream().limit(1))
-            .collect(groupingBy(Article::getTitle))
-            .values()
-            .stream()
-            .flatMap(values -> values.stream().limit(1))
-            .limit(limit.orElse(ArticleApiConstants.DEFAULT_LIMIT_ARTICLES.getArticlesLimit()))
+            .filter(article -> article.getPublishedAt() != null)
+            .filter(article ->
+                article.getPublishedAt().isAfter(fromInstant) && article.getPublishedAt().isBefore(toInstant) // Pick articles only within specified time range
+            )
+            .limit(limit.orElse(ArticleApiConstants.DEFAULT_LIMIT_ARTICLES.getArticlesLimit())) // Pick n articles with the best score
+            .sorted(Comparator.comparing(Article::getPublishedAt).reversed()) // Sort articles by publish date
             .toList();
+    }
+
+    public long countArticles() {
+        return articleRepository.count();
     }
 
 }
