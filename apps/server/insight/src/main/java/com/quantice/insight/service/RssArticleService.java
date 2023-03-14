@@ -60,4 +60,8 @@ public class RssArticleService {
             .toList();
     }
 
+    public long countArticles() {
+        return articleRepository.count();
+    }
+
 }
