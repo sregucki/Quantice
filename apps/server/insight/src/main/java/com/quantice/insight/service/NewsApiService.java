@@ -36,7 +36,6 @@ public class NewsApiService {
 
         return apiArticles.stream().map(apiArticle -> Article.builder()
             .url(String.valueOf(apiArticle.get("url")))
-            .author(String.valueOf(apiArticle.get("author")))
             .title(String.valueOf(apiArticle.get("title")))
             .publishedAt(Instant.parse(String.valueOf(apiArticle.get("publishedAt"))))
             .description(String.valueOf(apiArticle.get("description")))
