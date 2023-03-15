@@ -45,7 +45,7 @@
           <div class="articles-list">
             <div class="article-main" *ngFor="let article of initArticles">
               <div class="article-thumbnail">
-                <div class="thumbnail">
+                <div class="thumbnail" (click)="redirect(article.url)">
                   <img src="assets/quantice-logo.png" alt="image" height="80">
                 </div>
               </div>
@@ -53,8 +53,8 @@
                 <div class="article-title" (click)="redirect(article.url)">
                   <span>{{article.title}}</span>
                 </div>
-                <div class="article-content">
-                  <span>{{article.description}}</span>
+                <div class="article-content" (click)="redirect(article.url)">
+                  <span *ngIf="article.description.split('. ')[0].length < 250">{{article.description.split('. ')[0] + '...'}}</span>
                 </div>
                 <div class="article-footer">
                   <span>{{parseInstant(article.publishedAt)}}</span>

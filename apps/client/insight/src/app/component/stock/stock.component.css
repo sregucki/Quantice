@@ -191,6 +191,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
 }
 
 .thumbnail {
@@ -229,6 +230,7 @@
   color: #8d8c8c;
   text-align: justify;
   margin-right: 15%;
+  cursor: pointer;
 }
 
 .article-footer {
