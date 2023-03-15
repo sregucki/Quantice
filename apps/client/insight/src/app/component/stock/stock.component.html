@@ -1,5 +1,5 @@
 <div class="main">
-  <div class="navbar"><span>navbar here</span></div>
+  <div class="navbar"></div>
   <div class="content">
     <div class="charts-main">
       <div [chart]="stockChart" class="chart">
@@ -65,7 +65,25 @@
           </div>
         </div>
         <div class="articles-search">
-          <span>articles search params here</span>
+          <form class="form" [formGroup]="articleSearchForm" (ngSubmit)="onSubmit()">
+            <div class="search-input">
+              <label class="search-label">keywords</label>
+              <input class="input--style-1" type="text" formControlName="articleSearchKeywords">
+            </div>
+            <div class="search-date">
+              <div class="search-input">
+                <label class="search-label">from</label>
+                <input class="input--style-1" type="date" formControlName="articleSearchDateFrom">
+              </div>
+              <div class="search-input">
+                <label class="search-label">to</label>
+                <input class="input--style-1" type="date" formControlName="articleSearchDateTo">
+              </div>
+            </div>
+            <div class="search-button">
+              <button class="btn-submit" type="submit">Search</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

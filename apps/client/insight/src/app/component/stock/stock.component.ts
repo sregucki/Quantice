@@ -7,6 +7,7 @@ import {Article} from "../../model/article";
 import {StockChart} from "angular-highcharts";
 import {StockChartService} from "../../service/stock-chart-service/stock-chart.service";
 import {StockService} from "../../service/stock-service/stock.service";
+import {FormBuilder, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-stock',
@@ -24,9 +25,11 @@ export class StockComponent implements OnInit {
   lastPrice: number;
   lastPriceChange: number;
   lastPriceChangePercent: number;
+  articleSearchForm: FormGroup;
 
   constructor(private location: Location, private router: Router, private articleService: ArticleService,
-              private stockChartService: StockChartService, private stockService: StockService) {
+              private stockChartService: StockChartService, private stockService: StockService,
+              fb: FormBuilder) {
 
     const navigation = this.router.getCurrentNavigation();
     const state = navigation?.extras.state as {
@@ -35,6 +38,11 @@ export class StockComponent implements OnInit {
     };
     this.ticker = state.ticker;
     this.stockName = state.stockName;
+    this.articleSearchForm = fb.group({
+      articleSearchKeywords: [''],
+      articleSearchDateFrom: [''],
+      articleSearchDateTo: [''],
+    })
   }
 
   ngOnInit(): void {
@@ -87,6 +95,10 @@ export class StockComponent implements OnInit {
   parseInstant(instant: string) {
     const d = new Date(instant);
     return d.toDateString();
+  }
+
+  onSubmit() {
+    console.log(this.articleSearchForm.value)
   }
 
 }
