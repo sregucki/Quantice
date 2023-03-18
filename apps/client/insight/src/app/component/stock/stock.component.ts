@@ -8,6 +8,7 @@ import {StockChart} from "angular-highcharts";
 import {StockChartService} from "../../service/stock-chart-service/stock-chart.service";
 import {StockService} from "../../service/stock-service/stock.service";
 import {FormBuilder, FormGroup} from "@angular/forms";
+import {Notyf} from "notyf";
 
 @Component({
   selector: 'app-stock',
@@ -98,10 +99,32 @@ export class StockComponent implements OnInit {
   }
 
   onSubmit() {
-    this.articleService.getArticlesRss(this.articleSearchForm.value['articleSearchKeywords'].split(' ')).subscribe(data => {
-      this.initArticles = data;
-      this.headers = Object.keys(this.initArticles[0]).slice(1);
+    const keywords = this.articleSearchForm.value['articleSearchKeywords'];
+    var notyf = new Notyf({
+      duration: 4000,
+      position: {
+        x: 'right',
+        y: 'bottom'
+      },
+      types: [
+
+      ]
     });
+    if (keywords.length > 0){
+      this.articleService.getArticlesRss(keywords.split(' ')).subscribe(data => {
+        this.initArticles = data;
+        if (data.length > 0) {
+          this.headers = Object.keys(this.initArticles[0]).slice(1);
+        }
+        else {
+          notyf.open({
+            type: 'error',
+            message: 'Articles not found!\nPlease refine your search criteria to narrow the results.'
+          })
+        }
+      });
+    }
   }
+
 
 }
