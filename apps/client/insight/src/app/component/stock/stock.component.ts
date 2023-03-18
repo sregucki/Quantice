@@ -47,7 +47,7 @@ export class StockComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.articleService.getArticlesRss(this.stockName).subscribe(data => {
+    this.articleService.getArticlesRss([this.stockName]).subscribe(data => {
       this.initArticles = data;
       this.headers = Object.keys(this.initArticles[0]).slice(1);
     });
@@ -98,7 +98,10 @@ export class StockComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.articleSearchForm.value)
+    this.articleService.getArticlesRss(this.articleSearchForm.value['articleSearchKeywords'].split(' ')).subscribe(data => {
+      this.initArticles = data;
+      this.headers = Object.keys(this.initArticles[0]).slice(1);
+    });
   }
 
 }
