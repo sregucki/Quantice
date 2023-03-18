@@ -70,16 +70,16 @@
           <form class="form" [formGroup]="articleSearchForm" (ngSubmit)="onSubmit()">
             <div class="search-input">
               <label class="search-label">keywords</label>
-              <input class="input--style-1" type="text" formControlName="articleSearchKeywords">
+              <input id="articleSearchKeywords" class="input--style-1" type="text" formControlName="articleSearchKeywords">
             </div>
             <div class="search-date">
               <div class="search-input">
                 <label class="search-label">from</label>
-                <input class="input--style-1" type="date" formControlName="articleSearchDateFrom">
+                <input id="articleSearchDateFrom" class="input--style-1" type="date" formControlName="articleSearchDateFrom" required>
               </div>
               <div class="search-input">
                 <label class="search-label">to</label>
-                <input class="input--style-1" type="date" formControlName="articleSearchDateTo">
+                <input id="articleSearchDateTo" class="input--style-1" type="date" formControlName="articleSearchDateTo" required>
               </div>
             </div>
             <div class="search-button">

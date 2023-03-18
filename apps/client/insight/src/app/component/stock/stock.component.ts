@@ -22,7 +22,6 @@ export class StockComponent implements OnInit {
   initArticles: Article[];
   stockChart: StockChart;
   ticker: string;
-  // lastPrice: string;
   lastPrice: number;
   lastPriceChange: number;
   lastPriceChangePercent: number;
@@ -124,6 +123,9 @@ export class StockComponent implements OnInit {
         }
       });
     }
+    // (document.getElementById('articleSearchKeywords') as HTMLInputElement).value = '';
+    // (document.getElementById('articleSearchDateFrom') as HTMLInputElement).value = '';
+    // (document.getElementById('articleSearchDateTo') as HTMLInputElement).value = '';
   }
 
 
