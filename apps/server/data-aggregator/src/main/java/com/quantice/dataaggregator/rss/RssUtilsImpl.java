@@ -1,24 +1,32 @@
 package com.quantice.dataaggregator.rss;
 
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvValidationException;
+import com.quantice.dataaggregator.model.Entry;
 import com.quantice.dataaggregator.model.Language;
 import com.quantice.dataaggregator.repository.ChannelRepository;
+import com.rometools.rome.feed.synd.SyndContent;
 import com.rometools.rome.feed.synd.SyndFeed;
 import com.rometools.rome.io.FeedException;
 import com.rometools.rome.io.SyndFeedInput;
 import com.rometools.rome.io.XmlReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
+import org.jsoup.Jsoup;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
-import reactor.core.publisher.Flux;
 
 @Component
 @RequiredArgsConstructor
@@ -69,18 +77,55 @@ public class RssUtilsImpl implements RssUtils {
     }
 
     @Override
-    public Flux<String> getChannelsUrls(Language language) {
+    public List<Entry> readEntries(SyndFeed syndFeed) {
+
+        return syndFeed.getEntries().stream().map(rssEntry -> {
+
+            Optional<SyndContent> description = Optional.ofNullable(rssEntry.getDescription());
+            Instant publishedAt = null;
+            if (rssEntry.getPublishedDate() != null) {
+                publishedAt = rssEntry.getPublishedDate().toInstant();
+            }
+            String descriptionValue = description.map(syndContent -> Jsoup.parse(syndContent.getValue()).text()).orElse("");
+
+            return Entry.builder()
+                .url(rssEntry.getLink())
+                .title(rssEntry.getTitle())
+                .description(descriptionValue)
+                .publishedAt(publishedAt)
+                .build();
+
+        }).toList();
+    }
+
+    @Override
+    public List<String> getChannelsUrls(Language language) {
 
         List<String> channels = new ArrayList<>(
-            channelRepository.findAll().mapNotNull(channel -> {
+            channelRepository.findAll().stream().map(channel -> {
                 if (channel.getLanguage() == language) {
                     return channel.getUrl();
                 }
                 return null;
-            }).filter(Objects::nonNull).toStream().toList());
+            }).filter(Objects::nonNull).toList());
 
         Collections.shuffle(channels);
-        return Flux.fromIterable(channels);
+        return channels;
+    }
+
+    @Override
+    public List<List<String>> getCsvRecords(String fileName) {
+
+        List<List<String>> records = new ArrayList<>();
+        try (CSVReader csvReader = new CSVReader(new InputStreamReader(new ClassPathResource(fileName + ".csv").getInputStream()))) {
+            String[] values;
+            while ((values = csvReader.readNext()) != null) {
+                records.add(Arrays.asList(values));
+            }
+        } catch (IOException | CsvValidationException e) {
+            throw new RuntimeException(e);
+        }
+        return records;
     }
 
 }

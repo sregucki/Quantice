@@ -17,11 +17,14 @@ public class RssSchedule {
 
     /**
      * Fetch all data from rss after every 60 minutes
-     *
      */
     @Scheduled(fixedRate = 3600000)
-    public void aggregateRss() {
-        rssUtils.getChannelsUrls(rssProperties.getLanguage()).flatMap(rssChannelReader::readChannel).subscribe();
+    public void fetchArticles() {
+        rssUtils.getChannelsUrls(rssProperties.getLanguage())
+            .stream()
+            .map(rssChannelReader::readChannel)
+            .toList();
     }
+
 
 }

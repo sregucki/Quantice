@@ -2,30 +2,29 @@ package com.quantice.dataaggregator.config.mongo;
 
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
-import com.mongodb.reactivestreams.client.MongoClient;
-import com.mongodb.reactivestreams.client.MongoClients;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.mongodb.config.AbstractReactiveMongoConfiguration;
-import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
+import org.springframework.data.mongodb.config.AbstractMongoClientConfiguration;
+import org.springframework.data.mongodb.core.MongoTemplate;
 
 @Configuration
-@ConfigurationPropertiesScan(basePackageClasses = MongoProperties.class)
 @RequiredArgsConstructor
-public class MongoConfig extends AbstractReactiveMongoConfiguration {
+@ConfigurationPropertiesScan(basePackageClasses = MongoProperties.class)
+public class MongoConfig extends AbstractMongoClientConfiguration {
 
     private final MongoProperties mongoProperties;
 
-    @Bean
     @NonNull
-    public MongoClient reactiveMongoClient() {
+    @Bean
+    public MongoClient mongoClient() {
 
-        ConnectionString connectionString = new ConnectionString("""
-                mongodb://%s:%s/%s
-                """.formatted(mongoProperties.getHostname(), mongoProperties.getPort(), mongoProperties.getDatabaseName()));
+        ConnectionString connectionString = new ConnectionString(
+                String.format("mongodb://%s:%s/%s", mongoProperties.getHostname(), mongoProperties.getPort(), mongoProperties.getDatabaseName()));
 
         MongoClientSettings mongoClientSettings = MongoClientSettings.builder()
             .applyConnectionString(connectionString)
@@ -35,12 +34,12 @@ public class MongoConfig extends AbstractReactiveMongoConfiguration {
     }
 
     @Bean
-    public ReactiveMongoTemplate reactiveMongoTemplate() {
-        return new ReactiveMongoTemplate(reactiveMongoClient(), getDatabaseName());
+    public MongoTemplate mongoTemplate() {
+        return new MongoTemplate(mongoClient(), getDatabaseName());
     }
 
-    @Override
     @NonNull
+    @Override
     protected String getDatabaseName() {
         return mongoProperties.getDatabaseName();
     }
