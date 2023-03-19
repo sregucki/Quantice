@@ -1,12 +1,10 @@
 package com.quantice.dataaggregator.repository;
 
-
 import com.quantice.dataaggregator.model.Entry;
-import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
-import reactor.core.publisher.Mono;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface EntryRepository extends ReactiveMongoRepository<Entry, String> {
+public interface EntryRepository extends MongoRepository<Entry, String> {
 
-    Mono<Boolean> existsByUrl(String url);
+    boolean existsByUrl(String url);
 
 }

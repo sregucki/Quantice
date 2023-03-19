@@ -1,12 +1,13 @@
 package com.quantice.dataaggregator.rss;
 
+import com.quantice.dataaggregator.model.Channel;
 import com.quantice.dataaggregator.model.Entry;
-import reactor.core.publisher.Flux;
+import java.util.List;
 
 public interface RssChannelReader {
 
-    Flux<Entry> readChannel(String url);
+    List<Entry> readChannel(String url);
 
-    void saveChannels();
+    List<Channel> saveChannels();
 
 }
