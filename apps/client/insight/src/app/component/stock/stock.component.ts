@@ -7,7 +7,7 @@ import {Article} from "../../model/article";
 import {StockChart} from "angular-highcharts";
 import {StockChartService} from "../../service/stock-chart-service/stock-chart.service";
 import {StockService} from "../../service/stock-service/stock.service";
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {FormBuilder, FormGroup, ValidatorFn, Validators} from "@angular/forms";
 import {Notyf} from "notyf";
 
 @Component({
@@ -43,12 +43,13 @@ export class StockComponent implements OnInit {
         Validators.required,
         Validators.pattern(/[\S]/g),
       ]],
-      articleSearchDateFrom: [null],
-      articleSearchDateTo: [null],
-    }, {
-      updateOn: 'submit'
-    });
+      articleSearchDateFrom: [null, [Validators.required, this.dateRangeValidator]],
+      articleSearchDateTo: [null, [Validators.required, this.dateRangeValidator]],
 
+    },
+      {
+        updateOn: 'submit'
+      });
   }
 
   ngOnInit(): void {
@@ -117,10 +118,10 @@ export class StockComponent implements OnInit {
     });
 
     const keywords = this.articleSearchForm.value['articleSearchKeywords'];
-    const articleSearchDateFrom = this.articleSearchForm.value['articleSearchDateFrom'];
-    const articleSearchDateTo = this.articleSearchForm.value['articleSearchDateTo'];
+    const articleSearchDateFrom = new Date(this.articleSearchForm.value['articleSearchDateFrom']);
+    const articleSearchDateTo = new Date(this.articleSearchForm.value['articleSearchDateTo']);
     if (keywords.length > 0){
-      this.articleService.getArticlesRss(keywords.split(' '), articleSearchDateFrom, articleSearchDateTo).subscribe(data => {
+      this.articleService.getArticlesRss(keywords.split(' '), new Date(articleSearchDateFrom), new Date(articleSearchDateTo)).subscribe(data => {
         this.initArticles = data;
         if (data.length > 0) {
           this.headers = Object.keys(this.initArticles[0]).slice(1);
@@ -133,10 +134,19 @@ export class StockComponent implements OnInit {
         }
       });
     }
-    // (document.getElementById('articleSearchKeywords') as HTMLInputElement).value = '';
-    // (document.getElementById('articleSearchDateFrom') as HTMLInputElement).value = '';
-    // (document.getElementById('articleSearchDateTo') as HTMLInputElement).value = '';
   }
 
+  private dateRangeValidator: ValidatorFn = (): {
+    [key: string]: boolean;
+  } | null => {
+    let invalid = false;
+    const from = this.articleSearchForm && this.articleSearchForm.get("articleSearchDateFrom")!.value;
+    const to = this.articleSearchForm && this.articleSearchForm.get("articleSearchDateTo")!.value;
+    console.log(new Date(from).valueOf(), new Date(to).valueOf())
+    if (from && to) {
+      invalid = new Date(from).valueOf() >= new Date(to).valueOf();
+    }
+    return invalid ? { invalidRange: true }  : null;
+  };
 
 }

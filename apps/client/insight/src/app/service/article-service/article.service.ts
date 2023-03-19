@@ -23,7 +23,7 @@ export class ArticleService {
   constructor(private apollo: Apollo) {
   }
 
-  public getArticlesRss(keywords: string[], from: string | null, to: string | null): Observable<Article[]> {
+  public getArticlesRss(keywords: string[], from: Date | null, to: Date | null): Observable<Article[]> {
     return this.apollo.watchQuery<any>({
       query: queryFindArticlesRss,
       variables: {

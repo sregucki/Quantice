@@ -4,7 +4,7 @@
     <div class="charts-main">
       <div class="chart-explicit">
         <div [chart]="stockChart" class="chart">
-      </div>
+        </div>
       </div>
       <div class="chart-info">
         <div class="stock-name">
@@ -17,7 +17,7 @@
           <i class="fa-solid"
              [ngClass]="lastPriceChange > 0 ? 'fa-caret-up': 'fa-caret-down'"
              [ngStyle]="{'color': (lastPriceChange > 0) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}"
-          style="font-size: 1.2em; margin-right: 3px">
+             style="font-size: 1.2em; margin-right: 3px">
           </i>
           <span class="stock-price-change" [ngClass]="{
           'positive': lastPriceChange > 0,
@@ -56,7 +56,9 @@
                   <span>{{article.title}}</span>
                 </div>
                 <div class="article-content" (click)="redirect(article.url)">
-                  <span *ngIf="article.description.split('. ')[0].length < 250">{{article.description.split('. ')[0] + '...'}}</span>
+                  <span
+                    *ngIf="article.description.split('. ')[0].length < 250">{{article.description.split(
+                    '. ')[0] + '...'}}</span>
                 </div>
                 <div class="article-footer">
                   <span>{{parseInstant(article.publishedAt)}}</span>
@@ -67,23 +69,34 @@
           </div>
         </div>
         <div class="articles-search">
-          <form class="articleSearchForm form" [formGroup]="articleSearchForm" (ngSubmit)="onSubmit()" #formDir="ngForm">
+          <form class="articleSearchForm form" [formGroup]="articleSearchForm"
+                (ngSubmit)="onSubmit()" #formDir="ngForm">
             <div class="search-input" style="margin-right: 2%" [ngStyle]="{
             'border' : (articleSearchForm.hasError('pattern', 'articleSearchKeywords') ||
             articleSearchForm.hasError('required', 'articleSearchKeywords'))  &&
             formDir.submitted ? 'solid crimson 2px': 'none'
             }">
               <label class="search-label">keywords</label>
-              <input id="articleSearchKeywords" class="input--style-1" type="text" formControlName="articleSearchKeywords">
+              <input id="articleSearchKeywords" class="input--style-1" type="text"
+                     formControlName="articleSearchKeywords">
             </div>
             <div class="search-date">
-              <div class="search-input">
+              <div class="search-input" [ngStyle]="{
+            'border' : (articleSearchForm.hasError('invalidRange', 'articleSearchDateFrom') ||
+            articleSearchForm.hasError('required', 'articleSearchKeywords')) &&
+            formDir.submitted ? 'solid crimson 2px': 'none'
+            }">
                 <label class="search-label">from</label>
                 <input id="articleSearchDateFrom" class="input--style-1" type="date" formControlName="articleSearchDateFrom" required>
               </div>
-              <div class="search-input">
+              <div class="search-input" [ngStyle]="{
+            'border' : (articleSearchForm.hasError('invalidRange', 'articleSearchDateFrom') ||
+            articleSearchForm.hasError('required', 'articleSearchKeywords')) &&
+            formDir.submitted ? 'solid crimson 2px': 'none'
+            }">
                 <label class="search-label">to</label>
-                <input id="articleSearchDateTo" class="input--style-1" type="date" formControlName="articleSearchDateTo" required>
+                <input id="articleSearchDateTo" class="input--style-1" type="date"
+                       formControlName="articleSearchDateTo" required>
               </div>
             </div>
             <div class="search-button">
