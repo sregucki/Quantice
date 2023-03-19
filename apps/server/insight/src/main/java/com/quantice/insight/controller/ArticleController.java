@@ -17,9 +17,8 @@ public class ArticleController {
     private final RssArticleService rssArticleService;
 
     @QueryMapping
-    public List<Article> findArticlesRss(@Argument String keyword, @Argument String from, @Argument String to, @Argument Integer limit) {
-
-        return rssArticleService.findArticles(keyword, Optional.ofNullable(from), Optional.ofNullable(to), Optional.ofNullable(limit));
+    public List<Article> findArticlesRss(@Argument List<String> keywords, @Argument String from, @Argument String to, @Argument Integer limit) {
+        return rssArticleService.findArticles(keywords, Optional.ofNullable(from), Optional.ofNullable(to), Optional.ofNullable(limit));
     }
 
     @GetMapping("/articles/count")

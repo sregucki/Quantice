@@ -7,6 +7,8 @@ import {Article} from "../../model/article";
 import {StockChart} from "angular-highcharts";
 import {StockChartService} from "../../service/stock-chart-service/stock-chart.service";
 import {StockService} from "../../service/stock-service/stock.service";
+import {FormBuilder, FormGroup, ValidatorFn, Validators} from "@angular/forms";
+import {Notyf} from "notyf";
 
 @Component({
   selector: 'app-stock',
@@ -20,13 +22,14 @@ export class StockComponent implements OnInit {
   initArticles: Article[];
   stockChart: StockChart;
   ticker: string;
-  // lastPrice: string;
   lastPrice: number;
   lastPriceChange: number;
   lastPriceChangePercent: number;
+  articleSearchForm: FormGroup;
 
   constructor(private location: Location, private router: Router, private articleService: ArticleService,
-              private stockChartService: StockChartService, private stockService: StockService) {
+              private stockChartService: StockChartService, private stockService: StockService,
+              fb: FormBuilder) {
 
     const navigation = this.router.getCurrentNavigation();
     const state = navigation?.extras.state as {
@@ -35,11 +38,23 @@ export class StockComponent implements OnInit {
     };
     this.ticker = state.ticker;
     this.stockName = state.stockName;
+    this.articleSearchForm = fb.group({
+      articleSearchKeywords: [null, [
+        Validators.required,
+        Validators.pattern(/[\S]/g),
+      ]],
+      articleSearchDateFrom: [null, [Validators.required, this.dateRangeValidator]],
+      articleSearchDateTo: [null, [Validators.required, this.dateRangeValidator]],
+
+    },
+      {
+        updateOn: 'submit'
+      });
   }
 
   ngOnInit(): void {
 
-    this.articleService.getArticlesRss(this.stockName).subscribe(data => {
+    this.articleService.getArticlesRss([this.stockName], null, null).subscribe(data => {
       this.initArticles = data;
       this.headers = Object.keys(this.initArticles[0]).slice(1);
     });
@@ -88,5 +103,50 @@ export class StockComponent implements OnInit {
     const d = new Date(instant);
     return d.toDateString();
   }
+
+  onSubmit() {
+    if (!this.articleSearchForm.valid) {
+      return;
+    }
+    const notyf = new Notyf({
+      duration: 4000,
+      position: {
+        x: 'right',
+        y: 'bottom'
+      },
+      types: []
+    });
+
+    const keywords = this.articleSearchForm.value['articleSearchKeywords'];
+    const articleSearchDateFrom = new Date(this.articleSearchForm.value['articleSearchDateFrom']);
+    const articleSearchDateTo = new Date(this.articleSearchForm.value['articleSearchDateTo']);
+    if (keywords.length > 0){
+      this.articleService.getArticlesRss(keywords.split(' '), new Date(articleSearchDateFrom), new Date(articleSearchDateTo)).subscribe(data => {
+        this.initArticles = data;
+        if (data.length > 0) {
+          this.headers = Object.keys(this.initArticles[0]).slice(1);
+        }
+        else {
+          notyf.open({
+            type: 'error',
+            message: 'Articles not found!\nPlease refine your search criteria to narrow the results.'
+          })
+        }
+      });
+    }
+  }
+
+  private dateRangeValidator: ValidatorFn = (): {
+    [key: string]: boolean;
+  } | null => {
+    let invalid = false;
+    const from = this.articleSearchForm && this.articleSearchForm.get("articleSearchDateFrom")!.value;
+    const to = this.articleSearchForm && this.articleSearchForm.get("articleSearchDateTo")!.value;
+    console.log(new Date(from).valueOf(), new Date(to).valueOf())
+    if (from && to) {
+      invalid = new Date(from).valueOf() >= new Date(to).valueOf();
+    }
+    return invalid ? { invalidRange: true }  : null;
+  };
 
 }

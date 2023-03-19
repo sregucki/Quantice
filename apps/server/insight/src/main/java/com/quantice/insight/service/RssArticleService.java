@@ -3,6 +3,7 @@ package com.quantice.insight.service;
 import com.quantice.insight.config.ArticleApiConstants;
 import com.quantice.insight.model.Article;
 import com.quantice.insight.repository.ArticleRepository;
+import java.lang.reflect.Method;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
@@ -26,7 +27,7 @@ public class RssArticleService {
     private final MongoTemplate mongoTemplate;
     private static final Logger LOGGER = LoggerFactory.getLogger(RssArticleService.class);
 
-    public List<Article> findArticles(final String keyword, final Optional<String> from, final Optional<String> to, final Optional<Integer> limit) {
+    public List<Article> findArticles(final List<String> keywords, final Optional<String> from, final Optional<String> to, final Optional<Integer> limit) {
 
         Instant fromInstant;
         Instant toInstant;
@@ -45,12 +46,7 @@ public class RssArticleService {
             toInstant = Instant.now();
         }
 
-        // Full text search for other languages needs to be set up here
-        TextCriteria textCriteria = TextCriteria
-            .forDefaultLanguage()
-            .matchingPhrase(keyword);
-        Query query = TextQuery.queryText(textCriteria).sortByScore(); // Sort articles by score
-
+        Query query = TextQuery.queryText(getTextCriteriaMultipleMatch(keywords)).sortByScore();
         final List<Article> articles = new ArrayList<>(
             mongoTemplate.find(query, Article.class)
         );
@@ -68,6 +64,23 @@ public class RssArticleService {
 
     public long countArticles() {
         return articleRepository.count();
+    }
+
+    private TextCriteria getTextCriteriaMultipleMatch(List<String> keywords) {
+
+        TextCriteria textCriteria = TextCriteria.forDefaultLanguage();
+
+        for (String keyword: keywords) {
+            try {
+                Method method = textCriteria.getClass().getMethod("matchingPhrase", String.class);
+                textCriteria = (TextCriteria) method.invoke(textCriteria, keyword);
+            }
+            catch (Exception e) {
+                LOGGER.error("Error while chaining matchingPrase for keywords");
+                e.printStackTrace();
+            }
+        }
+        return textCriteria;
     }
 
 }
