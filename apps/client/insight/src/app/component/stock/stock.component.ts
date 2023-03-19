@@ -7,7 +7,7 @@ import {Article} from "../../model/article";
 import {StockChart} from "angular-highcharts";
 import {StockChartService} from "../../service/stock-chart-service/stock-chart.service";
 import {StockService} from "../../service/stock-service/stock.service";
-import {FormBuilder, FormGroup} from "@angular/forms";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Notyf} from "notyf";
 
 @Component({
@@ -39,15 +39,21 @@ export class StockComponent implements OnInit {
     this.ticker = state.ticker;
     this.stockName = state.stockName;
     this.articleSearchForm = fb.group({
-      articleSearchKeywords: [''],
-      articleSearchDateFrom: [''],
-      articleSearchDateTo: [''],
-    })
+      articleSearchKeywords: [null, [
+        Validators.required,
+        Validators.pattern(/[\S]/g),
+      ]],
+      articleSearchDateFrom: [null],
+      articleSearchDateTo: [null],
+    }, {
+      updateOn: 'submit'
+    });
+
   }
 
   ngOnInit(): void {
 
-    this.articleService.getArticlesRss([this.stockName]).subscribe(data => {
+    this.articleService.getArticlesRss([this.stockName], null, null).subscribe(data => {
       this.initArticles = data;
       this.headers = Object.keys(this.initArticles[0]).slice(1);
     });
@@ -98,19 +104,23 @@ export class StockComponent implements OnInit {
   }
 
   onSubmit() {
-    const keywords = this.articleSearchForm.value['articleSearchKeywords'];
-    var notyf = new Notyf({
+    if (!this.articleSearchForm.valid) {
+      return;
+    }
+    const notyf = new Notyf({
       duration: 4000,
       position: {
         x: 'right',
         y: 'bottom'
       },
-      types: [
-
-      ]
+      types: []
     });
+
+    const keywords = this.articleSearchForm.value['articleSearchKeywords'];
+    const articleSearchDateFrom = this.articleSearchForm.value['articleSearchDateFrom'];
+    const articleSearchDateTo = this.articleSearchForm.value['articleSearchDateTo'];
     if (keywords.length > 0){
-      this.articleService.getArticlesRss(keywords.split(' ')).subscribe(data => {
+      this.articleService.getArticlesRss(keywords.split(' '), articleSearchDateFrom, articleSearchDateTo).subscribe(data => {
         this.initArticles = data;
         if (data.length > 0) {
           this.headers = Object.keys(this.initArticles[0]).slice(1);
