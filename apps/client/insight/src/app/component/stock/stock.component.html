@@ -69,7 +69,9 @@
         <div class="articles-search">
           <form class="articleSearchForm form" [formGroup]="articleSearchForm" (ngSubmit)="onSubmit()" #formDir="ngForm">
             <div class="search-input" style="margin-right: 2%" [ngStyle]="{
-            'border' : articleSearchForm.hasError('required', 'articleSearchKeywords') && formDir.submitted ? 'solid crimson 2px': 'none'
+            'border' : (articleSearchForm.hasError('pattern', 'articleSearchKeywords') ||
+            articleSearchForm.hasError('required', 'articleSearchKeywords'))  &&
+            formDir.submitted ? 'solid crimson 2px': 'none'
             }">
               <label class="search-label">keywords</label>
               <input id="articleSearchKeywords" class="input--style-1" type="text" formControlName="articleSearchKeywords">
