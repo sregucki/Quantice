@@ -397,3 +397,31 @@ input[type=date] {
   padding-right: 30px;
 }
 
+.chart-type-icons {
+  width: 700px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3px;
+}
+
+.chart-type-icon {
+  border: solid 1px #666;
+  height: 100%;
+  width: 30px;
+  border-radius: 3px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.chart-type-icon:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(1px);
+}
+
+

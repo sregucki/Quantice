@@ -27,8 +27,7 @@ export class StockComponent implements OnInit {
   lastPriceChangePercent: number;
   articleSearchForm: FormGroup;
 
-  constructor(private location: Location, private router: Router, private articleService: ArticleService,
-              private stockChartService: StockChartService, private stockService: StockService,
+  constructor(private location: Location, private router: Router, private articleService: ArticleService, public stockChartService: StockChartService, private stockService: StockService,
               fb: FormBuilder) {
 
     const navigation = this.router.getCurrentNavigation();
@@ -60,13 +59,21 @@ export class StockComponent implements OnInit {
     });
     this.stockService.getStockData(this.ticker, '3y', '1d').subscribe(stockData => {
 
+      const stockDataOpen = stockData['data' as keyof typeof stockData]['Open' as keyof typeof stockData];
+      const stockDataHigh = stockData['data' as keyof typeof stockData]['High' as keyof typeof stockData];
+      const stockDataLow = stockData['data' as keyof typeof stockData]['Low' as keyof typeof stockData];
       const stockDataClose = stockData['data' as keyof typeof stockData]['Close' as keyof typeof stockData];
+      const stockDataVolume = stockData['data' as keyof typeof stockData]['Volume' as keyof typeof stockData];
       const stockDataCloseFormatted = [];
-      for (let [date, price] of Object.entries(stockDataClose)) {
-        stockDataCloseFormatted.push([Date.parse(date), price])
+      const stockDataAll = [];
+      for (let [date, close] of Object.entries(stockDataClose)) {
+        stockDataCloseFormatted.push([Date.parse(date), close])
       }
-      this.stockChart = this.stockChartService.getLineChart(this.ticker, stockDataCloseFormatted)
+      for (let i = 0; i < Object.values(stockDataOpen).length; i++) {
+        stockDataAll.push([Date.parse(Object.keys(stockDataOpen)[i]), Object.values(stockDataOpen)[i], Object.values(stockDataHigh)[i], Object.values(stockDataLow)[i], Object.values(stockDataClose)[i], Object.values(stockDataVolume)[i]]);
+      }
 
+      this.stockChart = this.stockChartService.getLineChart(this.ticker, stockDataAll, stockDataCloseFormatted);
       this.lastPrice = (
         Number(stockDataCloseFormatted[stockDataCloseFormatted.length - 1][1])
       );
@@ -142,7 +149,6 @@ export class StockComponent implements OnInit {
     let invalid = false;
     const from = this.articleSearchForm && this.articleSearchForm.get("articleSearchDateFrom")!.value;
     const to = this.articleSearchForm && this.articleSearchForm.get("articleSearchDateTo")!.value;
-    console.log(new Date(from).valueOf(), new Date(to).valueOf())
     if (from && to) {
       invalid = new Date(from).valueOf() >= new Date(to).valueOf();
     }
