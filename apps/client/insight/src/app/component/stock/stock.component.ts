@@ -74,7 +74,6 @@ export class StockComponent implements OnInit {
       }
 
       this.stockChart = this.stockChartService.getLineChart(this.ticker, stockDataAll, stockDataCloseFormatted);
-      console.log(typeof this.stockChart)
       this.lastPrice = (
         Number(stockDataCloseFormatted[stockDataCloseFormatted.length - 1][1])
       );
