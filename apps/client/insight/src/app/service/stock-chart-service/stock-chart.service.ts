@@ -6,11 +6,13 @@ import {StockChart} from "angular-highcharts";
 })
 export class StockChartService {
 
+  chart: StockChart;
+
   constructor() {
   }
 
-  getLineChart(ticker: string, data: unknown[][]): StockChart {
-    return new StockChart({
+  getLineChart(ticker: string, dataAll: any, dataClose: any): StockChart {
+    this.chart = new StockChart({
       chart: {
         backgroundColor: 'white'
       },
@@ -18,14 +20,42 @@ export class StockChartService {
         selected: 1
       },
       series: [{
+        id: 'line',
         type: 'line',
+        tooltip: {
+          valueDecimals: 2
+        },
+        color:
+          '#3677a8',
+        name: ticker.toUpperCase(),
+        data: dataClose
+      },
+      {
+        id: 'candlestick',
+        type: 'candlestick',
         tooltip: {
           valueDecimals: 2
         },
         color: '#3677a8',
         name: ticker.toUpperCase(),
-        data: data
+        data: dataAll,
+        visible: false
       }]
+    })
+    return this.chart;
+  }
+
+  switchToCandle() {
+    this.chart.ref$.subscribe(ch => {
+      ch.series[0].setVisible(false);
+      ch.series[1].setVisible(true);
+    });
+  }
+
+  switchToLine() {
+    this.chart.ref$.subscribe(ch => {
+      ch.series[1].setVisible(false);
+      ch.series[0].setVisible(true);
     })
   }
 
