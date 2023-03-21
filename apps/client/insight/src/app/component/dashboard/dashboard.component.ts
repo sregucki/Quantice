@@ -52,6 +52,7 @@ export class DashboardComponent {
       },
       err => {
         console.log('Error while routing to: ' + ticker);
+        console.log('Error message:\n' + err);
       });
   }
 
