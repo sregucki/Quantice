@@ -47,7 +47,7 @@
             </div>
             <div class="recent-news-bar-gradient"></div>
           </div>
-          <div class="articles-list">
+          <div class="articles-list" id="articles-list">
             <div class="article-main" *ngFor="let article of initArticles">
               <div class="article-thumbnail">
                 <div class="thumbnail" (click)="redirect(article.url)">
@@ -56,7 +56,7 @@
               </div>
               <div class="article" [ngStyle]="{'background-color': (initArticles.indexOf(article) % 2 == 0) ? 'transparent': '#f3f3f3'}">
                 <div class="article-title" (click)="redirect(article.url)">
-                  <span>{{article.title}}</span>
+                  <span class="article-title-span">{{article.title}}</span>
                 </div>
                 <div class="article-content" (click)="redirect(article.url)">
                 </div>
