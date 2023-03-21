@@ -47,21 +47,18 @@
             </div>
             <div class="recent-news-bar-gradient"></div>
           </div>
-          <div class="articles-list">
+          <div class="articles-list" id="articles-list">
             <div class="article-main" *ngFor="let article of initArticles">
               <div class="article-thumbnail">
                 <div class="thumbnail" (click)="redirect(article.url)">
                   <img src="assets/quantice-logo.png" alt="image" height="80">
                 </div>
               </div>
-              <div class="article">
+              <div class="article" [ngStyle]="{'background-color': (initArticles.indexOf(article) % 2 == 0) ? 'transparent': '#f3f3f3'}">
                 <div class="article-title" (click)="redirect(article.url)">
-                  <span>{{article.title}}</span>
+                  <span class="article-title-span">{{article.title}}</span>
                 </div>
                 <div class="article-content" (click)="redirect(article.url)">
-                  <span
-                    *ngIf="article.description.split('. ')[0].length < 250">{{article.description.split(
-                    '. ')[0] + '...'}}</span>
                 </div>
                 <div class="article-footer">
                   <span>{{parseInstant(article.publishedAt)}}</span>

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {Location} from "@angular/common";
 import {Router} from "@angular/router";
 import {ArticleService} from "../../service/article-service/article.service";
@@ -9,13 +9,16 @@ import {StockChartService} from "../../service/stock-chart-service/stock-chart.s
 import {StockService} from "../../service/stock-service/stock.service";
 import {FormBuilder, FormGroup, ValidatorFn, Validators} from "@angular/forms";
 import {Notyf} from "notyf";
+import {
+  KeywordHighlightService
+} from "../../service/keyword-highligth-service/keyword-highlight.service";
 
 @Component({
   selector: 'app-stock',
   templateUrl: './stock.component.html',
   styleUrls: ['./stock.component.css']
 })
-export class StockComponent implements OnInit {
+export class StockComponent implements OnInit, AfterViewInit {
   sub: Subscription;
   stockName: string;
   headers: string[];
@@ -26,9 +29,10 @@ export class StockComponent implements OnInit {
   lastPriceChange: number;
   lastPriceChangePercent: number;
   articleSearchForm: FormGroup;
+  keywords: string[];
 
   constructor(private location: Location, private router: Router, private articleService: ArticleService, public stockChartService: StockChartService, private stockService: StockService,
-              fb: FormBuilder) {
+              fb: FormBuilder, private keywordHighlightService: KeywordHighlightService) {
 
     const navigation = this.router.getCurrentNavigation();
     const state = navigation?.extras.state as {
@@ -51,9 +55,16 @@ export class StockComponent implements OnInit {
       });
   }
 
-  ngOnInit(): void {
+  ngAfterViewInit() {
+    const observer = new MutationObserver(() => {
+      this.keywordHighlightService.highlightKeywords(this.keywords);
+    });
+    observer.observe(document.getElementById('articles-list') as Node, { childList:true })
+  }
 
-    this.articleService.getArticlesRss([this.stockName], null, null).subscribe(data => {
+  ngOnInit(): void {
+    this.keywords = [this.stockName];
+    this.articleService.getArticlesRss(this.keywords, null, null).subscribe(data => {
       this.initArticles = data;
       this.headers = Object.keys(this.initArticles[0]).slice(1);
     });
@@ -141,6 +152,7 @@ export class StockComponent implements OnInit {
         }
       });
     }
+    this.keywords = keywords.split(' ');
   }
 
   private dateRangeValidator: ValidatorFn = (): {
