@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {Location} from "@angular/common";
 import {Router} from "@angular/router";
 import {ArticleService} from "../../service/article-service/article.service";
@@ -18,7 +18,7 @@ import {
   templateUrl: './stock.component.html',
   styleUrls: ['./stock.component.css']
 })
-export class StockComponent implements OnInit {
+export class StockComponent implements OnInit, AfterViewInit {
   sub: Subscription;
   stockName: string;
   headers: string[];
@@ -53,6 +53,13 @@ export class StockComponent implements OnInit {
       {
         updateOn: 'submit'
       });
+  }
+
+  ngAfterViewInit() {
+    const observer = new MutationObserver(() => {
+      this.keywordHighlightService.highlightKeywords(this.keywords);
+    });
+    observer.observe(document.getElementById('articles-list') as Node, { childList:true })
   }
 
   ngOnInit(): void {
@@ -129,7 +136,6 @@ export class StockComponent implements OnInit {
     });
 
     const keywords = this.articleSearchForm.value['articleSearchKeywords'];
-    this.keywordHighlightService.highlightKeywords([keywords]);
     const articleSearchDateFrom = new Date(this.articleSearchForm.value['articleSearchDateFrom']);
     const articleSearchDateTo = new Date(this.articleSearchForm.value['articleSearchDateTo']);
     if (keywords.length > 0){
@@ -146,6 +152,7 @@ export class StockComponent implements OnInit {
         }
       });
     }
+    this.keywords = keywords.split(' ');
   }
 
   private dateRangeValidator: ValidatorFn = (): {
