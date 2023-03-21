@@ -9,6 +9,9 @@ import {StockChartService} from "../../service/stock-chart-service/stock-chart.s
 import {StockService} from "../../service/stock-service/stock.service";
 import {FormBuilder, FormGroup, ValidatorFn, Validators} from "@angular/forms";
 import {Notyf} from "notyf";
+import {
+  KeywordHighlightService
+} from "../../service/keyword-highligth-service/keyword-highlight.service";
 
 @Component({
   selector: 'app-stock',
@@ -26,9 +29,10 @@ export class StockComponent implements OnInit {
   lastPriceChange: number;
   lastPriceChangePercent: number;
   articleSearchForm: FormGroup;
+  keywords: string[];
 
   constructor(private location: Location, private router: Router, private articleService: ArticleService, public stockChartService: StockChartService, private stockService: StockService,
-              fb: FormBuilder) {
+              fb: FormBuilder, private keywordHighlightService: KeywordHighlightService) {
 
     const navigation = this.router.getCurrentNavigation();
     const state = navigation?.extras.state as {
@@ -52,8 +56,8 @@ export class StockComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
-    this.articleService.getArticlesRss([this.stockName], null, null).subscribe(data => {
+    this.keywords = [this.stockName];
+    this.articleService.getArticlesRss(this.keywords, null, null).subscribe(data => {
       this.initArticles = data;
       this.headers = Object.keys(this.initArticles[0]).slice(1);
     });
@@ -125,6 +129,7 @@ export class StockComponent implements OnInit {
     });
 
     const keywords = this.articleSearchForm.value['articleSearchKeywords'];
+    this.keywordHighlightService.highlightKeywords([keywords]);
     const articleSearchDateFrom = new Date(this.articleSearchForm.value['articleSearchDateFrom']);
     const articleSearchDateTo = new Date(this.articleSearchForm.value['articleSearchDateTo']);
     if (keywords.length > 0){
