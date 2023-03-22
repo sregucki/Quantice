@@ -8,7 +8,6 @@ export class KeywordHighlightService {
   constructor() { }
 
   highlightKeywords(keywords: string[]) {
-    console.log(keywords);
     Array.from(document.getElementsByClassName("article-title-span")).forEach(
       (element, index, array) => {
         keywords.forEach((keyword) => {

@@ -77,14 +77,16 @@ export class StockComponent implements OnInit, AfterViewInit {
       const stockDataVolume = stockData['data' as keyof typeof stockData]['Volume' as keyof typeof stockData];
       const stockDataCloseFormatted = [];
       const stockDataAll = [];
+      const stockDataVolumeFormatted = [];
       for (let [date, close] of Object.entries(stockDataClose)) {
         stockDataCloseFormatted.push([Date.parse(date), close])
       }
       for (let i = 0; i < Object.values(stockDataOpen).length; i++) {
-        stockDataAll.push([Date.parse(Object.keys(stockDataOpen)[i]), Object.values(stockDataOpen)[i], Object.values(stockDataHigh)[i], Object.values(stockDataLow)[i], Object.values(stockDataClose)[i], Object.values(stockDataVolume)[i]]);
+        stockDataAll.push([Date.parse(Object.keys(stockDataOpen)[i]), Object.values(stockDataOpen)[i], Object.values(stockDataHigh)[i], Object.values(stockDataLow)[i], Object.values(stockDataClose)[i]]);
+        stockDataVolumeFormatted.push([Date.parse(Object.keys(stockDataOpen)[i]), Object.values(stockDataVolume)[i]])
       }
 
-      this.stockChart = this.stockChartService.getLineChart(this.ticker, stockDataAll, stockDataCloseFormatted);
+      this.stockChart = this.stockChartService.getLineChart(this.ticker, stockDataAll, stockDataCloseFormatted, stockDataVolumeFormatted);
       this.lastPrice = (
         Number(stockDataCloseFormatted[stockDataCloseFormatted.length - 1][1])
       );
