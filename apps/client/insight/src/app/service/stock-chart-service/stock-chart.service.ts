@@ -26,7 +26,7 @@ export class StockChartService {
         backgroundColor: 'white'
       },
       rangeSelector: {
-        selected: 1
+        selected: 0
       },
       series: [{
         id: 'line',
