@@ -1623,12 +1623,9 @@ nsf.gov,en,science,1,None,http://nsf.gov/rss/rss_www_news.xml,1341
 nrk.no,no,sport,None,NO,http://www.nrk.no/sport/toppsaker.rss,3068
 nr2.com.ua,ru,news,1,None,http://nr2.com.ua/xml/rss.html,147850
 nps.gov,en,travel,1,None,http://www.nps.gov/feeds/getNewsRSS.htm?id=yell,400
-npr.org,en,tech,None,None,http://www.npr.org/rss/rss.php?id=1019,155
 npr.org,en,science,None,None,http://www.npr.org/rss/rss.php?id=1007,155
-npr.org,en,news,1,None,http://www.npr.org/rss/rss.php?id=1001,155
 npr.org,en,music,None,None,http://www.npr.org/rss/rss.php?id=1039,155
 npr.org,en,food,None,None,http://www.npr.org/rss/rss.php?id=1053,155
-npr.org,en,economics,None,None,http://www.npr.org/rss/rss.php?id=93559255,155
 nplus1.ru,ru,science,1,None,https://nplus1.ru/rss,27202
 nowheremag.com,en,travel,1,None,http://nowheremag.com/feed/,None
 now.com,fr,travel,None,None,http://www.nowmadnow.com/?feed=rss2,35506
@@ -1727,8 +1724,6 @@ newsroom.co.nz,en,news,1,NZ,http://newsroom.co.nz/feed/rss,41277
 newsrimini.it,it,news,1,None,http://www.newsrimini.it/rss/homepage.xml,271888
 newsone.com,en,news,1,None,http://newsone.com/feed/,13216
 newsmax.com,en,world,None,None,http://www.newsmax.com/rss/International/19.xml,2378
-newsmax.com,en,politics,None,None,http://www.newsmax.com/xml/limbaugh.xml,2378
-newsmax.com,en,news,1,None,http://www.newsmax.com/rss/BenStein/39.xml,2378
 newsmaker.md,ru,news,1,None,http://newsmaker.md/rus/novosti/c:all.rss,187929
 newslincolncounty.com,en,news,1,None,http://newslincolncounty.com/?feed=rss2,888513
 newsledge.com,en,tech,1,None,http://www.newsledge.com/feed,311938
@@ -2494,7 +2489,6 @@ iwpr.net,en,news,1,None,http://iwpr.net/view/topstories/feed,28705
 ivg.it,it,news,1,None,http://www.ivg.it/feed/,140815
 itworldcanada.com,en,tech,1,None,http://www.itworldcanada.com/articlesrss,18286
 itworld.com,en,tech,1,None,http://www.itworld.com/taxonomy/term/16/all/feed,4951
-itv.com,en,news,1,None,http://www.itv.com/news/index.rss,1259
 itreseller.ch,de,tech,1,None,http://www.itreseller.ch/rss/news.xml,427076
 itproportal.com,en,news,1,None,https://www.itproportal.com/rss/,5712
 itpro.co.uk,en,tech,1,None,http://feeds.itpro.co.uk/ITPro/Today,8683

@@ -8,6 +8,7 @@ import com.quantice.dataaggregator.model.Topic;
 import com.quantice.dataaggregator.repository.ChannelRepository;
 import com.quantice.dataaggregator.repository.EntryRepository;
 import com.rometools.rome.feed.synd.SyndFeed;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -34,11 +35,11 @@ public class RssChannelReaderImpl implements RssChannelReader {
 
         if (!rssUtils.isActive(url)) {
             LOGGER.warn(String.format("Rss channel of url: %s is inactive", url));
-            return List.of();
+            return Collections.emptyList();
         }
         if (syndFeed.isEmpty()) {
             LOGGER.warn(String.format("Rss channel of url: %s is not parsable", url));
-            return List.of();
+            return Collections.emptyList();
         }
 
         List<Entry> entries = rssUtils.readEntries(syndFeed.get())
@@ -74,11 +75,11 @@ public class RssChannelReaderImpl implements RssChannelReader {
             }
 
             if (language != null && topic != null && !url.isEmpty()) {
-                return Channel.builder()
-                    .url(url)
-                    .language(language)
-                    .topic(topic)
-                    .build();
+                Channel channel = new Channel();
+                channel.setUrl(url);
+                channel.setLanguage(language);
+                channel.setTopic(topic);
+                return channel;
             }
             return null;
         }).filter(Objects::nonNull).toList();
