@@ -17,7 +17,6 @@ import java.net.URL;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -45,7 +44,7 @@ public class RssUtilsImpl implements RssUtils {
             httpURLConnection.setRequestMethod("GET");
             httpURLConnection.setDoOutput(false);
 
-            SyndFeed syndFeed = syndFeedInput.build(new XmlReader(new URL(url).openStream()));
+            SyndFeed syndFeed = syndFeedInput.build(new XmlReader(new URL(url)));
 
             return Optional.ofNullable(syndFeed);
 
@@ -101,16 +100,13 @@ public class RssUtilsImpl implements RssUtils {
     @Override
     public List<String> getChannelsUrls(Language language) {
 
-        List<String> channels = new ArrayList<>(
+        return new ArrayList<>(
             channelRepository.findAll().stream().map(channel -> {
                 if (channel.getLanguage() == language) {
                     return channel.getUrl();
                 }
                 return null;
             }).filter(Objects::nonNull).toList());
-
-        Collections.shuffle(channels);
-        return channels;
     }
 
     @Override
@@ -126,6 +122,12 @@ public class RssUtilsImpl implements RssUtils {
             throw new RuntimeException(e);
         }
         return records;
+    }
+
+    @Override
+    public long getNumberOfChannels(Language language) {
+
+        return channelRepository.findAllByLanguage(language).size();
     }
 
 }

@@ -18,4 +18,6 @@ public interface RssUtils {
 
     List<Entry> readEntries(SyndFeed syndFeed);
 
+    long getNumberOfChannels(Language language);
+
 }
