@@ -2,8 +2,3 @@ mongo:
   hostname: "[::1]"
   port: 27018
   databaseName: articles
-
-logging:
-  level:
-    org.springframework.web: DEBUG
-    org.springframework.data: DEBUG
