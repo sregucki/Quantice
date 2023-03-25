@@ -2,13 +2,6 @@
   <div class="navbar"></div>
   <div class="content">
     <div class="charts-main">
-      <div class="chart-explicit">
-        <div class="chart-type-icons">
-          <button class="chart-type-icon" style="background-image: url('assets/line-chart.svg'); margin-left: 7px" (click)="stockChartService.switchToLine()"></button>
-          <button class="chart-type-icon" style="background-image: url('assets/candlestick-chart.svg')" (click)="stockChartService.switchToCandle()"></button>
-        </div>
-        <div [chart]="stockChart" class="chart"></div>
-      </div>
       <div class="chart-info">
         <div class="stock-name">
           <span>{{stockName}}</span>
@@ -31,6 +24,13 @@
           'negative': lastPriceChangePercent < 0
           }">{{lastPriceChangePercent | number: '1.2-2'}}%</span>
         </div>
+      </div>
+      <div class="chart-explicit">
+        <div class="chart-type-icons">
+          <button class="chart-type-icon" style="background-image: url('assets/line-chart.svg'); margin-left: 7px" (click)="stockChartService.switchToLine()"></button>
+          <button class="chart-type-icon" style="background-image: url('assets/candlestick-chart.svg')" (click)="stockChartService.switchToCandle()"></button>
+        </div>
+        <div [chart]="stockChart" class="chart"></div>
       </div>
     </div>
     <div class="articles-main">

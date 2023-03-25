@@ -10,7 +10,7 @@
   align-items: center;
   margin: 0 auto 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 .navbar {
@@ -20,11 +20,10 @@
 }
 
 .charts-main {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
   height: 400px;
   width: 100%;
+  padding-top: 50px;
 }
 .chart {
   height: 300px;
@@ -32,24 +31,26 @@
 }
 
 .chart-explicit {
-  grid-area: 1 / 2 / 2 / 3;
-  height: 100%;
+  height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  padding-top: 25px;
 }
 
 .chart-info {
   display: flex;
+  align-self: flex-start;
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  grid-area: 1 / 1 / 2 / 2;
-  height: 100%;
+  height: fit-content;
   width: 100%;
+  padding-right: 25px;
 }
+
 
 .stock-last-price {
   font-size: 3rem;
@@ -93,6 +94,7 @@
   font-weight: 500;
   line-height: 1.125;
   border-bottom: 2px solid #656565;
+  height: 25px;
 }
 
 .content {
@@ -412,6 +414,8 @@ input[type=date] {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 3px;
+  border-top: 2px solid #656565;
+  padding-top: 10px;
 }
 
 .chart-type-icon {
