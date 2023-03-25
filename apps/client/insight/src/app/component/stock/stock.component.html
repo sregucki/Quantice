@@ -54,7 +54,7 @@
                   <img src="assets/quantice-logo.png" alt="image" height="80">
                 </div>
               </div>
-              <div class="article" [ngStyle]="{'background-color': (initArticles.indexOf(article) % 2 == 0) ? 'transparent': '#f3f3f3'}">
+              <div class="article" [ngStyle]="{'background-color': (initArticles.indexOf(article) % 2 == 0) ? 'transparent': 'rgb(245, 245, 245)'}">
                 <div class="article-title" (click)="redirect(article.url)">
                   <span class="article-title-span">{{article.title}}</span>
                 </div>
