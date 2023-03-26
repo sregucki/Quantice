@@ -19,6 +19,9 @@ export class AuthService implements CanActivate {
   }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+    if (!environment.isAuthEnabled) {
+      return true;
+    }
     if (this.getTokenFromCookie()) {
       return this.http.post(environment.authServerUrl, {token: this.getTokenFromCookie()}).pipe(
         map((response: any) => {

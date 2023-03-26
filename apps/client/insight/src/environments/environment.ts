@@ -3,5 +3,6 @@ export const environment = {
   stockApiUrl: '',
   graphQLSchemaUrl: '',
   loginPageUrl: '',
-  authServerUrl: ''
+  authServerUrl: '',
+  isAuthEnabled: true
 };
