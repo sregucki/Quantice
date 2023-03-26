@@ -7,10 +7,11 @@ import com.quantice.authservice.model.enums.AuthProvider;
 import com.quantice.authservice.security.PasswordEncoder;
 import com.quantice.authservice.security.jwt.TokenProvider;
 import com.quantice.authservice.service.UserService;
+import java.util.Map;
+import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -19,8 +20,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor
@@ -35,7 +34,7 @@ public class UserController {
 
     // TODO @Valid on request bodies
     // TODO exception handling
-    @PostMapping("/login")
+    @PostMapping(value = "/login", produces = { "application/json" })
     public ResponseEntity login(@RequestBody LoginRequest loginRequest) {
 
         Authentication authentication = authenticationManager.authenticate(
@@ -48,10 +47,7 @@ public class UserController {
 
         LOGGER.info(String.format("Token for logging user: %s", token));
 
-        HttpHeaders headers = new HttpHeaders();
-        headers.add("Authorization", token);
-
-        return new ResponseEntity(headers, HttpStatus.OK);
+        return new ResponseEntity(Map.of("token", token), HttpStatus.OK);
     }
 
     @PostMapping("/register")

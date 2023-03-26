@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "insight": {
+    "auth": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/insight",
+            "outputPath": "dist/auth",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -66,21 +66,18 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "insight:build:production"
+              "browserTarget": "auth:build:production"
             },
             "development": {
-              "browserTarget": "insight:build:development"
+              "browserTarget": "auth:build:development"
             }
           },
-          "defaultConfiguration": "development",
-          "options": {
-            "port": 4201
-          }
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "insight:build"
+            "browserTarget": "auth:build"
           }
         },
         "test": {
@@ -105,6 +102,6 @@
     }
   },
   "cli": {
-    "analytics": "a2953e42-2360-49a8-898c-2ac62275c8b9"
+    "analytics": "fbca653c-0805-4c3f-98dc-2f9381212cb1"
   }
 }

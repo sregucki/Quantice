@@ -1,2 +1,17 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-candle-stick-up: #0ccb80;
+  --color-candle-stick-down: #f6465d;
+}
+
+.highcharts-point-down {
+  fill: var(--color-candle-stick-down);
+  stroke: var(--color-candle-stick-down);
+}
+
+.highcharts-point-up {
+  stroke: var(--color-candle-stick-up);
+  fill: var(--color-candle-stick-up);
+}

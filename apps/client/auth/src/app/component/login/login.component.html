@@ -1,0 +1,25 @@
+<div class="main">
+  <div class="wrap-form">
+    <form [formGroup]="this.loginForm" (ngSubmit)="onSubmit()" #formDir="ngForm">
+      <div style="scale: 80%">
+        <img src="assets/quantice_logo_transparent.png">
+      </div>
+      <label for="email">Email</label>
+      <input id="email" type="text" formControlName="email">
+      <label for="password">Password</label>
+      <input id="password" type="text" formControlName="password">
+      <button>Log in</button>
+      <div class="sign-in-label-main">
+        <div class="sign-in-label-line"></div>
+        <div class="sign-in-label-text">OR</div>
+        <div class="sign-in-label-line"></div>
+      </div>
+      <div class="sign-in-google" (click)="redirectOAuth2()">
+        <img src="assets/sign_in_google.png">
+      </div>
+      <div class="sign-up-label">
+        <span>Don't have account?<a routerLink="/register">Sign up</a></span>
+      </div>
+    </form>
+  </div>
+</div>
