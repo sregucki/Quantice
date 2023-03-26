@@ -7,6 +7,7 @@
 html, body {
   height: 100%;
   margin: 0;
+  background: #f2f2f2;
 }
 
 .main {
@@ -24,14 +25,20 @@ html, body {
 button {
   margin-top: 50px;
   width: 100%;
-  background-color: #ffffff;
-  color: #080710;
+  color: white;
   padding: 15px 0;
   font-size: 18px;
   font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
+  border: solid 1px grey;
+  background-color: #3677a8;;
 }
+
+button:active {
+  transform: translateY(2px);
+}
+
 
 label{
   display: block;
@@ -46,16 +53,22 @@ input{
   height: 30px;
   width: 100%;
   background-color: rgba(255,255,255,0.07);
-  border-radius: 3px;
   margin-top: 8px;
-  font-size: 14px;
+  font-size: 16px;
   align-self: flex-start;
   padding: 0;
+  border: 1px none grey;
+  border-bottom-style: solid;
 }
 
+input:focus {
+  outline: none;
+}
+
+
 form{
-  height: 520px;
-  width: 350px;
+  height: 540px;
+  width: 310px;
   background-color: rgba(255,255,255,0.13);
   border-radius: 10px;
   backdrop-filter: blur(10px);
@@ -65,5 +78,18 @@ form{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 25px;
+  padding: 0 30px;
+}
+
+.wrap-form {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

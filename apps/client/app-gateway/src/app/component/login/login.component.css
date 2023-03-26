@@ -1,0 +1,40 @@
+.sign-in-label-main {
+  height: 20px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.sign-in-label-line {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.sign-in-label-text {
+  width: fit-content;
+  height: inherit;
+  text-align: center;
+}
+
+.sign-up-label {
+  font-size: 14px;
+}
+
+.sign-up-label a {
+  margin-left: 3px;
+}
+
+.sign-in-google {
+  scale: 55%;
+  cursor: pointer;
+}
+.sign-in-google:active {
+  transform: translateY(2px);
+}

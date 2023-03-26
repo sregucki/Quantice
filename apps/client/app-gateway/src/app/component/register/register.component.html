@@ -1,12 +1,17 @@
 <div class="main">
   <form [formGroup]="this.registerForm" (ngSubmit)="onSubmit()" #formDir="ngForm">
-    <h3>Register Here</h3>
+    <div style="scale: 80%">
+      <img src="assets/quantice_logo_transparent.png">
+    </div>
     <label for="username">Username</label>
     <input id="username" type="text" formControlName="username">
     <label for="password">Password</label>
     <input id="password" type="text" formControlName="password">
     <label for="email">Email</label>
     <input id="email" type="text" formControlName="email">
-    <button>Log in</button>
+    <button>Register</button>
+    <div class="sign-in-label">
+      <span>Already have account?<a routerLink="/login">Sign in</a></span>
+    </div>
   </form>
 </div>
