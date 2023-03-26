@@ -25,4 +25,8 @@ export class LoginComponent {
     this.authService.login(this.loginForm.value['email'], this.loginForm.value['password']);
   }
 
+  redirectOAuth2(): void {
+    window.location.href = 'http://localhost:8090/oauth2/authorize/google';
+  }
+
 }

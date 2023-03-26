@@ -15,7 +15,11 @@ export class AuthService implements CanActivate {
     const tokenPrefix = 'quantice-';
     const decodedCookie = decodeURIComponent(document.cookie);
     let cookie = decodedCookie.split(';').filter(cookie => cookie.includes(tokenPrefix));
-    return cookie.length != 0 ? cookie[0].substring(tokenPrefix.length + 1) : null;
+    let token = cookie.length != 0 ? cookie[0].substring(tokenPrefix.length) : null;
+    if (token) {
+      return token.includes('-') ? token.substring(1) : token;
+    }
+    return token;
   }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
@@ -23,19 +27,24 @@ export class AuthService implements CanActivate {
       return true;
     }
     if (this.getTokenFromCookie()) {
+      console.log(this.getTokenFromCookie())
       return this.http.post(environment.authServerUrl, {token: this.getTokenFromCookie()}).pipe(
         map((response: any) => {
-          return response.valueOf();
+          if (response.valueOf()) {
+            return true;
+          }
+          AuthService.redirectToLoginPage();
+          return false;
         })
       );
     }
     else {
-      this.redirectToLoginPage();
+      AuthService.redirectToLoginPage();
       return false;
     }
   }
 
-  redirectToLoginPage(): void {
+  public static redirectToLoginPage(): void {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', environment.loginPageUrl, true);
     xhr.withCredentials = true;
