@@ -20,7 +20,8 @@ export interface Stock {
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent {
+export class DashboardComponent  {
+
   stateCtrl = new FormControl();
   filteredStocks: Observable<Stock[]>;
   stocks: Stock[] = data as Stock[];
@@ -31,6 +32,7 @@ export class DashboardComponent {
       map(state => (state ? this._filterStates(state) : this.stocks.slice())),
     );
   }
+
 
   private _filterStates(value: string): Stock[] {
     const filterValue = value.toLowerCase();
@@ -54,6 +56,10 @@ export class DashboardComponent {
         console.log('Error while routing to: ' + ticker);
         console.log('Error message:\n' + err);
       });
+  }
+
+  test() {
+    console.log('test')
   }
 
 }
