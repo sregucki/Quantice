@@ -109,7 +109,7 @@
   color: #fff;
   letter-spacing: .025em;
   text-transform: uppercase;
-  height: 25px;
+  height: 30px;
   width: fit-content;
   padding: 5px;
   display: flex;
@@ -391,7 +391,7 @@ input[type=date] {
 
 .chart-type-icons {
   width: 700px;
-  height: 25px;
+  height: 35px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -404,7 +404,7 @@ input[type=date] {
 .chart-type-icon {
   border: solid 1px #666;
   height: 100%;
-  width: 30px;
+  width: 25px;
   border-radius: 3px;
   background-size: contain;
   background-repeat: no-repeat;
