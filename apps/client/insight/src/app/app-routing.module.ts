@@ -8,7 +8,8 @@ import {Oauth2Service} from "./service/oauth2-service/oauth2.service";
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthService]},
   { path: 'stock/:name', component: StockComponent },
-  { path: 'oauth2/:token', canActivate: [Oauth2Service], component: DashboardComponent}
+  { path: 'oauth2/:token', canActivate: [Oauth2Service], component: DashboardComponent},
+  { path: '**', component: DashboardComponent} // TODO redirect to some page
 ];
 
 @NgModule({

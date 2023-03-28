@@ -31,7 +31,7 @@ export class StockComponent implements OnInit, AfterViewInit {
   articleSearchForm: FormGroup;
   keywords: string[];
 
-  constructor(private location: Location, private router: Router, private articleService: ArticleService, public stockChartService: StockChartService, private stockService: StockService,
+  constructor(private location: Location, public router: Router, private articleService: ArticleService, public stockChartService: StockChartService, private stockService: StockService,
               fb: FormBuilder, private keywordHighlightService: KeywordHighlightService) {
 
     const navigation = this.router.getCurrentNavigation();

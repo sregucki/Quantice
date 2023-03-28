@@ -2,23 +2,6 @@
   --material-gray: rgb(245, 245, 245);
 }
 
-
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0 auto 0 auto;
-  width: 100%;
-  max-width: 1100px;
-}
-
-.navbar {
-  border: solid lightgray 1px;
-  height: 40px;
-  width: 100%;
-}
-
 .charts-main {
   display: flex;
   height: 400px;
@@ -126,7 +109,7 @@
   color: #fff;
   letter-spacing: .025em;
   text-transform: uppercase;
-  height: 25px;
+  height: 30px;
   width: fit-content;
   padding: 5px;
   display: flex;
@@ -408,7 +391,7 @@ input[type=date] {
 
 .chart-type-icons {
   width: 700px;
-  height: 25px;
+  height: 35px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -421,7 +404,7 @@ input[type=date] {
 .chart-type-icon {
   border: solid 1px #666;
   height: 100%;
-  width: 30px;
+  width: 25px;
   border-radius: 3px;
   background-size: contain;
   background-repeat: no-repeat;
