@@ -22,9 +22,33 @@
           <span>{{stock.name}}</span>
         </mat-option>
       </mat-autocomplete>
-      <button type="submit" (click)="test()" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" style="background-color: #3677a8">Search</button>
+      <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" style="background-color: #3677a8">Search</button>
     </div>
   </form>
+  <div class="content-main">
+    <div class="content-articles"></div>
+    <div class="content-index-showcase">
+      <table>
+        <tr *ngFor="let index of this.indexShowcaseTickers">
+          <td id="td-index">
+            <span class="indicator" [ngStyle]="{'border-color': (this.getPriceDiff(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) > 0) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}"></span>
+            {{index}}
+          </td>
+          <td class="td-index-price" style="width: 90px">{{(this.getIndexData(index)?.[0] | number: '1.2-2')!.toString() + '$'}}</td>
+          <td class="td-index-price" [ngStyle]="{'color': (this.getPriceDiff(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) > 0) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}">
+            {{(this.getPriceDiff(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) | number: '1.2-2')!.toString() + '$'}}
+          </td>
+          <td class="td-index-price" [ngStyle]="{'color': (this.getPriceDiff(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) > 0) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}">
+            {{(this.getPriceDiffPercent(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) | number: '1.2-2')!.toString() + '%'}}
+            <i class="fa-solid"
+               [ngClass]="(this.getPriceDiff(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) > 0) ? 'fa-caret-up': 'fa-caret-down'"
+               [ngStyle]="{'color': (this.getPriceDiff(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) > 0) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}"
+               style="margin-left: 15px; text-align: right; vertical-align: center">
+            </i>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </div>
-
 
