@@ -61,7 +61,7 @@
                   <img src="assets/quantice-logo.png" alt="image" height="80">
                 </div>
               </div>
-              <div class="article" [ngStyle]="{'background-color': (initArticles.indexOf(article) % 2 == 0) ? 'transparent': 'rgb(245, 245, 245)'}">
+              <div class="article" [ngStyle]="{'background-color': (initArticles.indexOf(article) % 2 == 0) ? 'transparent': 'rgb(247, 247, 247)'}">
                 <div class="article-title" (click)="redirect(article.url)">
                   <span class="article-title-span">{{article.title}}</span>
                 </div>
@@ -85,7 +85,7 @@
             }">
               <label class="search-label">keywords</label>
               <input id="articleSearchKeywords" class="input--style-1" type="text"
-                     formControlName="articleSearchKeywords">
+                     formControlName="articleSearchKeywords" autocomplete="off">
             </div>
             <div class="search-date">
               <div class="search-input" [ngStyle]="{
