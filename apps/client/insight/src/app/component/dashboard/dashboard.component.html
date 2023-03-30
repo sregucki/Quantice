@@ -26,29 +26,67 @@
     </div>
   </form>
   <div class="content-main">
-    <div class="content-articles"></div>
     <div class="content-index-showcase">
       <table>
-        <tr *ngFor="let index of this.indexShowcaseTickers">
+        <tr *ngFor="let index of indexShowcaseList">
           <td id="td-index">
-            <span class="indicator" [ngStyle]="{'border-color': (this.getPriceDiff(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) > 0) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}"></span>
-            {{index}}
+            <span class="indicator" [ngStyle]="{'border-color': isDown(index) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}"></span>
+            <span>{{index.ticker}}</span>
           </td>
-          <td class="td-index-price" style="width: 90px">{{(this.getIndexData(index)?.[0] | number: '1.2-2')!.toString() + '$'}}</td>
-          <td class="td-index-price" [ngStyle]="{'color': (this.getPriceDiff(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) > 0) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}">
-            {{(this.getPriceDiff(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) | number: '1.2-2')!.toString() + '$'}}
+          <td class="td-index-price" style="width: 90px">{{(index.closePriceCurrent | number: '1.2-2')!.toString() + '$'}}</td>
+          <td class="td-index-price" [ngStyle]="{'color': isDown(index) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}">
+            {{(getPriceDiff(index) | number: '1.2-2')!.toString() + '$'}}
           </td>
-          <td class="td-index-price" [ngStyle]="{'color': (this.getPriceDiff(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) > 0) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}">
-            {{(this.getPriceDiffPercent(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) | number: '1.2-2')!.toString() + '%'}}
+          <td class="td-index-price" [ngStyle]="{'color': isDown(index) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}">
+            {{(getPriceDiffPercent(index) | number: '1.2-2')!.toString() + '%'}}
             <i class="fa-solid"
-               [ngClass]="(this.getPriceDiff(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) > 0) ? 'fa-caret-up': 'fa-caret-down'"
-               [ngStyle]="{'color': (this.getPriceDiff(this.getIndexData(index)?.[0], this.getIndexData(index)?.[1]) > 0) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}"
+               [ngClass]="isDown(index) ? 'fa-caret-up': 'fa-caret-down'"
+               [ngStyle]="{'color': isDown(index) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}"
                style="margin-left: 15px; text-align: right; vertical-align: center">
             </i>
           </td>
         </tr>
       </table>
     </div>
+    <div class="content-headlines">
+      <div class="headlines-major">
+        <div id="headline-major-title" class="headline-major-title">
+          <a href="{{headlines?.[0]?.url}}" target="_blank">{{headlines?.[0]?.title}}</a>
+        </div>
+        <div class="headline-major-image"><a href="{{headlines?.[0]?.url}}" target="_blank"><img src="{{headlines?.[0]?.imageUrl}}"></a></div>
+        <div class="headline-major-content">
+          <ul *ngFor="let headline of headlines?.slice(2, 5)">
+            <li><a href="{{headline.url}}" target="_blank">{{headline.title}}</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="headlines-minor">
+        <div class="headline-minor-image"><a href="{{headlines?.[1]?.url}}" target="_blank"><img src="{{headlines?.[1]?.imageUrl}}"></a></div>
+        <div class="headline-minor-title"><a href="{{headlines?.[1]?.url}}" target="_blank">{{headlines?.[1]?.title}}</a>></div>
+        <div class="headline-minor-content">
+          <ul *ngFor="let headlineL of headlines?.slice(5, 8)">
+            <li><a href="{{headlineL.url}}}" target="_blank">{{headlineL.title}}</a></li>
+          </ul>
+        </div>
+        <div class="headline-minor-content-bottom-main">
+          <div class="headline-minor-content-bottom" *ngFor="let headline of headlines?.slice(8, 12)">
+            <a href="{{headline.url}}">{{headline.title}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-headline-bottom">
+      <div class="section-bottom" *ngFor="let i of [13, 16, 19]">
+        <div class="headline-minor-image"><a href="{{headlines?.[i]?.url}}" target="_blank"><img src="{{headlines?.[i]?.imageUrl}}"></a></div>
+        <div class="headline-minor-title"><a href="{{headlines?.[i]?.url}}" target="_blank">{{headlines?.[i]?.title}}</a>></div>
+        <div class="headline-minor-content">
+          <ul *ngFor="let headlineL of headlines?.slice(i-1, i+3)">
+            <li><a href="{{headlineL.url}}}" target="_blank">{{headlineL.title}}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
