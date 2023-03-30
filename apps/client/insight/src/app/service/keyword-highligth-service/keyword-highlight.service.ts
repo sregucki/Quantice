@@ -12,7 +12,7 @@ export class KeywordHighlightService {
       (element, index, array) => {
         keywords.forEach((keyword) => {
           const regex = new RegExp(keyword, 'gi');
-          element.innerHTML = element.innerHTML.replace(regex, `<span style="text-decoration: underline dodgerblue">` + element.innerHTML.match(regex) + `</span>`)
+          element.innerHTML = element.innerHTML.replace(regex, `<span style="background-color: rgba(66, 133, 244, 0.3);">` + element.innerHTML.match(regex) + `</span>`)
         })
       });
   }
