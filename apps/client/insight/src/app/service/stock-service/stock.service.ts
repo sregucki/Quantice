@@ -14,4 +14,13 @@ export class StockService {
     return this.http.get<object>(environment.stockApiUrl + `/stock/data?ticker=${ticker}&period=${period}&interval=${interval}`)
   }
 
+  getStockDataFormatted(stockData: any, type: string): unknown[][] {
+    const stockDataObj = stockData['data' as keyof typeof stockData][type as keyof typeof stockData];
+    const stockDataFormatted = [];
+    for (let [date, close] of Object.entries(stockDataObj)) {
+      stockDataFormatted.push([Date.parse(date), close])
+    }
+    return stockDataFormatted;
+  }
+
 }
