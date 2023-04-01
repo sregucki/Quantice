@@ -2,6 +2,7 @@ package com.quantice.insight.config;
 
 import com.quantice.insight.config.mongo.MongoProperties;
 import com.quantice.insight.config.properties.NewsApiProperties;
+import com.rometools.rome.io.SyndFeedInput;
 import lombok.NonNull;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Bean;
@@ -19,9 +20,14 @@ public class AppConfig {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(@NonNull CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins("http://localhost:4200");
+                registry.addMapping("/**").allowedOrigins("http://localhost:4200", "http://localhost:4201");
             }
         };
+    }
+
+    @Bean
+    public SyndFeedInput syndFeedInput() {
+        return new SyndFeedInput();
     }
 
 }

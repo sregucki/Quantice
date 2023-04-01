@@ -2,8 +2,16 @@ package com.quantice.insight.service;
 
 import com.quantice.insight.config.ArticleApiConstants;
 import com.quantice.insight.model.Article;
+import com.quantice.insight.model.Headline;
 import com.quantice.insight.repository.ArticleRepository;
+import com.rometools.rome.feed.synd.SyndFeed;
+import com.rometools.rome.io.FeedException;
+import com.rometools.rome.io.SyndFeedInput;
+import com.rometools.rome.io.XmlReader;
+import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
@@ -25,6 +33,7 @@ public class RssArticleService {
 
     private final ArticleRepository articleRepository;
     private final MongoTemplate mongoTemplate;
+    private final SyndFeedInput syndFeedInput;
     private static final Logger LOGGER = LoggerFactory.getLogger(RssArticleService.class);
 
     public List<Article> findArticles(final List<String> keywords, final Optional<String> from, final Optional<String> to, final Optional<Integer> limit) {
@@ -81,6 +90,23 @@ public class RssArticleService {
             }
         }
         return textCriteria;
+    }
+
+    public List<Headline> getHeadlines() throws IOException, FeedException {
+        String headlineChannelUrl = "https://finance.yahoo.com/rss/"; // TODO move it to properties
+
+        HttpURLConnection httpURLConnection = (HttpURLConnection) new URL(headlineChannelUrl).openConnection();
+        httpURLConnection.setRequestMethod("GET");
+        httpURLConnection.setDoOutput(false);
+
+        SyndFeed syndFeed = syndFeedInput.build(new XmlReader(new URL(headlineChannelUrl)));
+
+        return syndFeed.getEntries().stream().map(rssEntry -> Headline.builder()
+             .url(rssEntry.getLink())
+             .title(rssEntry.getTitle())
+             .imageUrl(rssEntry.getForeignMarkup().get(0).getAttributeValue("url"))
+             .build()).toList();
+
     }
 
 }
