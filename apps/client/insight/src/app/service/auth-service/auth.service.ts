@@ -17,7 +17,7 @@ export class AuthService implements CanActivate {
     let cookie = decodedCookie.split(';').filter(cookie => cookie.includes(tokenPrefix));
     let token = cookie.length != 0 ? cookie[0].substring(tokenPrefix.length) : null;
     if (token) {
-      return token.includes('-') ? token.substring(1) : token;
+      return token[0] == '-' ? token.substring(1) : token;
     }
     return token;
   }
@@ -27,7 +27,6 @@ export class AuthService implements CanActivate {
       return true;
     }
     if (this.getTokenFromCookie()) {
-      console.log(this.getTokenFromCookie())
       return this.http.post(environment.authServerUrl, {token: this.getTokenFromCookie()}).pipe(
         map((response: any) => {
           if (response.valueOf()) {
