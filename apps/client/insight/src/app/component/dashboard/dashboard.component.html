@@ -18,8 +18,14 @@
              required>
       <mat-autocomplete #auto="matAutocomplete">
         <mat-option *ngFor="let stock of filteredStocks | async" [value]="stock.name" (click)="navigateTo(stock.name, stock.short_name)">
-          <span style="font-weight: 600">{{stock.short_name + ' | '}}</span>
-          <span>{{stock.name}}</span>
+          <div class="search-option">
+            <div class="search-option-ticker">
+              <span>{{stock.short_name}}</span>
+            </div>
+            <div class="search-option-name">
+              <span>{{stock.name}}</span>
+            </div>
+          </div>
         </mat-option>
       </mat-autocomplete>
       <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" style="background-color: #3677a8">Search</button>
@@ -28,7 +34,7 @@
   <div class="content-main">
     <div class="content-index-showcase">
       <table>
-        <tr *ngFor="let index of indexShowcaseList">
+        <tr *ngFor="let index of indexShowcaseList" (mouseover)=updateIndexPriceChart(index.ticker)>
           <td id="td-index">
             <span class="indicator" [ngStyle]="{'border-color': isDown(index) ? 'rgb(54, 127, 46)': 'rgb(181, 26, 40)'}"></span>
             <span>{{index.ticker}}</span>
@@ -47,6 +53,7 @@
           </td>
         </tr>
       </table>
+      <div [chart]="indexPriceChart" class="index-price-chart"></div>
     </div>
     <div class="content-headlines">
       <div class="headlines-major">

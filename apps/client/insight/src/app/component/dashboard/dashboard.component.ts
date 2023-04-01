@@ -7,6 +7,8 @@ import {Router} from "@angular/router";
 import {StockService} from "../../service/stock-service/stock.service";
 import {Headline, HeadlineService} from "../../service/headline-service/headline.service";
 import {StockIndex} from "../../model/stockIndex/stockIndex";
+import {StockChartService} from "../../service/stock-chart-service/stock-chart.service";
+import {StockChart} from "angular-highcharts";
 
 export interface Stock {
   id: string;
@@ -32,14 +34,22 @@ export class DashboardComponent implements OnInit {
   stocks: Stock[] = data as Stock[];
   indexShowcaseTickers: string[] = ['META', 'AMZN', 'AAPL', 'NFLX', "GOOGL"];
   indexShowcaseList: StockIndex[] = [];
+  indexPriceChart: StockChart;
   headlines: Headline[];
 
-  constructor(private http: HttpClient, private router: Router, private stockService: StockService, private headlineService: HeadlineService) {
+  constructor(private http: HttpClient, private router: Router, private stockService: StockService, private headlineService: HeadlineService, private stockChartService: StockChartService) {
     this.filteredStocks = this.stateCtrl.valueChanges.pipe(
       startWith(''),
       map(state => (state ? this._filterStates(state) : this.stocks.slice())),
     );
-    console.log(this.indexShowcaseList);
+    this.stockService.getStockData(this.indexShowcaseTickers[0], '1d', '1m').subscribe(closePrice => {
+      const stockDataClose = closePrice['data' as keyof typeof closePrice]['Close' as keyof typeof closePrice];
+      const stockDataCloseFormatted = [];
+      for (let [date, close] of Object.entries(stockDataClose)) {
+        stockDataCloseFormatted.push([Date.parse(date), close])
+      }
+      this.indexPriceChart = this.stockChartService.getLineChart(this.indexShowcaseTickers[0], stockDataCloseFormatted);
+    });
   }
 
   ngOnInit(): void {
@@ -72,6 +82,29 @@ export class DashboardComponent implements OnInit {
 
     return this.stocks.filter(stock => stock.name.toLowerCase().includes(filterValue));
   }
+
+  updateIndexPriceChart(ticker: string): void {
+    this.stockService.getStockData(ticker, '1d', '1m').subscribe(closePriceData => {
+      this.indexPriceChart.ref$.subscribe(ch => {
+        ch.update({
+          title: {
+            text: `<span style='vertical-align: bottom; margin-right: 3px'>${ticker}</span>` +
+              `<img src='../../../assets/dashboard/${ticker}_logo.png' width='16' height='16' style='display: inline-block; vertical-align: top; margin-bottom: 2px'/>`
+          }
+        })
+        ch.series[0].update({
+          type: 'line',
+          tooltip: {
+            valueDecimals: 2
+          },
+          color: '#3677a8',
+          name: ticker,
+          data: this.stockService.getStockDataFormatted(closePriceData, 'Close')
+        });
+      })
+    })
+  }
+
 
   navigateTo(stockName: string, ticker: string) {
     ticker = ticker.toLowerCase();
