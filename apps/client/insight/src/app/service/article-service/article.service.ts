@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {Apollo, gql} from 'apollo-angular';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
-import {Article} from "../../model/article";
+import {Article} from "../../model/article/article";
 
 const queryFindArticlesRss = gql`
   query findArticlesRss($keywords: [String!], $from: String, $to: String) {

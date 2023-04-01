@@ -16,9 +16,7 @@ export class AuthService {
   login(email: string, password: string): void {
     this.http.post<object>(`${this.authApiUrl}/login`, { email, password}, {observe: 'response'})
     .subscribe((response: any) => { //TODO handle error when no token
-      console.log(`quantice-${response.body.token}`.length);
       document.cookie = 'quantice-' + response.body.token;
-      console.log(( 'quantice-' + response.body.token).length)
       this.redirectToDashboard();
     });
   }

@@ -3,7 +3,7 @@ import {Location} from "@angular/common";
 import {Router} from "@angular/router";
 import {ArticleService} from "../../service/article-service/article.service";
 import {Subscription} from "rxjs";
-import {Article} from "../../model/article";
+import {Article} from "../../model/article/article";
 import {StockChart} from "angular-highcharts";
 import {StockChartService} from "../../service/stock-chart-service/stock-chart.service";
 import {StockService} from "../../service/stock-service/stock.service";
@@ -86,7 +86,7 @@ export class StockComponent implements OnInit, AfterViewInit {
         stockDataVolumeFormatted.push([Date.parse(Object.keys(stockDataOpen)[i]), Object.values(stockDataVolume)[i]])
       }
 
-      this.stockChart = this.stockChartService.getLineChart(this.ticker, stockDataAll, stockDataCloseFormatted, stockDataVolumeFormatted);
+      this.stockChart = this.stockChartService.getChartConsolidated(this.ticker, stockDataAll, stockDataCloseFormatted, stockDataVolumeFormatted);
       this.lastPrice = (
         Number(stockDataCloseFormatted[stockDataCloseFormatted.length - 1][1])
       );
